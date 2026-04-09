@@ -1,4 +1,5 @@
-import { X, MapPin, Bed, Bath, Maximize, ArrowRight } from "lucide-react";
+import { useState } from "react";
+import { X, MapPin, Bed, Bath, Maximize, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 export interface Project {
   id: string;
