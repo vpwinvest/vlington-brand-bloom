@@ -10,6 +10,7 @@ import velaris1 from "@/assets/velaris-1.jpg";
 import velaris2 from "@/assets/velaris-2.jpg";
 import velaris3 from "@/assets/velaris-3.jpg";
 import velaris4 from "@/assets/velaris-4.jpg";
+import montHouse1 from "@/assets/mont-house-1.png";
 import ProjectModal, { type Project } from "./ProjectModal";
 
 const featuredProject: Project = {
@@ -64,6 +65,32 @@ const projects: Project[] = [
       "Estacionamento subterrâneo (126 lugares)",
       "Espaços verdes e praça pública",
       "Piscinas infinitas",
+    ],
+  },
+  {
+    id: "mont-house",
+    image: montHouse1,
+    title: "Mont House",
+    location: "Lamas, Cadaval",
+    type: "Habitação Unifamiliar",
+    description:
+      "Habitação unifamiliar de arquitetura contemporânea em Lamas, Cadaval. O projeto combina volumes brancos com revestimento em madeira ripada e pedra natural, criando uma linguagem arquitetónica sofisticada. Amplas superfícies envidraçadas garantem uma relação fluida entre o interior e o exterior, com espelho de água na entrada principal.",
+    details: {
+      bedrooms: "4",
+      bathrooms: "3",
+      area: "500 m²",
+      status: "Em Projeto",
+    },
+    gallery: [montHouse1],
+    features: [
+      "Lote de 500 m²",
+      "Arquitetura contemporânea",
+      "Revestimento em madeira ripada",
+      "Pedra natural",
+      "Amplos envidraçados",
+      "Espelho de água",
+      "2 pisos",
+      "Garagem integrada",
     ],
   },
   {
