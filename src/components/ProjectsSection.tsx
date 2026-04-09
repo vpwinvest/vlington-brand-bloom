@@ -4,6 +4,7 @@ import property1 from "@/assets/property-1.jpg";
 import property2 from "@/assets/property-2.jpg";
 import property3 from "@/assets/property-3.jpg";
 import abyssHouse1 from "@/assets/abyss-house-1.png";
+import abyssHouse2 from "@/assets/abyss-house-2.png";
 import aboutBg from "@/assets/about-bg.jpg";
 import ProjectModal, { type Project } from "./ProjectModal";
 
@@ -11,20 +12,20 @@ const featuredProject: Project = {
   id: "abyss-house",
   image: abyssHouse1,
   title: "Abyss House",
-  location: "Sesimbra, Portugal",
+  location: "Torres Vedras, Portugal",
   type: "Projeto em Destaque",
   description:
-    "Uma habitação unifamiliar T4 integrada na encosta de Sesimbra, onde a arquitetura contemporânea dialoga com a topografia natural do terreno. Distribuída por 3 pisos, a Abyss House maximiza as vistas panorâmicas sobre o mar e a vila, com espaços generosos que fluem entre interior e exterior através de amplos terraços e jardins paisagísticos.",
+    "Uma habitação unifamiliar T4 integrada na encosta de Torres Vedras, com uma vista única e privilegiada sobre a cidade. A arquitetura contemporânea dialoga com a topografia natural do terreno, distribuída por 3 pisos que maximizam as vistas panorâmicas. Espaços generosos fluem entre interior e exterior através de amplos terraços e jardins paisagísticos.",
   details: {
     bedrooms: "4",
     bathrooms: "3",
     area: "311 m²",
     status: "Em Projeto",
   },
-  gallery: [abyssHouse1, aboutBg],
+  gallery: [abyssHouse1, abyssHouse2, aboutBg],
   features: [
     "Lote de 694 m²",
-    "3 pisos com vista mar",
+    "3 pisos com vista sobre a cidade",
     "Garagem para 3 viaturas",
     "Terraços e alpendres (270 m²)",
     "Cozinha open space",
