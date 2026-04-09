@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logoSymbol from "@/assets/logo-symbol.png";
+import logoSymbol from "@/assets/logo-vlington-symbol.png";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -29,7 +29,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-6">
         <a href="#hero" className="flex items-center gap-3">
-          <img src={logoSymbol} alt="VLINGTON" className="h-8 w-auto brightness-0 invert" />
+          <img src={logoSymbol} alt="VLINGTON" className="h-8 w-auto" />
         </a>
 
         <div className="hidden md:flex items-center gap-10">
