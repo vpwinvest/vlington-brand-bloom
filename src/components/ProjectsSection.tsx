@@ -6,6 +6,10 @@ import property3 from "@/assets/property-3.jpg";
 import abyssHouse1 from "@/assets/abyss-house-1.png";
 import abyssHouse2 from "@/assets/abyss-house-2.png";
 import abyssHouse3 from "@/assets/abyss-house-3.png";
+import velaris1 from "@/assets/velaris-1.jpg";
+import velaris2 from "@/assets/velaris-2.jpg";
+import velaris3 from "@/assets/velaris-3.jpg";
+import velaris4 from "@/assets/velaris-4.jpg";
 import ProjectModal, { type Project } from "./ProjectModal";
 
 const featuredProject: Project = {
