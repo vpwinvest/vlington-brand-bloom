@@ -25,7 +25,7 @@ const featuredProject: Project = {
   gallery: [abyssHouse1, abyssHouse2, aboutBg],
   features: [
     "Lote de 694 m²",
-    "3 pisos com vista mar",
+    "3 pisos com vista sobre a cidade",
     "Garagem para 3 viaturas",
     "Terraços e alpendres (270 m²)",
     "Cozinha open space",
