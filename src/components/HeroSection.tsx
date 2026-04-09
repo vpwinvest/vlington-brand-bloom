@@ -1,5 +1,5 @@
 import heroBg from "@/assets/hero-bg.jpg";
-import logoFull from "@/assets/logo-full.png";
+import logoFull from "@/assets/logo-vlington-full.png";
 
 const HeroSection = () => {
   return (
@@ -21,7 +21,7 @@ const HeroSection = () => {
           <img
             src={logoFull}
             alt="VLINGTON Properties - Think Beyond"
-            className="mx-auto h-24 md:h-32 lg:h-40 w-auto brightness-0 invert opacity-90"
+            className="mx-auto h-24 md:h-32 lg:h-40 w-auto"
           />
         </div>
         <div
