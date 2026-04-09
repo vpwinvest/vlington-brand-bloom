@@ -50,7 +50,7 @@ const projects: Project[] = [
       area: "350 m²",
       status: "Em Construção",
     },
-    gallery: [property1, aboutBg],
+    gallery: [property1],
     features: [
       "Piscina infinita",
       "Jardim paisagístico",
