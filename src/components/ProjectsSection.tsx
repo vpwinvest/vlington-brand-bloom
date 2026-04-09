@@ -11,6 +11,10 @@ import velaris2 from "@/assets/velaris-2.jpg";
 import velaris3 from "@/assets/velaris-3.jpg";
 import velaris4 from "@/assets/velaris-4.jpg";
 import montHouse1 from "@/assets/mont-house-1.png";
+import atlanticGold1 from "@/assets/atlantic-gold-1.png";
+import atlanticGold2 from "@/assets/atlantic-gold-2.jpg";
+import atlanticGold3 from "@/assets/atlantic-gold-3.jpg";
+import atlanticGold4 from "@/assets/atlantic-gold-4.jpg";
 import ProjectModal, { type Project } from "./ProjectModal";
 
 const featuredProject: Project = {
@@ -65,6 +69,32 @@ const projects: Project[] = [
       "Estacionamento subterrâneo (126 lugares)",
       "Espaços verdes e praça pública",
       "Piscinas infinitas",
+    ],
+  },
+  {
+    id: "atlantic-gold",
+    image: atlanticGold1,
+    title: "The Atlantic Gold Residence",
+    location: "Atalaia, Lourinhã",
+    type: "Condomínio Residencial",
+    description:
+      "Condomínio residencial T3 na Atalaia, Lourinhã, com arquitetura contemporânea que combina betão, madeira e vegetação abundante. Os apartamentos dispõem de amplas varandas com vista para a piscina comum, sala e cozinha open space, e acabamentos de design em todos os espaços.",
+    details: {
+      bedrooms: "3",
+      bathrooms: "2",
+      area: "T3",
+      status: "Em Projeto",
+    },
+    gallery: [atlanticGold1, atlanticGold2, atlanticGold3, atlanticGold4],
+    features: [
+      "Piscina comum",
+      "Varandas amplas",
+      "Sala e cozinha open space",
+      "2 pisos por fração",
+      "Acabamentos de design",
+      "Proximidade à praia",
+      "Estacionamento",
+      "Jardins paisagísticos",
     ],
   },
   {
