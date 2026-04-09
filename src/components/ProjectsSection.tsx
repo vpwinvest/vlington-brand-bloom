@@ -12,10 +12,10 @@ const featuredProject: Project = {
   id: "abyss-house",
   image: abyssHouse1,
   title: "Abyss House",
-  location: "Sesimbra, Portugal",
+  location: "Torres Vedras, Portugal",
   type: "Projeto em Destaque",
   description:
-    "Uma habitação unifamiliar T4 integrada na encosta de Sesimbra, onde a arquitetura contemporânea dialoga com a topografia natural do terreno. Distribuída por 3 pisos, a Abyss House maximiza as vistas panorâmicas sobre o mar e a vila, com espaços generosos que fluem entre interior e exterior através de amplos terraços e jardins paisagísticos.",
+    "Uma habitação unifamiliar T4 integrada na encosta de Torres Vedras, com uma vista única e privilegiada sobre a cidade. A arquitetura contemporânea dialoga com a topografia natural do terreno, distribuída por 3 pisos que maximizam as vistas panorâmicas. Espaços generosos fluem entre interior e exterior através de amplos terraços e jardins paisagísticos.",
   details: {
     bedrooms: "4",
     bathrooms: "3",
