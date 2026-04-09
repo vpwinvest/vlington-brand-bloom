@@ -83,7 +83,7 @@ const projects: Project[] = [
       bedrooms: "3",
       bathrooms: "2",
       area: "T3",
-      status: "Em Projeto",
+      status: "Em Construção — Conclusão 2027",
     },
     gallery: [atlanticGold1, atlanticGold2, atlanticGold3, atlanticGold4],
     features: [
@@ -145,30 +145,6 @@ const projects: Project[] = [
       "Domótica integrada",
       "Pavimento em pedra natural",
       "Aquecimento por piso radiante",
-    ],
-  },
-  {
-    id: "the-hillside",
-    image: property2,
-    title: "The Hillside",
-    location: "Cascais, Portugal",
-    type: "Empreendimento Exclusivo",
-    description:
-      "Integrado na encosta verde de Cascais, The Hillside é um empreendimento que redefine o conceito de vida em contacto com a natureza. Múltiplos níveis acompanham o terreno natural, com caminhos de pedra e vegetação autóctone envolvente.",
-    details: {
-      bedrooms: "3-5",
-      bathrooms: "3-6",
-      area: "220-480 m²",
-      status: "Concluído",
-    },
-    gallery: [property2, property1],
-    features: [
-      "Vistas panorâmicas",
-      "Terraços privativos",
-      "Estacionamento subterrâneo",
-      "Segurança 24h",
-      "Espaços verdes comuns",
-      "Proximidade à praia",
     ],
   },
   {
