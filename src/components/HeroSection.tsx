@@ -1,4 +1,5 @@
 import heroBg from "@/assets/hero-bg.jpg";
+import logoFull from "@/assets/logo-full.png";
 
 const HeroSection = () => {
   return (
@@ -13,27 +14,19 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-dark-overlay" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <p
-          className="text-gold text-sm md:text-base tracking-widest-xl uppercase mb-6 animate-fade-in-up"
-          style={{ animationDelay: "0.2s", opacity: 0 }}
+        <div
+          className="animate-fade-in-up mb-12"
+          style={{ animationDelay: "0.3s", opacity: 0 }}
         >
-          Think Beyond
-        </p>
-        <h1
-          className="text-5xl md:text-7xl lg:text-8xl font-black tracking-widest-xl text-primary-foreground mb-4 animate-fade-in-up"
-          style={{ animationDelay: "0.5s", opacity: 0 }}
-        >
-          VLINGTON
-        </h1>
-        <p
-          className="text-lg md:text-xl tracking-widest-xl text-primary-foreground/70 uppercase mb-12 animate-fade-in-up"
-          style={{ animationDelay: "0.7s", opacity: 0 }}
-        >
-          Properties
-        </p>
+          <img
+            src={logoFull}
+            alt="VLINGTON Properties - Think Beyond"
+            className="mx-auto h-24 md:h-32 lg:h-40 w-auto brightness-0 invert opacity-90"
+          />
+        </div>
         <div
           className="animate-fade-in-up"
-          style={{ animationDelay: "1s", opacity: 0 }}
+          style={{ animationDelay: "0.8s", opacity: 0 }}
         >
           <a
             href="#projects"
@@ -44,7 +37,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-fade-in" style={{ animationDelay: "1.5s", opacity: 0 }}>
         <div className="w-px h-16 bg-gradient-to-b from-gold/0 via-gold to-gold/0" />
       </div>
