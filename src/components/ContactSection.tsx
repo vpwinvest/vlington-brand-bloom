@@ -1,6 +1,43 @@
+import { useState } from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "sonner";
 
 const ContactSection = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [sending, setSending] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!name.trim() || !email.trim() || !message.trim()) {
+      toast.error("Por favor preencha todos os campos.");
+      return;
+    }
+
+    setSending(true);
+    try {
+      const { error } = await supabase
+        .from("contact_submissions")
+        .insert({ name: name.trim(), email: email.trim(), message: message.trim() });
+
+      if (error) throw error;
+
+      toast.success(
+        "Bem-vindo à Vlington Properties! Entraremos em contacto o mais breve possível. Obrigado."
+      );
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch {
+      toast.error("Ocorreu um erro. Por favor tente novamente.");
+    } finally {
+      setSending(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
@@ -52,15 +89,18 @@ const ContactSection = () => {
 
           {/* Form */}
           <div className="bg-card p-8 md:p-10 border border-border">
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-xs tracking-widest uppercase text-muted-foreground mb-2">
                   Nome
                 </label>
                 <input
                   type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="w-full bg-transparent border-b border-border py-3 text-foreground text-sm focus:border-gold focus:outline-none transition-colors"
                   placeholder="O seu nome"
+                  required
                 />
               </div>
               <div>
@@ -69,8 +109,11 @@ const ContactSection = () => {
                 </label>
                 <input
                   type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full bg-transparent border-b border-border py-3 text-foreground text-sm focus:border-gold focus:outline-none transition-colors"
                   placeholder="O seu email"
+                  required
                 />
               </div>
               <div>
@@ -79,15 +122,19 @@ const ContactSection = () => {
                 </label>
                 <textarea
                   rows={4}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   className="w-full bg-transparent border-b border-border py-3 text-foreground text-sm focus:border-gold focus:outline-none transition-colors resize-none"
                   placeholder="A sua mensagem"
+                  required
                 />
               </div>
               <button
                 type="submit"
-                className="w-full py-4 bg-dark text-primary-foreground text-sm tracking-widest uppercase hover:bg-gold hover:text-dark-deep transition-all duration-500"
+                disabled={sending}
+                className="w-full py-4 bg-dark text-primary-foreground text-sm tracking-widest uppercase hover:bg-gold hover:text-dark-deep transition-all duration-500 disabled:opacity-50"
               >
-                Enviar Mensagem
+                {sending ? "A enviar..." : "Enviar Mensagem"}
               </button>
             </form>
           </div>
