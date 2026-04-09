@@ -98,7 +98,7 @@ const projects: Project[] = [
       area: "120-280 m²",
       status: "Em Venda",
     },
-    gallery: [property3, aboutBg],
+    gallery: [property3],
     features: [
       "Interiores de design",
       "Varandas amplas",
