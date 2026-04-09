@@ -72,6 +72,32 @@ const projects: Project[] = [
     ],
   },
   {
+    id: "atlantic-gold",
+    image: atlanticGold1,
+    title: "The Atlantic Gold Residence",
+    location: "Atalaia, Lourinhã",
+    type: "Condomínio Residencial",
+    description:
+      "Condomínio residencial T3 na Atalaia, Lourinhã, com arquitetura contemporânea que combina betão, madeira e vegetação abundante. Os apartamentos dispõem de amplas varandas com vista para a piscina comum, sala e cozinha open space, e acabamentos de design em todos os espaços.",
+    details: {
+      bedrooms: "3",
+      bathrooms: "2",
+      area: "T3",
+      status: "Em Projeto",
+    },
+    gallery: [atlanticGold1, atlanticGold2, atlanticGold3, atlanticGold4],
+    features: [
+      "Piscina comum",
+      "Varandas amplas",
+      "Sala e cozinha open space",
+      "2 pisos por fração",
+      "Acabamentos de design",
+      "Proximidade à praia",
+      "Estacionamento",
+      "Jardins paisagísticos",
+    ],
+  },
+  {
     id: "mont-house",
     image: montHouse1,
     title: "Mont House",
