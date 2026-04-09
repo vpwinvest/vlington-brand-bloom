@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logoSymbol from "@/assets/logo-symbol.png";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -22,21 +23,15 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-dark-deep/95 backdrop-blur-md py-4 shadow-lg"
+          ? "bg-dark-deep/95 backdrop-blur-md py-3 shadow-lg"
           : "bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-6">
-        <a href="#hero" className="flex flex-col items-start">
-          <span className="text-2xl font-black tracking-widest-xl text-primary-foreground">
-            VLINGTON
-          </span>
-          <span className="text-[10px] tracking-widest-xl text-primary-foreground/70">
-            PROPERTIES
-          </span>
+        <a href="#hero" className="flex items-center gap-3">
+          <img src={logoSymbol} alt="VLINGTON" className="h-8 w-auto brightness-0 invert" />
         </a>
 
-        {/* Desktop */}
         <div className="hidden md:flex items-center gap-10">
           {links.map((link) => (
             <a
@@ -49,7 +44,6 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile toggle */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden text-primary-foreground"
@@ -58,7 +52,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-dark-deep/95 backdrop-blur-md px-6 pb-6 pt-2 animate-fade-in">
           {links.map((link) => (

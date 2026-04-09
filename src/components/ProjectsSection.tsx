@@ -1,74 +1,146 @@
+import { useState } from "react";
+import { ArrowRight } from "lucide-react";
 import property1 from "@/assets/property-1.jpg";
 import property2 from "@/assets/property-2.jpg";
 import property3 from "@/assets/property-3.jpg";
+import aboutBg from "@/assets/about-bg.jpg";
+import ProjectModal, { type Project } from "./ProjectModal";
 
-const projects = [
+const projects: Project[] = [
   {
+    id: "villa-serena",
     image: property1,
     title: "Villa Serena",
     location: "Comporta, Portugal",
     type: "Residencial de Luxo",
+    description:
+      "Um refúgio exclusivo no coração da Comporta, onde a arquitetura contemporânea se funde com a paisagem natural. Villa Serena oferece uma experiência de vida única, com acabamentos de alta qualidade, piscina infinita e vistas panorâmicas sobre o arrozal e o mar.",
+    details: {
+      bedrooms: "4",
+      bathrooms: "5",
+      area: "350 m²",
+      status: "Em Construção",
+    },
+    gallery: [property1, aboutBg],
+    features: [
+      "Piscina infinita",
+      "Jardim paisagístico",
+      "Cozinha Bulthaup",
+      "Domótica integrada",
+      "Pavimento em pedra natural",
+      "Aquecimento por piso radiante",
+    ],
   },
   {
+    id: "the-hillside",
     image: property2,
     title: "The Hillside",
     location: "Cascais, Portugal",
     type: "Empreendimento Exclusivo",
+    description:
+      "Integrado na encosta verde de Cascais, The Hillside é um empreendimento que redefine o conceito de vida em contacto com a natureza. Múltiplos níveis acompanham o terreno natural, com caminhos de pedra e vegetação autóctone envolvente.",
+    details: {
+      bedrooms: "3-5",
+      bathrooms: "3-6",
+      area: "220-480 m²",
+      status: "Concluído",
+    },
+    gallery: [property2, property1],
+    features: [
+      "Vistas panorâmicas",
+      "Terraços privativos",
+      "Estacionamento subterrâneo",
+      "Segurança 24h",
+      "Espaços verdes comuns",
+      "Proximidade à praia",
+    ],
   },
   {
+    id: "the-residence",
     image: property3,
     title: "The Residence",
     location: "Lisboa, Portugal",
     type: "Apartamentos Premium",
+    description:
+      "Situado numa localização privilegiada de Lisboa, The Residence combina o charme da cidade com o conforto e sofisticação dos interiores contemporâneos. Cada apartamento foi desenhado para maximizar a luz natural e proporcionar uma experiência residencial de exceção.",
+    details: {
+      bedrooms: "2-4",
+      bathrooms: "2-4",
+      area: "120-280 m²",
+      status: "Em Venda",
+    },
+    gallery: [property3, aboutBg],
+    features: [
+      "Interiores de design",
+      "Varandas amplas",
+      "Condomínio fechado",
+      "Ginásio e spa",
+      "Concierge dedicado",
+      "Acabamentos premium",
+    ],
   },
 ];
 
 const ProjectsSection = () => {
-  return (
-    <section id="projects" className="py-24 md:py-32 bg-dark-deep">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="text-gold text-xs tracking-widest-xl uppercase mb-4">
-            Portefólio
-          </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground">
-            Projetos em Destaque
-          </h2>
-        </div>
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden cursor-pointer"
-            >
-              <div className="aspect-[3/4] overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
-                />
+  return (
+    <>
+      <section id="projects" className="py-24 md:py-32 bg-dark-deep">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <p className="text-gold text-xs tracking-widest-xl uppercase mb-4">
+              Portefólio
+            </p>
+            <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground">
+              Projetos em Destaque
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {projects.map((project) => (
+              <div
+                key={project.id}
+                className="group relative overflow-hidden cursor-pointer"
+                onClick={() => setSelectedProject(project)}
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-deep via-transparent to-transparent opacity-80" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <p className="text-gold text-xs tracking-widest uppercase mb-2">
+                    {project.type}
+                  </p>
+                  <h3 className="text-xl font-bold text-primary-foreground mb-1">
+                    {project.title}
+                  </h3>
+                  <p className="text-primary-foreground/60 text-sm mb-4">
+                    {project.location}
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-gold text-xs tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    Ver detalhes <ArrowRight size={14} />
+                  </span>
+                </div>
+                <div className="absolute inset-0 border border-gold/0 group-hover:border-gold/40 transition-all duration-500" />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-dark-deep via-transparent to-transparent opacity-80" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="text-gold text-xs tracking-widest uppercase mb-2">
-                  {project.type}
-                </p>
-                <h3 className="text-xl font-bold text-primary-foreground mb-1">
-                  {project.title}
-                </h3>
-                <p className="text-primary-foreground/60 text-sm">
-                  {project.location}
-                </p>
-              </div>
-              {/* Hover border */}
-              <div className="absolute inset-0 border border-gold/0 group-hover:border-gold/40 transition-all duration-500" />
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {selectedProject && (
+        <ProjectModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
+    </>
   );
 };
 
