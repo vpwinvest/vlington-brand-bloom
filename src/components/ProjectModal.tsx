@@ -24,6 +24,7 @@ interface ProjectModalProps {
 }
 
 const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   return (
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8"
