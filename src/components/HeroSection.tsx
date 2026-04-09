@@ -1,5 +1,5 @@
 import heroBg from "@/assets/hero-bg.jpg";
-import logoFull from "@/assets/logo-vlington-full.png";
+import logoNegative from "@/assets/logo-negative.png";
 
 const HeroSection = () => {
   return (
@@ -19,7 +19,7 @@ const HeroSection = () => {
           style={{ animationDelay: "0.3s", opacity: 0 }}
         >
           <img
-            src={logoFull}
+            src={logoNegative}
             alt="VLINGTON Properties - Think Beyond"
             className="mx-auto h-24 md:h-32 lg:h-40 w-auto"
           />
