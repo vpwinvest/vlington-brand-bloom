@@ -125,6 +125,40 @@ const ProjectsSection = () => {
             </h2>
           </div>
 
+          {/* Featured Project - Abyss House */}
+          <div
+            className="group relative overflow-hidden cursor-pointer mb-12"
+            onClick={() => setSelectedProject(featuredProject)}
+          >
+            <div className="aspect-[16/7] md:aspect-[21/9] overflow-hidden">
+              <img
+                src={featuredProject.image}
+                alt={featuredProject.title}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-dark-deep via-dark-deep/30 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
+              <p className="text-gold text-xs tracking-widest-xl uppercase mb-3">
+                {featuredProject.type}
+              </p>
+              <h3 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-2">
+                {featuredProject.title}
+              </h3>
+              <p className="text-primary-foreground/60 text-sm mb-2">
+                {featuredProject.location}
+              </p>
+              <p className="text-primary-foreground/50 text-sm max-w-xl mb-6 hidden md:block">
+                {featuredProject.description}
+              </p>
+              <span className="inline-flex items-center gap-2 text-gold text-xs tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                Ver detalhes <ArrowRight size={14} />
+              </span>
+            </div>
+            <div className="absolute inset-0 border border-gold/0 group-hover:border-gold/30 transition-all duration-500" />
+          </div>
+
+          {/* Other Projects */}
           <div className="grid md:grid-cols-3 gap-8">
             {projects.map((project) => (
               <div
