@@ -6,6 +6,10 @@ import property3 from "@/assets/property-3.jpg";
 import abyssHouse1 from "@/assets/abyss-house-1.png";
 import abyssHouse2 from "@/assets/abyss-house-2.png";
 import abyssHouse3 from "@/assets/abyss-house-3.png";
+import velaris1 from "@/assets/velaris-1.jpg";
+import velaris2 from "@/assets/velaris-2.jpg";
+import velaris3 from "@/assets/velaris-3.jpg";
+import velaris4 from "@/assets/velaris-4.jpg";
 import ProjectModal, { type Project } from "./ProjectModal";
 
 const featuredProject: Project = {
@@ -36,6 +40,32 @@ const featuredProject: Project = {
 };
 
 const projects: Project[] = [
+  {
+    id: "velaris-atalaya",
+    image: velaris1,
+    title: "Velaris Atalaya",
+    location: "Atalaia, Lourinhã",
+    type: "Condomínio de Luxo",
+    description:
+      "Condomínio habitacional de luxo na costa oeste de Portugal, pensado para nómadas digitais que valorizam conforto, liberdade e proximidade com a natureza. Com vistas impressionantes para o oceano, o empreendimento inclui 5 villas exclusivas, 5 edifícios residenciais, wellness center com spa, coworking e anfiteatro ao ar livre.",
+    details: {
+      bedrooms: "T1-T4",
+      bathrooms: "1-4",
+      area: "9.718 m²",
+      status: "Em Projeto",
+    },
+    gallery: [velaris1, velaris2, velaris3, velaris4],
+    features: [
+      "34 fogos (T1 a T4)",
+      "5 Villas com vista mar",
+      "Wellness center e spa",
+      "Coworking com sala de reuniões",
+      "Anfiteatro para 120 pessoas",
+      "Estacionamento subterrâneo (126 lugares)",
+      "Espaços verdes e praça pública",
+      "Piscinas infinitas",
+    ],
+  },
   {
     id: "villa-serena",
     image: property1,
@@ -109,7 +139,6 @@ const projects: Project[] = [
     ],
   },
 ];
-
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
