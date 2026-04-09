@@ -5,7 +5,7 @@ import property2 from "@/assets/property-2.jpg";
 import property3 from "@/assets/property-3.jpg";
 import abyssHouse1 from "@/assets/abyss-house-1.png";
 import abyssHouse2 from "@/assets/abyss-house-2.png";
-import aboutBg from "@/assets/about-bg.jpg";
+import abyssHouse3 from "@/assets/abyss-house-3.png";
 import ProjectModal, { type Project } from "./ProjectModal";
 
 const featuredProject: Project = {
@@ -22,7 +22,7 @@ const featuredProject: Project = {
     area: "311 m²",
     status: "Em Projeto",
   },
-  gallery: [abyssHouse1, abyssHouse2, aboutBg],
+  gallery: [abyssHouse1, abyssHouse2, abyssHouse3],
   features: [
     "Lote de 694 m²",
     "3 pisos com vista sobre a cidade",
