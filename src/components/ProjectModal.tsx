@@ -1,4 +1,5 @@
-import { X, MapPin, Bed, Bath, Maximize, ArrowRight } from "lucide-react";
+import { useState } from "react";
+import { X, MapPin, Bed, Bath, Maximize, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 export interface Project {
   id: string;
@@ -23,6 +24,7 @@ interface ProjectModalProps {
 }
 
 const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   return (
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8"
@@ -120,7 +122,11 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               <h3 className="text-lg font-bold text-foreground mb-4">Galeria</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {project.gallery.map((img, i) => (
-                  <div key={i} className="aspect-[4/3] overflow-hidden">
+                  <div
+                    key={i}
+                    className="aspect-[4/3] overflow-hidden cursor-pointer"
+                    onClick={() => setLightboxIndex(i)}
+                  >
                     <img
                       src={img}
                       alt={`${project.title} - ${i + 1}`}
@@ -130,6 +136,49 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                   </div>
                 ))}
               </div>
+            </div>
+          )}
+
+          {/* Lightbox */}
+          {lightboxIndex !== null && (
+            <div
+              className="fixed inset-0 z-[200] flex items-center justify-center bg-dark-deep/95 backdrop-blur-md"
+              onClick={() => setLightboxIndex(null)}
+            >
+              <button
+                onClick={(e) => { e.stopPropagation(); setLightboxIndex(null); }}
+                className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center bg-dark-deep/80 text-primary-foreground hover:bg-gold hover:text-dark-deep transition-all"
+              >
+                <X size={18} />
+              </button>
+
+              {project.gallery.length > 1 && (
+                <>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); setLightboxIndex((lightboxIndex - 1 + project.gallery.length) % project.gallery.length); }}
+                    className="absolute left-4 z-10 w-10 h-10 flex items-center justify-center bg-dark-deep/80 text-primary-foreground hover:bg-gold hover:text-dark-deep transition-all"
+                  >
+                    <ChevronLeft size={20} />
+                  </button>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); setLightboxIndex((lightboxIndex + 1) % project.gallery.length); }}
+                    className="absolute right-4 z-10 w-10 h-10 flex items-center justify-center bg-dark-deep/80 text-primary-foreground hover:bg-gold hover:text-dark-deep transition-all"
+                  >
+                    <ChevronRight size={20} />
+                  </button>
+                </>
+              )}
+
+              <img
+                src={project.gallery[lightboxIndex]}
+                alt={`${project.title} - ${lightboxIndex + 1}`}
+                className="max-w-[90vw] max-h-[85vh] object-contain"
+                onClick={(e) => e.stopPropagation()}
+              />
+
+              <p className="absolute bottom-6 text-primary-foreground/60 text-sm">
+                {lightboxIndex + 1} / {project.gallery.length}
+              </p>
             </div>
           )}
 
