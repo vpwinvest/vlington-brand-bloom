@@ -22,7 +22,7 @@ const featuredProject: Project = {
     area: "311 m²",
     status: "Em Projeto",
   },
-  gallery: [abyssHouse1, aboutBg],
+  gallery: [abyssHouse1, abyssHouse2, aboutBg],
   features: [
     "Lote de 694 m²",
     "3 pisos com vista mar",
