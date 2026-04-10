@@ -82,8 +82,6 @@ const featuredProject: Project = {
     "Acabamentos premium",
   ],
 };
-  ],
-};
 
 const projects: Project[] = [
   {
