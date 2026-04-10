@@ -48,6 +48,7 @@ import atlanticGold2 from "@/assets/atlantic-gold-2.jpg";
 import atlanticGold3 from "@/assets/atlantic-gold-3.jpg";
 import atlanticGold4 from "@/assets/atlantic-gold-4.jpg";
 import atlanticGold5 from "@/assets/atlantic-gold-5.png";
+import atlanticGold6 from "@/assets/atlantic-gold-6.png";
 import zimbralVilas1 from "@/assets/zimbral-vilas-1.jpg";
 import zimbralVilas2 from "@/assets/zimbral-vilas-2.jpg";
 import zimbralVilas3 from "@/assets/zimbral-vilas-3.jpg";
@@ -121,7 +122,7 @@ const projects: Project[] = [
       area: "T3",
       status: "Em Construção — Conclusão 2027",
     },
-    gallery: [atlanticGold5, atlanticGold1, atlanticGold2, atlanticGold3, atlanticGold4],
+    gallery: [atlanticGold5, atlanticGold6, atlanticGold1, atlanticGold2, atlanticGold3, atlanticGold4],
     features: [
       "Piscina comum",
       "Varandas amplas",
