@@ -46,6 +46,7 @@ import atlanticGold1 from "@/assets/atlantic-gold-1.png";
 import atlanticGold2 from "@/assets/atlantic-gold-2.jpg";
 import atlanticGold3 from "@/assets/atlantic-gold-3.jpg";
 import atlanticGold4 from "@/assets/atlantic-gold-4.jpg";
+import atlanticGold5 from "@/assets/atlantic-gold-5.png";
 import zimbralVilas1 from "@/assets/zimbral-vilas-1.jpg";
 import zimbralVilas2 from "@/assets/zimbral-vilas-2.jpg";
 import zimbralVilas3 from "@/assets/zimbral-vilas-3.jpg";
@@ -107,7 +108,7 @@ const projects: Project[] = [
   },
   {
     id: "atlantic-gold",
-    image: atlanticGold1,
+    image: atlanticGold5,
     title: "The Atlantic Gold Residence",
     location: "Atalaia, Lourinhã",
     type: "Condomínio Residencial",
@@ -119,7 +120,7 @@ const projects: Project[] = [
       area: "T3",
       status: "Em Construção — Conclusão 2027",
     },
-    gallery: [atlanticGold1, atlanticGold2, atlanticGold3, atlanticGold4],
+    gallery: [atlanticGold5, atlanticGold1, atlanticGold2, atlanticGold3, atlanticGold4],
     features: [
       "Piscina comum",
       "Varandas amplas",
