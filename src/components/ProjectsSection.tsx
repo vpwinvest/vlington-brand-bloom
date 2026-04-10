@@ -43,6 +43,7 @@ import bridgeHouse16 from "@/assets/bridge-house-16.jpg";
 import bridgeHouse17 from "@/assets/bridge-house-17.jpg";
 import bridgeHouse18 from "@/assets/bridge-house-18.jpg";
 import bridgeHouse19 from "@/assets/bridge-house-19.jpg";
+import bridgeHouse20 from "@/assets/bridge-house-20.png";
 import atlanticGold1 from "@/assets/atlantic-gold-1.png";
 import atlanticGold2 from "@/assets/atlantic-gold-2.jpg";
 import atlanticGold3 from "@/assets/atlantic-gold-3.jpg";
@@ -134,7 +135,7 @@ const projects: Project[] = [
   },
   {
     id: "bridge-house",
-    image: bridgeHouse3,
+    image: bridgeHouse20,
     title: "Bridge House",
     location: "Quinta de Fez, Turcifal",
     type: "Habitação Unifamiliar",
@@ -146,7 +147,7 @@ const projects: Project[] = [
       area: "350 m²",
       status: "Em Construção — Conclusão 2026",
     },
-    gallery: [bridgeHouse3, bridgeHouse7, bridgeHouse4, bridgeHouse5, bridgeHouse6, bridgeHouse8, bridgeHouse1, bridgeHouse2, bridgeHouse17, bridgeHouse16, bridgeHouse11, bridgeHouse10, bridgeHouse9, bridgeHouse12, bridgeHouse13, bridgeHouse18, bridgeHouse14, bridgeHouse15, bridgeHouse19],
+    gallery: [bridgeHouse20, bridgeHouse3, bridgeHouse7, bridgeHouse4, bridgeHouse5, bridgeHouse6, bridgeHouse8, bridgeHouse1, bridgeHouse2, bridgeHouse17, bridgeHouse16, bridgeHouse11, bridgeHouse10, bridgeHouse9, bridgeHouse12, bridgeHouse13, bridgeHouse18, bridgeHouse14, bridgeHouse15, bridgeHouse19],
     features: [
       "Terreno privado de 1.100 m²",
       "Piscina aquecida",
