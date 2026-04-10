@@ -71,7 +71,7 @@ const projects: Project[] = [
       area: "9.718 m²",
       status: "Em Projeto",
     },
-    gallery: [velaris6, velaris5, velaris7, velaris8, velaris9],
+    gallery: [velaris6],
     features: [
       "34 fogos (T1 a T4)",
       "5 Villas com vista mar",
