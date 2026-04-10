@@ -34,6 +34,8 @@ import bridgeHouse8 from "@/assets/bridge-house-8.png";
 import bridgeHouse9 from "@/assets/bridge-house-9.jpg";
 import bridgeHouse10 from "@/assets/bridge-house-10.jpg";
 import bridgeHouse11 from "@/assets/bridge-house-11.jpg";
+import bridgeHouse12 from "@/assets/bridge-house-12.jpg";
+import bridgeHouse13 from "@/assets/bridge-house-13.jpg";
 import atlanticGold1 from "@/assets/atlantic-gold-1.png";
 import atlanticGold2 from "@/assets/atlantic-gold-2.jpg";
 import atlanticGold3 from "@/assets/atlantic-gold-3.jpg";
@@ -137,7 +139,7 @@ const projects: Project[] = [
       area: "350 m²",
       status: "Em Construção — Conclusão 2026",
     },
-    gallery: [bridgeHouse3, bridgeHouse1, bridgeHouse2, bridgeHouse4, bridgeHouse5, bridgeHouse6, bridgeHouse7, bridgeHouse8, bridgeHouse9, bridgeHouse10, bridgeHouse11],
+    gallery: [bridgeHouse3, bridgeHouse1, bridgeHouse2, bridgeHouse4, bridgeHouse5, bridgeHouse6, bridgeHouse7, bridgeHouse8, bridgeHouse9, bridgeHouse10, bridgeHouse11, bridgeHouse12, bridgeHouse13],
     features: [
       "Terreno privado de 1.100 m²",
       "Piscina aquecida",
