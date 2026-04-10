@@ -57,29 +57,31 @@ import twentyFour1 from "@/assets/twenty-four-1.png";
 import ProjectModal, { type Project } from "./ProjectModal";
 
 const featuredProject: Project = {
-  id: "abyss-house",
-  image: abyssHouse1,
-  title: "Abyss House",
-  location: "Torres Vedras, Portugal",
+  id: "bridge-house",
+  image: bridgeHouse20,
+  title: "Bridge House",
+  location: "Quinta de Fez, Turcifal",
   type: "Projeto em Destaque",
   description:
-    "Uma habitação unifamiliar T4 integrada na encosta de Torres Vedras, com uma vista única e privilegiada sobre a cidade. A arquitetura contemporânea dialoga com a topografia natural do terreno, distribuída por 3 pisos que maximizam as vistas panorâmicas. Espaços generosos fluem entre interior e exterior através de amplos terraços e jardins paisagísticos.",
+    "Situada na prestigiada Quinta de Fez do Turcifal — que oferece campos de ténis e o famoso Campo Real para a prática de golf — a Bridge House é uma moradia de arquitetura contemporânea com um terreno privado de 1.100 m². O projeto destaca-se pela garagem de design com iluminação LED geométrica e interiores sofisticados com mobiliário de linhas orgânicas. Privacidade, piso radiante, lareira, piscina aquecida, jardim interior e um jardim exterior criado para proporcionar um ambiente verdadeiramente único.",
   details: {
     bedrooms: "4",
-    bathrooms: "3",
-    area: "311 m²",
-    status: "Em Projeto",
+    bathrooms: "5",
+    area: "350 m²",
+    status: "Em Construção — Conclusão 2026",
   },
-  gallery: [abyssHouse1, abyssHouse2, abyssHouse3, abyssHouse4, abyssHouse5, abyssHouse6, abyssHouse7, abyssHouse8, abyssHouse9, abyssHouse10, abyssHouse11],
+  gallery: [bridgeHouse20, bridgeHouse1, bridgeHouse2, bridgeHouse17, bridgeHouse16, bridgeHouse11, bridgeHouse10, bridgeHouse9, bridgeHouse12, bridgeHouse13, bridgeHouse18, bridgeHouse14, bridgeHouse15, bridgeHouse19],
   features: [
-    "Lote de 694 m²",
-    "3 pisos com vista sobre a cidade",
-    "Garagem para 3 viaturas",
-    "Terraços e alpendres (270 m²)",
-    "Cozinha open space",
-    "Suite com closet",
-    "Jardim paisagístico",
-    "Acabamentos em betão e pedra natural",
+    "Terreno privado de 1.100 m²",
+    "Piscina aquecida",
+    "Piso radiante",
+    "Lareira",
+    "Garagem de design",
+    "Jardim interior",
+    "Campos de ténis e golf (Quinta de Fez)",
+    "Acabamentos premium",
+  ],
+};
   ],
 };
 
