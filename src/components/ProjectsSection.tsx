@@ -196,7 +196,7 @@ const projects: Project[] = [
       bedrooms: "3",
       bathrooms: "2",
       area: "132 m²",
-      status: "Em Projeto",
+      status: "Concluído",
     },
     gallery: [twentyFour1],
     features: [
