@@ -147,7 +147,7 @@ const projects: Project[] = [
       area: "350 m²",
       status: "Em Construção — Conclusão 2026",
     },
-    gallery: [bridgeHouse20, bridgeHouse3, bridgeHouse7, bridgeHouse4, bridgeHouse5, bridgeHouse6, bridgeHouse8, bridgeHouse1, bridgeHouse2, bridgeHouse17, bridgeHouse16, bridgeHouse11, bridgeHouse10, bridgeHouse9, bridgeHouse12, bridgeHouse13, bridgeHouse18, bridgeHouse14, bridgeHouse15, bridgeHouse19],
+    gallery: [bridgeHouse20, bridgeHouse1, bridgeHouse2, bridgeHouse17, bridgeHouse16, bridgeHouse11, bridgeHouse10, bridgeHouse9, bridgeHouse12, bridgeHouse13, bridgeHouse18, bridgeHouse14, bridgeHouse15, bridgeHouse19],
     features: [
       "Terreno privado de 1.100 m²",
       "Piscina aquecida",
