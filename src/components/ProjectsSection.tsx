@@ -24,6 +24,7 @@ import velaris13 from "@/assets/velaris-13.png";
 import velaris14 from "@/assets/velaris-14.png";
 import velaris15 from "@/assets/velaris-15.png";
 import montHouse1 from "@/assets/mont-house-1.png";
+import montHouse2 from "@/assets/mont-house-2.png";
 import bridgeHouse1 from "@/assets/bridge-house-1.jpg";
 import bridgeHouse3 from "@/assets/bridge-house-3.png";
 import bridgeHouse2 from "@/assets/bridge-house-2.jpg";
@@ -161,7 +162,7 @@ const projects: Project[] = [
   },
   {
     id: "mont-house",
-    image: montHouse1,
+    image: montHouse2,
     title: "Mont House",
     location: "Lamas, Cadaval",
     type: "Habitação Unifamiliar",
@@ -173,7 +174,7 @@ const projects: Project[] = [
       area: "500 m²",
       status: "Em Projeto",
     },
-    gallery: [montHouse1],
+    gallery: [montHouse2, montHouse1],
     features: [
       "Lote de 500 m²",
       "Arquitetura contemporânea",
