@@ -120,7 +120,7 @@ const projects: Project[] = [
       "Piso radiante",
       "Lareira",
       "Garagem de design",
-      "Parede ripada em madeira natural",
+      "Jardim interior",
       "Campos de ténis e golf (Quinta de Fez)",
       "Acabamentos premium",
     ],
