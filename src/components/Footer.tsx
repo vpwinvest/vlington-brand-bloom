@@ -23,6 +23,13 @@ const Footer = () => {
               Responsabilidade Social & Patrocínios
             </Link>
             <span className="hidden md:inline text-primary-foreground/20">|</span>
+            <Link
+              to="/sustentabilidade"
+              className="text-primary-foreground/40 hover:text-gold transition-colors duration-300 text-xs tracking-wider uppercase"
+            >
+              Sustentabilidade
+            </Link>
+            <span className="hidden md:inline text-primary-foreground/20">|</span>
             <p className="text-primary-foreground/40 text-xs tracking-wider">
               © {new Date().getFullYear()} VLINGTON Properties. Todos os direitos reservados.
             </p>
