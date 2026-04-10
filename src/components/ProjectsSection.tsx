@@ -215,7 +215,7 @@ const projects: Project[] = [
     id: "villa-serena",
     image: property1,
     title: "Villa Serena",
-    location: "Urbanização do Pinhal, Fonte Grada",
+    location: "Fonte Grada, Torres Vedras",
     type: "Condomínio Residencial",
     description:
       "Condomínio residencial de 6 fogos T3 na Urbanização do Pinhal, Fonte Grada. O projeto contempla frações com suite e closet, sala comum, kitchenette e garagem privativa. Os espaços comuns incluem piscina de 50 m², telheiro coberto e sala de condomínio, proporcionando um estilo de vida confortável e funcional.",
