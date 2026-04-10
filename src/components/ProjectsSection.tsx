@@ -167,7 +167,7 @@ const projects: Project[] = [
     location: "Lamas, Cadaval",
     type: "Habitação Unifamiliar",
     description:
-      "Habitação unifamiliar de arquitetura contemporânea em Lamas, Cadaval. O projeto combina volumes brancos com revestimento em madeira ripada e pedra natural, criando uma linguagem arquitetónica sofisticada. Amplas superfícies envidraçadas garantem uma relação fluida entre o interior e o exterior, com espelho de água na entrada principal.",
+      "Habitação unifamiliar de arquitetura contemporânea em Lamas, Cadaval, com vista panorâmica para a Serra de Montejunto. Inserida no centro da natureza com todos os serviços na proximidade, destaca-se pelas manhãs calmas, ar puro e natureza em toda a envolvente — um verdadeiro luxo no campo. O projeto combina volumes brancos com revestimento em madeira ripada e pedra natural, criando uma linguagem arquitetónica sofisticada. Amplas superfícies envidraçadas garantem uma relação fluida entre o interior e o exterior, com espelho de água na entrada principal.",
     details: {
       bedrooms: "4",
       bathrooms: "3",
