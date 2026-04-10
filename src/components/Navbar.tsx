@@ -56,7 +56,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-6">
         <a href="/" onClick={handleLogoClick} className="flex items-center gap-3">
-          <img src={logoNegative} alt="VLINGTON Properties" className="h-8 w-auto" />
+          <img src={logoNavbar} alt="VLINGTON Properties" className="h-8 w-auto" />
         </a>
 
         <div className="hidden md:flex items-center gap-10">
