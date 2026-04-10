@@ -204,30 +204,6 @@ const projects: Project[] = [
       "Aquecimento por piso radiante",
     ],
   },
-  {
-    id: "the-residence",
-    image: property3,
-    title: "The Residence",
-    location: "Lisboa, Portugal",
-    type: "Apartamentos Premium",
-    description:
-      "Situado numa localização privilegiada de Lisboa, The Residence combina o charme da cidade com o conforto e sofisticação dos interiores contemporâneos. Cada apartamento foi desenhado para maximizar a luz natural e proporcionar uma experiência residencial de exceção.",
-    details: {
-      bedrooms: "2-4",
-      bathrooms: "2-4",
-      area: "120-280 m²",
-      status: "Em Venda",
-    },
-    gallery: [property3],
-    features: [
-      "Interiores de design",
-      "Varandas amplas",
-      "Condomínio fechado",
-      "Ginásio e spa",
-      "Concierge dedicado",
-      "Acabamentos premium",
-    ],
-  },
 ];
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
