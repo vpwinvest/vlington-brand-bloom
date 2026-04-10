@@ -1,4 +1,5 @@
 import logoSymbol from "@/assets/logo-vlington-symbol.png";
+import { Instagram, Linkedin, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -9,9 +10,35 @@ const Footer = () => {
           <p className="text-primary-foreground/40 text-xs tracking-wider">
             © {new Date().getFullYear()} VLINGTON Properties. Todos os direitos reservados.
           </p>
-          <p className="text-gold/60 text-xs italic tracking-wider">
-            Think Beyond
-          </p>
+          <div className="flex items-center gap-6">
+            <a
+              href="https://www.instagram.com/vlington.properties/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-foreground/40 hover:text-gold transition-colors duration-300"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/vlington-properties/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-foreground/40 hover:text-gold transition-colors duration-300"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.facebook.com/vlington.properties/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-foreground/40 hover:text-gold transition-colors duration-300"
+              aria-label="Facebook"
+            >
+              <Facebook className="h-5 w-5" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
