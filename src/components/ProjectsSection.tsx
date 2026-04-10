@@ -11,6 +11,8 @@ import velaris2 from "@/assets/velaris-2.jpg";
 import velaris3 from "@/assets/velaris-3.jpg";
 import velaris4 from "@/assets/velaris-4.jpg";
 import montHouse1 from "@/assets/mont-house-1.png";
+import bridgeHouse1 from "@/assets/bridge-house-1.jpg";
+import bridgeHouse2 from "@/assets/bridge-house-2.jpg";
 import atlanticGold1 from "@/assets/atlantic-gold-1.png";
 import atlanticGold2 from "@/assets/atlantic-gold-2.jpg";
 import atlanticGold3 from "@/assets/atlantic-gold-3.jpg";
@@ -95,6 +97,32 @@ const projects: Project[] = [
       "Proximidade à praia",
       "Estacionamento",
       "Jardins paisagísticos",
+    ],
+  },
+  {
+    id: "bridge-house",
+    image: bridgeHouse1,
+    title: "Bridge House",
+    location: "Quinta de Fez, Turcifal",
+    type: "Habitação Unifamiliar",
+    description:
+      "Habitação unifamiliar de arquitetura contemporânea na Quinta de Fez, Turcifal. O projeto destaca-se pela garagem de design com iluminação LED geométrica, interiores sofisticados com parede ripada em madeira natural e mobiliário de linhas orgânicas. Espaços amplos e luminosos que combinam conforto e elegância.",
+    details: {
+      bedrooms: "4",
+      bathrooms: "3",
+      area: "350 m²",
+      status: "Em Construção — Conclusão 2026",
+    },
+    gallery: [bridgeHouse1, bridgeHouse2],
+    features: [
+      "Garagem de design",
+      "Parede ripada em madeira natural",
+      "Interiores contemporâneos",
+      "Amplas áreas envidraçadas",
+      "Cozinha open space",
+      "Suite com closet",
+      "Jardim paisagístico",
+      "Acabamentos premium",
     ],
   },
   {
