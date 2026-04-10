@@ -24,6 +24,7 @@ import velaris13 from "@/assets/velaris-13.png";
 import velaris14 from "@/assets/velaris-14.png";
 import montHouse1 from "@/assets/mont-house-1.png";
 import bridgeHouse1 from "@/assets/bridge-house-1.jpg";
+import bridgeHouse3 from "@/assets/bridge-house-3.png";
 import bridgeHouse2 from "@/assets/bridge-house-2.jpg";
 import atlanticGold1 from "@/assets/atlantic-gold-1.png";
 import atlanticGold2 from "@/assets/atlantic-gold-2.jpg";
@@ -116,7 +117,7 @@ const projects: Project[] = [
   },
   {
     id: "bridge-house",
-    image: bridgeHouse1,
+    image: bridgeHouse3,
     title: "Bridge House",
     location: "Quinta de Fez, Turcifal",
     type: "Habitação Unifamiliar",
@@ -128,7 +129,7 @@ const projects: Project[] = [
       area: "350 m²",
       status: "Em Construção — Conclusão 2026",
     },
-    gallery: [bridgeHouse1, bridgeHouse2],
+    gallery: [bridgeHouse3, bridgeHouse1, bridgeHouse2],
     features: [
       "Terreno privado de 1.100 m²",
       "Piscina aquecida",
