@@ -100,6 +100,32 @@ const projects: Project[] = [
     ],
   },
   {
+    id: "bridge-house",
+    image: bridgeHouse1,
+    title: "Bridge House",
+    location: "Quinta de Fez, Turcifal",
+    type: "Habitação Unifamiliar",
+    description:
+      "Habitação unifamiliar de arquitetura contemporânea na Quinta de Fez, Turcifal. O projeto destaca-se pela garagem de design com iluminação LED geométrica, interiores sofisticados com parede ripada em madeira natural e mobiliário de linhas orgânicas. Espaços amplos e luminosos que combinam conforto e elegância.",
+    details: {
+      bedrooms: "4",
+      bathrooms: "3",
+      area: "350 m²",
+      status: "Em Construção — Conclusão 2026",
+    },
+    gallery: [bridgeHouse1, bridgeHouse2],
+    features: [
+      "Garagem de design",
+      "Parede ripada em madeira natural",
+      "Interiores contemporâneos",
+      "Amplas áreas envidraçadas",
+      "Cozinha open space",
+      "Suite com closet",
+      "Jardim paisagístico",
+      "Acabamentos premium",
+    ],
+  },
+  {
     id: "mont-house",
     image: montHouse1,
     title: "Mont House",
