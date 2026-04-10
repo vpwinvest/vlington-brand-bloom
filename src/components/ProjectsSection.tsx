@@ -49,6 +49,7 @@ import atlanticGold3 from "@/assets/atlantic-gold-3.jpg";
 import atlanticGold4 from "@/assets/atlantic-gold-4.jpg";
 import atlanticGold5 from "@/assets/atlantic-gold-5.png";
 import atlanticGold6 from "@/assets/atlantic-gold-6.png";
+import twentyFour1 from "@/assets/twenty-four-1.png";
 import ProjectModal, { type Project } from "./ProjectModal";
 
 const featuredProject: Project = {
@@ -211,27 +212,6 @@ const projects: Project[] = [
   },
   {
     id: "villa-serena",
-    image: property1,
-    title: "Villa Serena",
-    location: "Comporta, Portugal",
-    type: "Residencial de Luxo",
-    description:
-      "Um refúgio exclusivo no coração da Comporta, onde a arquitetura contemporânea se funde com a paisagem natural. Villa Serena oferece uma experiência de vida única, com acabamentos de alta qualidade, piscina infinita e vistas panorâmicas sobre o arrozal e o mar.",
-    details: {
-      bedrooms: "4",
-      bathrooms: "5",
-      area: "350 m²",
-      status: "Em Construção",
-    },
-    gallery: [property1],
-    features: [
-      "Piscina infinita",
-      "Jardim paisagístico",
-      "Cozinha Bulthaup",
-      "Domótica integrada",
-      "Pavimento em pedra natural",
-      "Aquecimento por piso radiante",
-    ],
     image: property1,
     title: "Villa Serena",
     location: "Comporta, Portugal",
