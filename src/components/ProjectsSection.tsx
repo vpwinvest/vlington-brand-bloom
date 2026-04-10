@@ -176,7 +176,7 @@ const projects: Project[] = [
       area: "500 m²",
       status: "Em Projeto",
     },
-    gallery: [montHouse2, montHouse1, montHouse3, montHouse4],
+    gallery: [montHouse2, montHouse3, montHouse4],
     features: [
       "Lote de 500 m²",
       "Arquitetura contemporânea",
