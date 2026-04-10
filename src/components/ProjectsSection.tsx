@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import property1 from "@/assets/property-1.jpg";
-
-import property3 from "@/assets/property-3.jpg";
 import abyssHouse1 from "@/assets/abyss-house-1.png";
 import abyssHouse2 from "@/assets/abyss-house-2.png";
 import abyssHouse3 from "@/assets/abyss-house-3.png";
@@ -202,30 +200,6 @@ const projects: Project[] = [
       "Domótica integrada",
       "Pavimento em pedra natural",
       "Aquecimento por piso radiante",
-    ],
-  },
-  {
-    id: "the-residence",
-    image: property3,
-    title: "The Residence",
-    location: "Lisboa, Portugal",
-    type: "Apartamentos Premium",
-    description:
-      "Situado numa localização privilegiada de Lisboa, The Residence combina o charme da cidade com o conforto e sofisticação dos interiores contemporâneos. Cada apartamento foi desenhado para maximizar a luz natural e proporcionar uma experiência residencial de exceção.",
-    details: {
-      bedrooms: "2-4",
-      bathrooms: "2-4",
-      area: "120-280 m²",
-      status: "Em Venda",
-    },
-    gallery: [property3],
-    features: [
-      "Interiores de design",
-      "Varandas amplas",
-      "Condomínio fechado",
-      "Ginásio e spa",
-      "Concierge dedicado",
-      "Acabamentos premium",
     ],
   },
 ];
