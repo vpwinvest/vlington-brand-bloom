@@ -162,7 +162,7 @@ const projects: Project[] = [
   },
   {
     id: "mont-house",
-    image: montHouse1,
+    image: montHouse2,
     title: "Mont House",
     location: "Lamas, Cadaval",
     type: "Habitação Unifamiliar",
@@ -174,7 +174,7 @@ const projects: Project[] = [
       area: "500 m²",
       status: "Em Projeto",
     },
-    gallery: [montHouse1],
+    gallery: [montHouse2, montHouse1],
     features: [
       "Lote de 500 m²",
       "Arquitetura contemporânea",
