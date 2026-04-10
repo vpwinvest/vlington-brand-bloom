@@ -17,6 +17,7 @@ import velaris2 from "@/assets/velaris-2.jpg";
 import velaris3 from "@/assets/velaris-3.jpg";
 import velaris4 from "@/assets/velaris-4.jpg";
 import velaris5 from "@/assets/velaris-5.png";
+import velaris6 from "@/assets/velaris-6.png";
 import montHouse1 from "@/assets/mont-house-1.png";
 import bridgeHouse1 from "@/assets/bridge-house-1.jpg";
 import bridgeHouse2 from "@/assets/bridge-house-2.jpg";
