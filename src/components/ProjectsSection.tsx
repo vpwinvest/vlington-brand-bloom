@@ -20,6 +20,8 @@ import velaris9 from "@/assets/velaris-9.png";
 import velaris10 from "@/assets/velaris-10.png";
 import velaris11 from "@/assets/velaris-11.png";
 import velaris12 from "@/assets/velaris-12.png";
+import velaris13 from "@/assets/velaris-13.png";
+import velaris14 from "@/assets/velaris-14.png";
 import montHouse1 from "@/assets/mont-house-1.png";
 import bridgeHouse1 from "@/assets/bridge-house-1.jpg";
 import bridgeHouse2 from "@/assets/bridge-house-2.jpg";
@@ -74,7 +76,7 @@ const projects: Project[] = [
       area: "9.718 m²",
       status: "Em Projeto",
     },
-    gallery: [velaris6, velaris7, velaris8, velaris9, velaris10, velaris11, velaris12],
+    gallery: [velaris6, velaris7, velaris8, velaris9, velaris10, velaris11, velaris12, velaris13, velaris14],
     features: [
       "34 fogos (T1 a T4)",
       "5 Villas com vista mar",
