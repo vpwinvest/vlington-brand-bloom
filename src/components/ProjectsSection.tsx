@@ -49,6 +49,7 @@ import atlanticGold3 from "@/assets/atlantic-gold-3.jpg";
 import atlanticGold4 from "@/assets/atlantic-gold-4.jpg";
 import atlanticGold5 from "@/assets/atlantic-gold-5.png";
 import atlanticGold6 from "@/assets/atlantic-gold-6.png";
+import twentyFour1 from "@/assets/twenty-four-1.png";
 import ProjectModal, { type Project } from "./ProjectModal";
 
 const featuredProject: Project = {
@@ -180,6 +181,32 @@ const projects: Project[] = [
       "Amplos envidraçados",
       "Espelho de água",
       "2 pisos",
+      "Garagem integrada",
+    ],
+  },
+  {
+    id: "twenty-four",
+    image: twentyFour1,
+    title: "Twenty Four",
+    location: "Ameal, Torres Vedras",
+    type: "Habitação Unifamiliar",
+    description:
+      "Moradia unifamiliar T3 de arquitetura contemporânea no Ameal, combinando volumes brancos com revestimento em madeira ripada. O projeto inclui suite com closet, dois quartos, sala e cozinha open space com ampla varanda, e acabamentos em soalho flutuante, cimento afagado e deck de madeira.",
+    details: {
+      bedrooms: "3",
+      bathrooms: "2",
+      area: "132 m²",
+      status: "Em Projeto",
+    },
+    gallery: [twentyFour1],
+    features: [
+      "Suite com closet",
+      "Cozinha open space",
+      "Varanda de 22,5 m²",
+      "Deck de madeira exterior",
+      "Cimento afagado",
+      "Soalho flutuante",
+      "Jardim com relva natural",
       "Garagem integrada",
     ],
   },
