@@ -10,6 +10,8 @@ import abyssHouse6 from "@/assets/abyss-house-6.png";
 import abyssHouse7 from "@/assets/abyss-house-7.jpg";
 import abyssHouse8 from "@/assets/abyss-house-8.png";
 import abyssHouse9 from "@/assets/abyss-house-9.png";
+import abyssHouse10 from "@/assets/abyss-house-10.png";
+import abyssHouse11 from "@/assets/abyss-house-11.jpg";
 import velaris1 from "@/assets/velaris-1.jpg";
 import velaris2 from "@/assets/velaris-2.jpg";
 import velaris3 from "@/assets/velaris-3.jpg";
@@ -40,7 +42,7 @@ const featuredProject: Project = {
     area: "311 m²",
     status: "Em Projeto",
   },
-  gallery: [abyssHouse1, abyssHouse2, abyssHouse3, abyssHouse4, abyssHouse5, abyssHouse6, abyssHouse7, abyssHouse8, abyssHouse9],
+  gallery: [abyssHouse1, abyssHouse2, abyssHouse3, abyssHouse4, abyssHouse5, abyssHouse6, abyssHouse7, abyssHouse8, abyssHouse9, abyssHouse10, abyssHouse11],
   features: [
     "Lote de 694 m²",
     "3 pisos com vista sobre a cidade",
