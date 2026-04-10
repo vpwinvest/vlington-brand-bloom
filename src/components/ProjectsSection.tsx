@@ -17,6 +17,9 @@ import atlanticGold1 from "@/assets/atlantic-gold-1.png";
 import atlanticGold2 from "@/assets/atlantic-gold-2.jpg";
 import atlanticGold3 from "@/assets/atlantic-gold-3.jpg";
 import atlanticGold4 from "@/assets/atlantic-gold-4.jpg";
+import zimbralVilas1 from "@/assets/zimbral-vilas-1.jpg";
+import zimbralVilas2 from "@/assets/zimbral-vilas-2.jpg";
+import zimbralVilas3 from "@/assets/zimbral-vilas-3.jpg";
 import ProjectModal, { type Project } from "./ProjectModal";
 
 const featuredProject: Project = {
@@ -123,6 +126,32 @@ const projects: Project[] = [
       "Jardim interior",
       "Campos de ténis e golf (Quinta de Fez)",
       "Acabamentos premium",
+    ],
+  },
+  {
+    id: "zimbral-vilas",
+    image: zimbralVilas1,
+    title: "Zimbral Vilas",
+    location: "Praia Azul, Torres Vedras",
+    type: "Condomínio Residencial",
+    description:
+      "Condomínio de 6 moradias de arquitetura contemporânea em Casal Zimbral, Silveira, a apenas 3 minutos da Praia Azul e 5 minutos de Santa Cruz. Inserido num terreno de 7.806 m² rodeado de pinhal, o projeto oferece tipologias de T3 a T4+1, com áreas generosas, piscinas privadas, garagem e acabamentos de excelência. Privacidade e natureza a poucos passos do mar.",
+    details: {
+      bedrooms: "T3 a T4+1",
+      bathrooms: "3-4",
+      area: "242–442 m²",
+      status: "Em Projeto",
+    },
+    gallery: [zimbralVilas1, zimbralVilas2, zimbralVilas3],
+    features: [
+      "6 moradias exclusivas",
+      "Terreno total de 7.806 m²",
+      "Piscinas privadas",
+      "A 3 min da Praia Azul",
+      "Zona de pinhal envolvente",
+      "Garagem privada",
+      "Acabamentos contemporâneos",
+      "24 lugares de estacionamento",
     ],
   },
   {
