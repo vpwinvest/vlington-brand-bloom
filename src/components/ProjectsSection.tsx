@@ -11,6 +11,8 @@ import velaris2 from "@/assets/velaris-2.jpg";
 import velaris3 from "@/assets/velaris-3.jpg";
 import velaris4 from "@/assets/velaris-4.jpg";
 import montHouse1 from "@/assets/mont-house-1.png";
+import bridgeHouse1 from "@/assets/bridge-house-1.jpg";
+import bridgeHouse2 from "@/assets/bridge-house-2.jpg";
 import atlanticGold1 from "@/assets/atlantic-gold-1.png";
 import atlanticGold2 from "@/assets/atlantic-gold-2.jpg";
 import atlanticGold3 from "@/assets/atlantic-gold-3.jpg";
