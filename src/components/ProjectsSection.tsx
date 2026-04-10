@@ -60,7 +60,7 @@ const featuredProject: Project = {
 const projects: Project[] = [
   {
     id: "velaris-atalaya",
-    image: velaris5,
+    image: velaris6,
     title: "Velaris Atalaya",
     location: "Atalaia, Lourinhã",
     type: "Condomínio de Luxo",
