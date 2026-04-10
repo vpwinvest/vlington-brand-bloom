@@ -12,7 +12,7 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-6">
             <a
-              href="https://www.instagram.com/vlington.properties/"
+              href="https://www.instagram.com/vlington/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-foreground/40 hover:text-gold transition-colors duration-300"
