@@ -17,6 +17,7 @@ import velaris2 from "@/assets/velaris-2.jpg";
 import velaris3 from "@/assets/velaris-3.jpg";
 import velaris4 from "@/assets/velaris-4.jpg";
 import velaris5 from "@/assets/velaris-5.png";
+import velaris6 from "@/assets/velaris-6.png";
 import montHouse1 from "@/assets/mont-house-1.png";
 import bridgeHouse1 from "@/assets/bridge-house-1.jpg";
 import bridgeHouse2 from "@/assets/bridge-house-2.jpg";
@@ -59,7 +60,7 @@ const featuredProject: Project = {
 const projects: Project[] = [
   {
     id: "velaris-atalaya",
-    image: velaris5,
+    image: velaris6,
     title: "Velaris Atalaya",
     location: "Atalaia, Lourinhã",
     type: "Condomínio de Luxo",
@@ -71,7 +72,7 @@ const projects: Project[] = [
       area: "9.718 m²",
       status: "Em Projeto",
     },
-    gallery: [velaris5, velaris1, velaris2, velaris3, velaris4],
+    gallery: [velaris6, velaris5, velaris1, velaris2, velaris3, velaris4],
     features: [
       "34 fogos (T1 a T4)",
       "5 Villas com vista mar",
