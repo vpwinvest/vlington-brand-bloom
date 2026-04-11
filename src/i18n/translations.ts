@@ -254,4 +254,5 @@ export const translations = {
 } as const;
 
 export type Lang = "pt" | "en";
-export type Translations = (typeof translations)["pt" | "en"];
+// Use a loose type so both lang objects are assignable
+export type Translations = typeof translations.pt & typeof translations.en;
