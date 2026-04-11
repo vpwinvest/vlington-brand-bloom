@@ -6,7 +6,9 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
   const [videoOpen, setVideoOpen] = useState(false);
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+
+  const videoId = lang === "en" ? "4Pzildo9hLQ" : "5y1BAoXmk-g";
 
   return (
     <>
@@ -83,7 +85,7 @@ const HeroSection = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <iframe
-              src="https://www.youtube.com/embed/5y1BAoXmk-g?autoplay=1&rel=0"
+              src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
               title={t.hero.videoTitle}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
