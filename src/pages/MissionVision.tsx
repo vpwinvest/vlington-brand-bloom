@@ -1,5 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import teamBooth from "@/assets/team-booth.jpg";
+import teamMeeting from "@/assets/team-meeting.jpg";
 
 const MissionVision = () => {
   return (
@@ -10,9 +12,25 @@ const MissionVision = () => {
           <p className="text-gold text-xs tracking-widest-xl uppercase mb-4">
             Quem Somos
           </p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-16 leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-12 leading-tight">
             Missão &<span className="text-gradient-gold block">Visão</span>
           </h1>
+
+          {/* Team Photos */}
+          <div className="grid md:grid-cols-2 gap-6 mb-16">
+            <img
+              src={teamBooth}
+              alt="Equipa VLINGTON Properties no stand"
+              className="w-full h-[320px] object-cover"
+              loading="lazy"
+            />
+            <img
+              src={teamMeeting}
+              alt="VLINGTON Properties em reunião com cliente"
+              className="w-full h-[320px] object-cover object-top"
+              loading="lazy"
+            />
+          </div>
 
           <div className="grid md:grid-cols-2 gap-16">
             {/* Missão */}
