@@ -90,6 +90,13 @@ const featuredProject: Project = {
     "Campos de ténis e golf (Quinta de Fez)",
     "Acabamentos premium",
   ],
+  nearby: {
+    distanceLisbon: "~45 km (via A8)",
+    airport: "Aeroporto Humberto Delgado — ~50 km",
+    nearestCities: ["Torres Vedras — 8 km", "Mafra — 20 km", "Ericeira — 15 km"],
+    nearestBeaches: ["Praia de Santa Cruz — 15 km", "Praia da Foz do Lizandro — 18 km", "Praia de Porto Novo — 12 km"],
+    activities: ["Campo Real Golf Resort", "Campos de ténis (Quinta de Fez)", "Trilhos pedestres", "Enoturismo na região"],
+  },
 };
 
 const projects: Project[] = [
@@ -119,6 +126,13 @@ const projects: Project[] = [
       "Espaços verdes e praça pública",
       "Piscinas infinitas",
     ],
+    nearby: {
+      distanceLisbon: "~68 km (via A8)",
+      airport: "Aeroporto Humberto Delgado — ~75 km",
+      nearestCities: ["Lourinhã — 5 km", "Peniche — 20 km", "Torres Vedras — 25 km"],
+      nearestBeaches: ["Praia do Porto das Barcas — 3 km", "Praia da Areia Branca — 5 km", "Praia de Paimogo — 4 km"],
+      activities: ["Surf e bodyboard", "Museu da Lourinhã (dinossauros)", "Rota dos dinossauros", "Mergulho e pesca desportiva"],
+    },
   },
   {
     id: "atlantic-gold",
@@ -146,6 +160,13 @@ const projects: Project[] = [
       "Estacionamento",
       "Jardins paisagísticos",
     ],
+    nearby: {
+      distanceLisbon: "~68 km (via A8)",
+      airport: "Aeroporto Humberto Delgado — ~75 km",
+      nearestCities: ["Lourinhã — 5 km", "Peniche — 20 km", "Torres Vedras — 25 km"],
+      nearestBeaches: ["Praia do Porto das Barcas — 3 km", "Praia da Areia Branca — 5 km", "Praia de Valmitão — 2 km"],
+      activities: ["Surf e bodyboard", "Museu da Lourinhã (dinossauros)", "Mergulho e pesca desportiva", "Passeios de barco"],
+    },
   },
   {
     id: "abyss-house",
@@ -173,6 +194,13 @@ const projects: Project[] = [
       "Jardim paisagístico",
       "Acabamentos em betão e pedra natural",
     ],
+    nearby: {
+      distanceLisbon: "~50 km (via A8)",
+      airport: "Aeroporto Humberto Delgado — ~55 km",
+      nearestCities: ["Torres Vedras (centro) — 3 km", "Mafra — 25 km", "Sobral de Monte Agraço — 15 km"],
+      nearestBeaches: ["Praia de Santa Cruz — 15 km", "Praia de Porto Novo — 12 km", "Praia Azul — 14 km"],
+      activities: ["Mercado municipal de Torres Vedras", "Castelo de Torres Vedras", "Trilhos pedestres", "Festas do concelho"],
+    },
   },
   {
     id: "mont-house",
@@ -200,6 +228,13 @@ const projects: Project[] = [
       "2 pisos",
       "Garagem integrada",
     ],
+    nearby: {
+      distanceLisbon: "~65 km (via A1/A8)",
+      airport: "Aeroporto Humberto Delgado — ~70 km",
+      nearestCities: ["Cadaval — 5 km", "Caldas da Rainha — 25 km", "Alenquer — 20 km"],
+      nearestBeaches: ["Praia da Foz do Arelho — 30 km", "Praia de São Martinho do Porto — 35 km"],
+      activities: ["Serra de Montejunto (Paisagem Protegida)", "Trilhos pedestres e BTT", "Enoturismo e quintas vinícolas", "Parapente na Serra"],
+    },
   },
   {
     id: "twenty-four",
@@ -227,6 +262,13 @@ const projects: Project[] = [
       "Jardim com relva natural",
       "Garagem integrada",
     ],
+    nearby: {
+      distanceLisbon: "~45 km (via A8)",
+      airport: "Aeroporto Humberto Delgado — ~50 km",
+      nearestCities: ["Torres Vedras — 5 km", "Mafra — 22 km", "Ericeira — 18 km"],
+      nearestBeaches: ["Praia de Santa Cruz — 12 km", "Praia de Porto Novo — 10 km", "Praia Azul — 11 km"],
+      activities: ["Restaurantes típicos regionais", "Mercado municipal de Torres Vedras", "Trilhos pedestres", "Enoturismo"],
+    },
   },
   {
     id: "villa-serena",
@@ -254,6 +296,13 @@ const projects: Project[] = [
       "Kitchenette",
       "Arrumos",
     ],
+    nearby: {
+      distanceLisbon: "~50 km (via A8)",
+      airport: "Aeroporto Humberto Delgado — ~55 km",
+      nearestCities: ["Torres Vedras — 5 km", "Lourinhã — 15 km", "Mafra — 25 km"],
+      nearestBeaches: ["Praia de Santa Cruz — 10 km", "Praia de Porto Novo — 8 km", "Praia Azul — 9 km"],
+      activities: ["Surf e desportos aquáticos", "Campo Real Golf Resort — 12 km", "Castelo de Torres Vedras", "Termas dos Cucos — 8 km"],
+    },
   },
 ];
 const ProjectsSection = () => {
