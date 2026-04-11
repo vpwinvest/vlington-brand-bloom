@@ -90,6 +90,13 @@ const featuredProject: Project = {
     "Campos de ténis e golf (Quinta de Fez)",
     "Acabamentos premium",
   ],
+  nearby: {
+    distanceLisbon: "~45 km (via A8)",
+    airport: "Aeroporto Humberto Delgado — ~50 km",
+    nearestCities: ["Torres Vedras — 8 km", "Mafra — 20 km", "Ericeira — 15 km"],
+    nearestBeaches: ["Praia de Santa Cruz — 15 km", "Praia da Foz do Lizandro — 18 km", "Praia de Porto Novo — 12 km"],
+    activities: ["Campo Real Golf Resort", "Campos de ténis (Quinta de Fez)", "Trilhos pedestres", "Enoturismo na região"],
+  },
 };
 
 const projects: Project[] = [
