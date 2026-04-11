@@ -126,6 +126,13 @@ const projects: Project[] = [
       "Espaços verdes e praça pública",
       "Piscinas infinitas",
     ],
+    nearby: {
+      distanceLisbon: "~68 km (via A8)",
+      airport: "Aeroporto Humberto Delgado — ~75 km",
+      nearestCities: ["Lourinhã — 5 km", "Peniche — 20 km", "Torres Vedras — 25 km"],
+      nearestBeaches: ["Praia do Porto das Barcas — 3 km", "Praia da Areia Branca — 5 km", "Praia de Paimogo — 4 km"],
+      activities: ["Surf e bodyboard", "Museu da Lourinhã (dinossauros)", "Rota dos dinossauros", "Mergulho e pesca desportiva"],
+    },
   },
   {
     id: "atlantic-gold",
