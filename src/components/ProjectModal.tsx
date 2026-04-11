@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { X, MapPin, Bed, Bath, Maximize, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
+export interface NearbyInfo {
+  distanceLisbon: string;
+  airport: string;
+  nearestCities: string[];
+  nearestBeaches: string[];
+  activities: string[];
+}
+
 export interface Project {
   id: string;
   image: string;
@@ -9,6 +17,7 @@ export interface Project {
   type: string;
   description: string;
   coordinates?: { lat: number; lng: number };
+  nearby?: NearbyInfo;
   details: {
     bedrooms?: string;
     bathrooms?: string;
