@@ -155,7 +155,7 @@ const projects: Project[] = [
       area: "311 m²",
       status: "Em Projeto",
     },
-    gallery: [abyssHouse1, abyssHouse2, abyssHouse3, abyssHouse4, abyssHouse5, abyssHouse6, abyssHouse7, abyssHouse8, abyssHouse9, abyssHouse10, abyssHouse11],
+    gallery: [abyssHouse12, abyssHouse13, abyssHouse14, abyssHouse15],
     features: [
       "Lote de 694 m²",
       "3 pisos com vista sobre a cidade",
