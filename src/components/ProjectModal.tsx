@@ -37,7 +37,7 @@ const ProjectMap = ({ lat, lng, title }: { lat: number; lng: number; title: stri
           title={`Mapa - ${title}`}
           className="w-full h-full border-0"
           style={{
-            filter: "grayscale(100%) invert(92%) sepia(8%) saturate(400%) hue-rotate(10deg) contrast(0.9) brightness(0.85)",
+            filter: "grayscale(100%) brightness(1.05) contrast(0.95) sepia(15%) saturate(60%) hue-rotate(10deg)",
           }}
           loading="lazy"
         />
