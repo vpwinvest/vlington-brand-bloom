@@ -8,6 +8,7 @@ export interface Project {
   location: string;
   type: string;
   description: string;
+  coordinates?: { lat: number; lng: number };
   details: {
     bedrooms?: string;
     bathrooms?: string;
@@ -22,6 +23,38 @@ interface ProjectModalProps {
   project: Project;
   onClose: () => void;
 }
+
+const ProjectMap = ({ lat, lng, title }: { lat: number; lng: number; title: string }) => {
+  const zoom = 14;
+  const src = `https://www.openstreetmap.org/export/embed.html?bbox=${lng - 0.015}%2C${lat - 0.01}%2C${lng + 0.015}%2C${lat + 0.01}&layer=mapnik&marker=${lat}%2C${lng}`;
+
+  return (
+    <div className="mb-10">
+      <h3 className="text-lg font-bold text-foreground mb-4">Localização</h3>
+      <div className="relative overflow-hidden border border-border" style={{ height: 260 }}>
+        <iframe
+          src={src}
+          title={`Mapa - ${title}`}
+          className="w-full h-full border-0"
+          style={{
+            filter: "grayscale(100%) invert(92%) sepia(8%) saturate(400%) hue-rotate(10deg) contrast(0.9) brightness(0.85)",
+          }}
+          loading="lazy"
+        />
+        <div className="absolute inset-0 pointer-events-none border border-gold/20" />
+      </div>
+      <a
+        href={`https://www.google.com/maps?q=${lat},${lng}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 mt-3 text-gold text-xs tracking-widest uppercase hover:text-gold-light transition-colors"
+      >
+        <MapPin size={12} />
+        Ver no Google Maps
+      </a>
+    </div>
+  );
+};
 
 const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
@@ -117,6 +150,15 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               </div>
             )}
 
+            {/* Map */}
+            {project.coordinates && (
+              <ProjectMap
+                lat={project.coordinates.lat}
+                lng={project.coordinates.lng}
+                title={project.title}
+              />
+            )}
+
             {/* Gallery */}
             {project.gallery.length > 0 && (
               <div>
@@ -154,7 +196,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
         </div>
       </div>
 
-      {/* Lightbox - outside scrollable modal */}
+      {/* Lightbox */}
       {lightboxIndex !== null && (
         <div
           className="fixed inset-0 z-[200] flex items-center justify-center bg-dark-deep/95 backdrop-blur-md"
