@@ -197,7 +197,7 @@ const projects: Project[] = [
     nearby: {
       distanceLisbon: "~50 km (via A8)",
       airport: "Aeroporto Humberto Delgado — ~55 km",
-      nearestCities: ["Torres Vedras (centro) — 3 km", "Mafra — 25 km", "Sobral de Monte Agraço — 15 km"],
+      nearestCities: ["Torres Vedras (centro) — 3 km", "Mafra — 25 km", "Ericeira — 30 km"],
       nearestBeaches: ["Praia de Santa Cruz — 15 km", "Praia de Porto Novo — 12 km", "Praia Azul — 14 km"],
       activities: ["Mercado municipal de Torres Vedras", "Castelo de Torres Vedras", "Trilhos pedestres", "Festas do concelho"],
     },
@@ -299,7 +299,7 @@ const projects: Project[] = [
     nearby: {
       distanceLisbon: "~50 km (via A8)",
       airport: "Aeroporto Humberto Delgado — ~55 km",
-      nearestCities: ["Torres Vedras — 5 km", "Lourinhã — 15 km", "Mafra — 25 km"],
+      nearestCities: ["Torres Vedras — 5 km", "Lourinhã — 15 km", "Ericeira — 25 km"],
       nearestBeaches: ["Praia de Santa Cruz — 10 km", "Praia de Porto Novo — 8 km", "Praia Azul — 9 km"],
       activities: ["Surf e desportos aquáticos", "Campo Real Golf Resort — 12 km", "Castelo de Torres Vedras", "Termas dos Cucos — 8 km"],
     },
