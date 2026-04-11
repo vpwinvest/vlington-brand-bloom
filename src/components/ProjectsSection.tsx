@@ -180,6 +180,7 @@ const projects: Project[] = [
     title: "Mont House",
     location: "Lamas, Cadaval",
     type: "Habitação Unifamiliar",
+    coordinates: { lat: 39.2440, lng: -9.1050 },
     description:
       "Habitação unifamiliar de arquitetura contemporânea em Lamas, Cadaval, com vista panorâmica para a Serra de Montejunto. Inserida no centro da natureza com todos os serviços na proximidade, destaca-se pelas manhãs calmas, ar puro e natureza em toda a envolvente — um verdadeiro luxo no campo. O projeto combina volumes brancos com revestimento em madeira ripada e pedra natural, criando uma linguagem arquitetónica sofisticada. Amplas superfícies envidraçadas garantem uma relação fluida entre o interior e o exterior, com espelho de água na entrada principal.",
     details: {
@@ -206,6 +207,7 @@ const projects: Project[] = [
     title: "Twenty Four",
     location: "Ameal, Torres Vedras",
     type: "Habitação Unifamiliar",
+    coordinates: { lat: 39.0850, lng: -9.2700 },
     description:
       "Moradia unifamiliar T3 de arquitetura contemporânea no Ameal, combinando volumes brancos com revestimento em madeira ripada. O projeto inclui suite com closet, dois quartos, sala e cozinha open space com ampla varanda, e acabamentos em soalho flutuante, cimento afagado e deck de madeira.",
     details: {
@@ -232,6 +234,7 @@ const projects: Project[] = [
     title: "Villa Serena",
     location: "Fonte Grada, Torres Vedras",
     type: "Condomínio Residencial",
+    coordinates: { lat: 39.0750, lng: -9.2650 },
     description:
       "Condomínio residencial de 6 fogos T3 na Urbanização do Pinhal, Fonte Grada. O projeto contempla frações com suite e closet, sala comum, kitchenette e garagem privativa. Os espaços comuns incluem piscina de 50 m², telheiro coberto e sala de condomínio, proporcionando um estilo de vida confortável e funcional.",
     details: {
