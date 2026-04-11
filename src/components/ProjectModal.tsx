@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { X, MapPin, Bed, Bath, Maximize, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, MapPin, Bed, Bath, Maximize, ArrowRight, ChevronLeft, ChevronRight, Plane, Building2, Waves, Compass } from "lucide-react";
 
 export interface NearbyInfo {
   distanceLisbon: string;
