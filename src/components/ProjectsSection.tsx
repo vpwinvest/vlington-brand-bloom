@@ -70,6 +70,7 @@ const featuredProject: Project = {
   title: "Bridge House",
   location: "Quinta de Fez, Turcifal",
   type: "Projeto em Destaque",
+  coordinates: { lat: 39.0833, lng: -9.2833 },
   description:
     "Situada na prestigiada Quinta de Fez do Turcifal — que oferece campos de ténis e o famoso Campo Real para a prática de golf — a Bridge House é uma moradia de arquitetura contemporânea com um terreno privado de 1.100 m². O projeto destaca-se pelo design da ponte que é a entrada para a moradia e pela sua privacidade. Esta moradia apresenta-se com piso radiante, lareira, piscina aquecida, churrasqueira, lavandaria, alpendre, jardim interior e um jardim exterior criado para proporcionar um ambiente verdadeiramente único.",
   details: {
@@ -98,6 +99,7 @@ const projects: Project[] = [
     title: "Velaris Atalaya",
     location: "Atalaia, Lourinhã",
     type: "Condomínio de Luxo",
+    coordinates: { lat: 39.2480, lng: -9.3340 },
     description:
       "Condomínio habitacional de luxo na costa oeste de Portugal, pensado para nómadas digitais que valorizam conforto, liberdade e proximidade com a natureza. Com vistas impressionantes para o oceano, o empreendimento inclui 5 villas exclusivas, 5 edifícios residenciais, wellness center com spa, coworking e anfiteatro ao ar livre.",
     details: {
@@ -124,6 +126,7 @@ const projects: Project[] = [
     title: "The Atlantic Gold Residence",
     location: "Atalaia, Lourinhã",
     type: "Condomínio Residencial",
+    coordinates: { lat: 39.2480, lng: -9.3340 },
     description:
       "Condomínio residencial T3 na Atalaia, Lourinhã, com arquitetura contemporânea que combina betão, madeira e vegetação abundante. Os apartamentos dispõem de amplas varandas com vista para a piscina comum, sala e cozinha open space, e acabamentos de design em todos os espaços.",
     details: {
@@ -150,6 +153,7 @@ const projects: Project[] = [
     title: "Abyss House",
     location: "Torres Vedras, Portugal",
     type: "Habitação Unifamiliar",
+    coordinates: { lat: 39.0910, lng: -9.2590 },
     description:
       "Uma habitação unifamiliar T4 integrada na encosta de Torres Vedras, com uma vista única e privilegiada sobre a cidade. A arquitetura contemporânea dialoga com a topografia natural do terreno, distribuída por 3 pisos que maximizam as vistas panorâmicas. Espaços generosos fluem entre interior e exterior através de amplos terraços e jardins paisagísticos.",
     details: {
@@ -176,6 +180,7 @@ const projects: Project[] = [
     title: "Mont House",
     location: "Lamas, Cadaval",
     type: "Habitação Unifamiliar",
+    coordinates: { lat: 39.2440, lng: -9.1050 },
     description:
       "Habitação unifamiliar de arquitetura contemporânea em Lamas, Cadaval, com vista panorâmica para a Serra de Montejunto. Inserida no centro da natureza com todos os serviços na proximidade, destaca-se pelas manhãs calmas, ar puro e natureza em toda a envolvente — um verdadeiro luxo no campo. O projeto combina volumes brancos com revestimento em madeira ripada e pedra natural, criando uma linguagem arquitetónica sofisticada. Amplas superfícies envidraçadas garantem uma relação fluida entre o interior e o exterior, com espelho de água na entrada principal.",
     details: {
@@ -202,6 +207,7 @@ const projects: Project[] = [
     title: "Twenty Four",
     location: "Ameal, Torres Vedras",
     type: "Habitação Unifamiliar",
+    coordinates: { lat: 39.0850, lng: -9.2700 },
     description:
       "Moradia unifamiliar T3 de arquitetura contemporânea no Ameal, combinando volumes brancos com revestimento em madeira ripada. O projeto inclui suite com closet, dois quartos, sala e cozinha open space com ampla varanda, e acabamentos em soalho flutuante, cimento afagado e deck de madeira.",
     details: {
@@ -228,6 +234,7 @@ const projects: Project[] = [
     title: "Villa Serena",
     location: "Fonte Grada, Torres Vedras",
     type: "Condomínio Residencial",
+    coordinates: { lat: 39.0750, lng: -9.2650 },
     description:
       "Condomínio residencial de 6 fogos T3 na Urbanização do Pinhal, Fonte Grada. O projeto contempla frações com suite e closet, sala comum, kitchenette e garagem privativa. Os espaços comuns incluem piscina de 50 m², telheiro coberto e sala de condomínio, proporcionando um estilo de vida confortável e funcional.",
     details: {
