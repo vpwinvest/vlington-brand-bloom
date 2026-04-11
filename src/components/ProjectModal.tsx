@@ -159,7 +159,65 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               </div>
             )}
 
-            {/* Map */}
+            {/* Nearby / Proximity */}
+            {project.nearby && (
+              <div className="mb-10">
+                <h3 className="text-lg font-bold text-foreground mb-4">Proximidades</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Distance to Lisbon & Airport */}
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <Building2 size={16} className="text-gold mt-0.5 flex-shrink-0" />
+                      <div>
+                        <p className="text-sm font-semibold text-foreground">Distância a Lisboa</p>
+                        <p className="text-sm text-muted-foreground">{project.nearby.distanceLisbon}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Plane size={16} className="text-gold mt-0.5 flex-shrink-0" />
+                      <div>
+                        <p className="text-sm font-semibold text-foreground">Aeroporto</p>
+                        <p className="text-sm text-muted-foreground">{project.nearby.airport}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Nearest Cities */}
+                  <div className="flex items-start gap-3">
+                    <MapPin size={16} className="text-gold mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="text-sm font-semibold text-foreground">Cidades Próximas</p>
+                      {project.nearby.nearestCities.map((city, i) => (
+                        <p key={i} className="text-sm text-muted-foreground">{city}</p>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Nearest Beaches */}
+                  <div className="flex items-start gap-3">
+                    <Waves size={16} className="text-gold mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="text-sm font-semibold text-foreground">Praias Próximas</p>
+                      {project.nearby.nearestBeaches.map((beach, i) => (
+                        <p key={i} className="text-sm text-muted-foreground">{beach}</p>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Activities */}
+                  <div className="flex items-start gap-3">
+                    <Compass size={16} className="text-gold mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="text-sm font-semibold text-foreground">Atividades & Serviços</p>
+                      {project.nearby.activities.map((activity, i) => (
+                        <p key={i} className="text-sm text-muted-foreground">{activity}</p>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {project.coordinates && (
               <ProjectMap
                 lat={project.coordinates.lat}
