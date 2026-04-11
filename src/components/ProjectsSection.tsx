@@ -143,7 +143,7 @@ const projects: Project[] = [
   },
   {
     id: "abyss-house",
-    image: abyssHouse1,
+    image: abyssHouse12,
     title: "Abyss House",
     location: "Torres Vedras, Portugal",
     type: "Habitação Unifamiliar",
