@@ -1,5 +1,4 @@
-import teamBooth from "@/assets/team-booth.jpg";
-import teamMeeting from "@/assets/team-meeting.jpg";
+import aboutBg from "@/assets/about-bg.jpg";
 
 const AboutSection = () => {
   return (
@@ -43,17 +42,11 @@ const AboutSection = () => {
           </div>
 
           {/* Images */}
-          <div className="relative space-y-4">
+          <div className="relative">
             <img
-              src={teamBooth}
-              alt="Equipa VLINGTON Properties no stand"
-              className="w-full h-[300px] object-cover"
-              loading="lazy"
-            />
-            <img
-              src={teamMeeting}
-              alt="VLINGTON Properties em reunião com cliente"
-              className="w-full h-[240px] object-cover object-top"
+              src={aboutBg}
+              alt="Modern luxury interior"
+              className="w-full h-[500px] object-cover"
               loading="lazy"
             />
             <div className="absolute -bottom-6 -left-6 w-32 h-32 border border-gold/30" />
