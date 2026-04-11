@@ -153,6 +153,7 @@ const projects: Project[] = [
     title: "Abyss House",
     location: "Torres Vedras, Portugal",
     type: "Habitação Unifamiliar",
+    coordinates: { lat: 39.0910, lng: -9.2590 },
     description:
       "Uma habitação unifamiliar T4 integrada na encosta de Torres Vedras, com uma vista única e privilegiada sobre a cidade. A arquitetura contemporânea dialoga com a topografia natural do terreno, distribuída por 3 pisos que maximizam as vistas panorâmicas. Espaços generosos fluem entre interior e exterior através de amplos terraços e jardins paisagísticos.",
     details: {
