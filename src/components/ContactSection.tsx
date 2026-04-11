@@ -2,18 +2,20 @@ import { useState } from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ContactSection = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [sending, setSending] = useState(false);
+  const { t } = useLanguage();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!name.trim() || !email.trim() || !message.trim()) {
-      toast.error("Por favor preencha todos os campos.");
+      toast.error(t.contact.errorEmpty);
       return;
     }
 
@@ -25,14 +27,12 @@ const ContactSection = () => {
 
       if (error) throw error;
 
-      toast.success(
-        "Bem-vindo à Vlington Properties! Entraremos em contacto o mais breve possível. Obrigado."
-      );
+      toast.success(t.contact.success);
       setName("");
       setEmail("");
       setMessage("");
     } catch {
-      toast.error("Ocorreu um erro. Por favor tente novamente.");
+      toast.error(t.contact.error);
     } finally {
       setSending(false);
     }
@@ -45,15 +45,14 @@ const ContactSection = () => {
           {/* Info */}
           <div>
             <p className="text-gold text-xs tracking-widest-xl uppercase mb-4">
-              Contacto
+              {t.contact.label}
             </p>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-8 leading-tight">
-              Vamos conversar sobre o seu
-              <span className="text-gradient-gold block">próximo projeto</span>
+              {t.contact.heading1}
+              <span className="text-gradient-gold block">{t.contact.heading2}</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-10">
-              Estamos disponíveis para esclarecer todas as suas questões e apresentar
-              as melhores oportunidades de investimento imobiliário.
+              {t.contact.intro}
             </p>
 
             <div className="space-y-6">
@@ -62,7 +61,7 @@ const ContactSection = () => {
                   <MapPin size={16} className="text-gold" />
                 </div>
                 <div>
-                  <p className="text-foreground font-medium text-sm">Morada</p>
+                  <p className="text-foreground font-medium text-sm">{t.contact.address}</p>
                   <p className="text-muted-foreground text-sm">Lisboa, Portugal</p>
                 </div>
               </div>
@@ -71,7 +70,7 @@ const ContactSection = () => {
                   <Phone size={16} className="text-gold" />
                 </div>
                 <div>
-                  <p className="text-foreground font-medium text-sm">Telefone</p>
+                  <p className="text-foreground font-medium text-sm">{t.contact.phone}</p>
                   <p className="text-muted-foreground text-sm">+351 261 338 447</p>
                 </div>
               </div>
@@ -80,7 +79,7 @@ const ContactSection = () => {
                   <Mail size={16} className="text-gold" />
                 </div>
                 <div>
-                  <p className="text-foreground font-medium text-sm">Email</p>
+                  <p className="text-foreground font-medium text-sm">{t.contact.email}</p>
                   <p className="text-muted-foreground text-sm">hello@vlington.com</p>
                 </div>
               </div>
@@ -92,40 +91,40 @@ const ContactSection = () => {
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-xs tracking-widest uppercase text-muted-foreground mb-2">
-                  Nome
+                  {t.contact.nameLabel}
                 </label>
                 <input
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="w-full bg-transparent border-b border-border py-3 text-foreground text-sm focus:border-gold focus:outline-none transition-colors"
-                  placeholder="O seu nome"
+                  placeholder={t.contact.namePlaceholder}
                   required
                 />
               </div>
               <div>
                 <label className="block text-xs tracking-widest uppercase text-muted-foreground mb-2">
-                  Email
+                  {t.contact.emailLabel}
                 </label>
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full bg-transparent border-b border-border py-3 text-foreground text-sm focus:border-gold focus:outline-none transition-colors"
-                  placeholder="O seu email"
+                  placeholder={t.contact.emailPlaceholder}
                   required
                 />
               </div>
               <div>
                 <label className="block text-xs tracking-widest uppercase text-muted-foreground mb-2">
-                  Mensagem
+                  {t.contact.messageLabel}
                 </label>
                 <textarea
                   rows={4}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   className="w-full bg-transparent border-b border-border py-3 text-foreground text-sm focus:border-gold focus:outline-none transition-colors resize-none"
-                  placeholder="A sua mensagem"
+                  placeholder={t.contact.messagePlaceholder}
                   required
                 />
               </div>
@@ -134,7 +133,7 @@ const ContactSection = () => {
                 disabled={sending}
                 className="w-full py-4 bg-dark text-primary-foreground text-sm tracking-widest uppercase hover:bg-gold hover:text-dark-deep transition-all duration-500 disabled:opacity-50"
               >
-                {sending ? "A enviar..." : "Enviar Mensagem"}
+                {sending ? t.contact.sending : t.contact.send}
               </button>
             </form>
           </div>
