@@ -76,7 +76,7 @@ const featuredProject: Project = {
     area: "350 m²",
     status: "Em Construção — Conclusão 2026",
   },
-  gallery: [bridgeHouse20, bridgeHouse21],
+  gallery: [bridgeHouse20, bridgeHouse21, bridgeHouse22],
   features: [
     "Terreno privado de 1.100 m²",
     "Piscina aquecida",
