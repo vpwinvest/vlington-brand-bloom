@@ -60,6 +60,7 @@ import atlanticGold3 from "@/assets/atlantic-gold-3.jpg";
 import atlanticGold4 from "@/assets/atlantic-gold-4.jpg";
 import atlanticGold5 from "@/assets/atlantic-gold-5.png";
 import atlanticGold6 from "@/assets/atlantic-gold-6.png";
+import atlanticGold7 from "@/assets/atlantic-gold-7.jpg";
 import twentyFour1 from "@/assets/twenty-four-1.png";
 import ProjectModal, { type Project } from "./ProjectModal";
 
@@ -131,7 +132,7 @@ const projects: Project[] = [
       area: "T3",
       status: "Em Construção — Conclusão 2027",
     },
-    gallery: [atlanticGold5, atlanticGold6, atlanticGold1, atlanticGold2, atlanticGold3, atlanticGold4],
+    gallery: [atlanticGold5, atlanticGold6, atlanticGold7, atlanticGold1, atlanticGold2, atlanticGold3, atlanticGold4],
     features: [
       "Piscina comum",
       "Varandas amplas",
