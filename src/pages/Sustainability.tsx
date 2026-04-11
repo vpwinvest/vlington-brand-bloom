@@ -1,19 +1,33 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Leaf, TreePine, Droplets, Sun } from "lucide-react";
+import sustainabilityHero from "@/assets/sustainability-hero.jpg";
 
 const Sustainability = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <section className="pt-32 pb-24 md:pt-40 md:pb-32 bg-background">
-        <div className="container mx-auto px-6">
+
+      {/* Hero */}
+      <section className="relative h-[60vh] min-h-[400px] flex items-end">
+        <img
+          src={sustainabilityHero}
+          alt="Think Beyond — Sustentabilidade VLINGTON Properties"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark-deep via-dark-deep/60 to-dark-deep/20" />
+        <div className="relative container mx-auto px-6 pb-12 md:pb-16">
           <p className="text-gold text-xs tracking-widest-xl uppercase mb-4">
             Compromisso Ambiental
           </p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-8 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground leading-tight">
             Sustentabilidade
           </h1>
+        </div>
+      </section>
+
+      <section className="py-24 md:py-32 bg-background">
+        <div className="container mx-auto px-6">
           <p className="text-muted-foreground leading-relaxed max-w-3xl mb-20 text-lg">
             A atividade imobiliária tem um impacto relevante no território e nas
             comunidades. A VLINGTON Properties assume essa realidade como uma
