@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import teamBooth from "@/assets/team-booth.jpg";
 import teamMeeting from "@/assets/team-meeting.jpg";
+import ceoPhoto from "@/assets/ceo.png";
 
 const MissionVision = () => {
   return (
@@ -16,20 +17,34 @@ const MissionVision = () => {
             Missão &<span className="text-gradient-gold block">Visão</span>
           </h1>
 
-          {/* Team Photos */}
-          <div className="grid md:grid-cols-2 gap-6 mb-16">
-            <img
-              src={teamBooth}
-              alt="Equipa VLINGTON Properties no stand"
-              className="w-full h-[320px] object-cover"
-              loading="lazy"
-            />
-            <img
-              src={teamMeeting}
-              alt="VLINGTON Properties em reunião com cliente"
-              className="w-full h-[320px] object-cover object-top"
-              loading="lazy"
-            />
+          {/* CEO */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16 items-end">
+            <div className="md:col-span-1">
+              <img
+                src={ceoPhoto}
+                alt="CEO da VLINGTON Properties"
+                className="w-full h-[400px] object-cover object-top"
+                loading="lazy"
+              />
+              <div className="mt-4">
+                <h3 className="text-foreground font-semibold text-lg">Fundador & CEO</h3>
+                <p className="text-gold text-sm">VLINGTON Properties</p>
+              </div>
+            </div>
+            <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <img
+                src={teamBooth}
+                alt="Equipa VLINGTON Properties no stand"
+                className="w-full h-[240px] object-cover"
+                loading="lazy"
+              />
+              <img
+                src={teamMeeting}
+                alt="VLINGTON Properties em reunião com cliente"
+                className="w-full h-[240px] object-cover object-top"
+                loading="lazy"
+              />
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-16">
