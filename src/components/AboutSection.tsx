@@ -1,6 +1,9 @@
 import aboutBg from "@/assets/about-bg.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const AboutSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="about" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
@@ -8,35 +11,30 @@ const AboutSection = () => {
           {/* Text */}
           <div>
             <p className="text-gold text-xs tracking-widest-xl uppercase mb-4">
-              Sobre Nós
+              {t.about.label}
             </p>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-8 leading-tight">
-              Excelência em cada
-              <span className="text-gradient-gold block">detalhe</span>
+              {t.about.heading1}
+              <span className="text-gradient-gold block">{t.about.heading2}</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              A VLINGTON Properties dedica-se ao investimento e desenvolvimento de projetos imobiliários de
-              excelência, combinando arquitetura contemporânea com ambientes naturais de
-              exceção. Cada projeto é pensado ao pormenor para proporcionar experiências
-              de vida únicas.
+              {t.about.p1}
             </p>
             <p className="text-muted-foreground leading-relaxed mb-10">
-              Com uma visão que vai além do convencional — "Think Beyond" — procuramos
-              redefinir os padrões do mercado imobiliário de luxo, criando espaços que
-              inspiram e elevam.
+              {t.about.p2}
             </p>
             <div className="flex gap-12">
               <div>
                 <span className="text-3xl font-bold text-gradient-gold">20+</span>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-1">Anos de experiência</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-1">{t.about.stat1}</p>
               </div>
               <div>
                 <span className="text-3xl font-bold text-gradient-gold">20M€+</span>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-1">Em projetos</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-1">{t.about.stat2}</p>
               </div>
               <div>
                 <span className="text-3xl font-bold text-gradient-gold">101%</span>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-1">Dedicação</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-1">{t.about.stat3}</p>
               </div>
             </div>
           </div>

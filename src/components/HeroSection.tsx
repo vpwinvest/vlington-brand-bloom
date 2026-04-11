@@ -2,9 +2,11 @@ import { useState } from "react";
 import { Play, X } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import logoNegative from "@/assets/logo-negative.png";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
   const [videoOpen, setVideoOpen] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <>
@@ -37,12 +39,12 @@ const HeroSection = () => {
             <button
               onClick={() => setVideoOpen(true)}
               className="group inline-flex items-center gap-3 text-gold/80 hover:text-gold transition-colors duration-300"
-              aria-label="Ver vídeo de apresentação"
+              aria-label={t.hero.playLabel}
             >
               <span className="flex items-center justify-center w-14 h-14 rounded-full border-2 border-gold/60 group-hover:border-gold group-hover:bg-gold/10 transition-all duration-500">
                 <Play size={22} className="ml-1" fill="currentColor" />
               </span>
-              <span className="text-sm tracking-widest uppercase hidden sm:inline">Ver Vídeo</span>
+              <span className="text-sm tracking-widest uppercase hidden sm:inline">{t.hero.watchVideo}</span>
             </button>
           </div>
 
@@ -54,7 +56,7 @@ const HeroSection = () => {
               href="#projects"
               className="inline-block px-10 py-4 border border-gold text-gold text-sm tracking-widest uppercase hover:bg-gold hover:text-dark-deep transition-all duration-500"
             >
-              Descobrir Projetos
+              {t.hero.discoverProjects}
             </a>
           </div>
         </div>
@@ -72,7 +74,7 @@ const HeroSection = () => {
           <button
             onClick={() => setVideoOpen(false)}
             className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
-            aria-label="Fechar vídeo"
+            aria-label={t.hero.closeVideo}
           >
             <X size={32} />
           </button>
@@ -82,7 +84,7 @@ const HeroSection = () => {
           >
             <iframe
               src="https://www.youtube.com/embed/5y1BAoXmk-g?autoplay=1&rel=0"
-              title="VLINGTON Properties - Apresentação"
+              title={t.hero.videoTitle}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="w-full h-full rounded-lg"

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import logoNavbar from "@/assets/logo-navbar.png";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -9,6 +10,7 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isHome = location.pathname === "/";
+  const { lang, setLang, t } = useLanguage();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -17,10 +19,10 @@ const Navbar = () => {
   }, []);
 
   const links = [
-    { label: "Início", href: "#hero" },
-    { label: "Sobre", href: "#about" },
-    { label: "Projetos", href: "#projects" },
-    { label: "Contacto", href: "#contact" },
+    { label: t.nav.home, href: "#hero" },
+    { label: t.nav.about, href: "#about" },
+    { label: t.nav.projects, href: "#projects" },
+    { label: t.nav.contact, href: "#contact" },
   ];
 
   const handleLinkClick = (e: React.MouseEvent, href: string) => {
@@ -43,7 +45,6 @@ const Navbar = () => {
     }
   };
 
-  // On sub-pages, always show solid background
   const showSolid = scrolled || !isHome;
 
   return (
@@ -70,14 +71,57 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+
+          {/* Language Switcher */}
+          <div className="flex items-center gap-1 text-sm tracking-wider">
+            <button
+              onClick={() => setLang("pt")}
+              className={`px-1.5 py-0.5 transition-colors duration-300 ${
+                lang === "pt" ? "text-gold font-semibold" : "text-primary-foreground/50 hover:text-primary-foreground/80"
+              }`}
+            >
+              PT
+            </button>
+            <span className="text-primary-foreground/30">|</span>
+            <button
+              onClick={() => setLang("en")}
+              className={`px-1.5 py-0.5 transition-colors duration-300 ${
+                lang === "en" ? "text-gold font-semibold" : "text-primary-foreground/50 hover:text-primary-foreground/80"
+              }`}
+            >
+              EN
+            </button>
+          </div>
         </div>
 
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-primary-foreground"
-        >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center gap-4 md:hidden">
+          {/* Mobile Language Switcher */}
+          <div className="flex items-center gap-1 text-xs tracking-wider">
+            <button
+              onClick={() => setLang("pt")}
+              className={`px-1 transition-colors ${
+                lang === "pt" ? "text-gold font-semibold" : "text-primary-foreground/50"
+              }`}
+            >
+              PT
+            </button>
+            <span className="text-primary-foreground/30">|</span>
+            <button
+              onClick={() => setLang("en")}
+              className={`px-1 transition-colors ${
+                lang === "en" ? "text-gold font-semibold" : "text-primary-foreground/50"
+              }`}
+            >
+              EN
+            </button>
+          </div>
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="text-primary-foreground"
+          >
+            {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {menuOpen && (

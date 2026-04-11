@@ -1,8 +1,11 @@
 import logoSymbol from "@/assets/logo-vlington-symbol.png";
 import { Instagram, Linkedin, Facebook } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="py-12 bg-dark-deep border-t border-primary-foreground/10">
       <div className="container mx-auto px-6">
@@ -13,25 +16,25 @@ const Footer = () => {
               to="/missao-visao"
               className="text-primary-foreground/40 hover:text-gold transition-colors duration-300 text-xs tracking-wider uppercase"
             >
-              Missão & Visão
+              {t.footer.missionVision}
             </Link>
             <span className="hidden md:inline text-primary-foreground/20">|</span>
             <Link
               to="/responsabilidade-social"
               className="text-primary-foreground/40 hover:text-gold transition-colors duration-300 text-xs tracking-wider uppercase"
             >
-              Responsabilidade Social & Patrocínios
+              {t.footer.socialResponsibility}
             </Link>
             <span className="hidden md:inline text-primary-foreground/20">|</span>
             <Link
               to="/sustentabilidade"
               className="text-primary-foreground/40 hover:text-gold transition-colors duration-300 text-xs tracking-wider uppercase"
             >
-              Sustentabilidade
+              {t.footer.sustainability}
             </Link>
             <span className="hidden md:inline text-primary-foreground/20">|</span>
             <p className="text-primary-foreground/40 text-xs tracking-wider">
-              © {new Date().getFullYear()} VLINGTON Properties. Todos os direitos reservados.
+              © {new Date().getFullYear()} VLINGTON Properties. {t.footer.rights}
             </p>
           </div>
           <div className="flex items-center gap-6">

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import property1 from "@/assets/property-1.jpg";
 import abyssHouse1 from "@/assets/abyss-house-1.png";
 import abyssHouse2 from "@/assets/abyss-house-2.png";
@@ -307,6 +308,7 @@ const projects: Project[] = [
 ];
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const { t } = useLanguage();
 
   return (
     <>
@@ -314,14 +316,14 @@ const ProjectsSection = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-gold text-xs tracking-widest-xl uppercase mb-4">
-              Portefólio
+              {t.projects.label}
             </p>
             <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground">
-              Projetos em Destaque
+              {t.projects.heading}
             </h2>
           </div>
 
-          {/* Featured Project - Abyss House */}
+          {/* Featured Project */}
           <div
             className="group relative overflow-hidden cursor-pointer mb-12"
             onClick={() => setSelectedProject(featuredProject)}
@@ -348,7 +350,7 @@ const ProjectsSection = () => {
                 {featuredProject.description}
               </p>
               <span className="inline-flex items-center gap-2 text-gold text-xs tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                Ver detalhes <ArrowRight size={14} />
+                {t.projects.viewDetails} <ArrowRight size={14} />
               </span>
             </div>
             <div className="absolute inset-0 border border-gold/0 group-hover:border-gold/30 transition-all duration-500" />
@@ -382,7 +384,7 @@ const ProjectsSection = () => {
                     {project.location}
                   </p>
                   <span className="inline-flex items-center gap-2 text-gold text-xs tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    Ver detalhes <ArrowRight size={14} />
+                    {t.projects.viewDetails} <ArrowRight size={14} />
                   </span>
                 </div>
                 <div className="absolute inset-0 border border-gold/0 group-hover:border-gold/40 transition-all duration-500" />

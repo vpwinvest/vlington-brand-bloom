@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { X, MapPin, Bed, Bath, Maximize, ArrowRight, ChevronLeft, ChevronRight, Plane, Building2, Waves, Compass } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export interface NearbyInfo {
   distanceLisbon: string;
@@ -34,12 +35,12 @@ interface ProjectModalProps {
 }
 
 const ProjectMap = ({ lat, lng, title }: { lat: number; lng: number; title: string }) => {
-  const zoom = 14;
+  const { t } = useLanguage();
   const src = `https://www.openstreetmap.org/export/embed.html?bbox=${lng - 0.015}%2C${lat - 0.01}%2C${lng + 0.015}%2C${lat + 0.01}&layer=mapnik&marker=${lat}%2C${lng}`;
 
   return (
     <div className="mb-10">
-      <h3 className="text-lg font-bold text-foreground mb-4">Localização</h3>
+      <h3 className="text-lg font-bold text-foreground mb-4">{t.modal.location}</h3>
       <div className="relative overflow-hidden border border-border" style={{ height: 260 }}>
         <iframe
           src={src}
@@ -59,7 +60,7 @@ const ProjectMap = ({ lat, lng, title }: { lat: number; lng: number; title: stri
         className="inline-flex items-center gap-2 mt-3 text-gold text-xs tracking-widest uppercase hover:text-gold-light transition-colors"
       >
         <MapPin size={12} />
-        Ver no Google Maps
+        {t.modal.viewOnMaps}
       </a>
     </div>
   );
@@ -67,6 +68,8 @@ const ProjectMap = ({ lat, lng, title }: { lat: number; lng: number; title: stri
 
 const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const { t } = useLanguage();
+
   return (
     <>
       <div
@@ -112,42 +115,42 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                 <div className="border border-border p-4 text-center">
                   <Bed size={20} className="mx-auto text-gold mb-2" />
                   <p className="text-foreground font-semibold">{project.details.bedrooms}</p>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider">Quartos</p>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider">{t.modal.bedrooms}</p>
                 </div>
               )}
               {project.details.bathrooms && (
                 <div className="border border-border p-4 text-center">
                   <Bath size={20} className="mx-auto text-gold mb-2" />
                   <p className="text-foreground font-semibold">{project.details.bathrooms}</p>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider">Casas de Banho</p>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider">{t.modal.bathrooms}</p>
                 </div>
               )}
               {project.details.area && (
                 <div className="border border-border p-4 text-center">
                   <Maximize size={20} className="mx-auto text-gold mb-2" />
                   <p className="text-foreground font-semibold">{project.details.area}</p>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider">Área</p>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider">{t.modal.area}</p>
                 </div>
               )}
               {project.details.status && (
                 <div className="border border-border p-4 text-center">
                   <ArrowRight size={20} className="mx-auto text-gold mb-2" />
                   <p className="text-foreground font-semibold">{project.details.status}</p>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider">Estado</p>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider">{t.modal.status}</p>
                 </div>
               )}
             </div>
 
             {/* Description */}
             <div className="mb-10">
-              <h3 className="text-lg font-bold text-foreground mb-4">Sobre o Projeto</h3>
+              <h3 className="text-lg font-bold text-foreground mb-4">{t.modal.aboutProject}</h3>
               <p className="text-muted-foreground leading-relaxed">{project.description}</p>
             </div>
 
             {/* Features */}
             {project.features.length > 0 && (
               <div className="mb-10">
-                <h3 className="text-lg font-bold text-foreground mb-4">Características</h3>
+                <h3 className="text-lg font-bold text-foreground mb-4">{t.modal.features}</h3>
                 <div className="grid grid-cols-2 gap-3">
                   {project.features.map((feature, i) => (
                     <div key={i} className="flex items-center gap-3">
@@ -162,53 +165,49 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             {/* Nearby / Proximity */}
             {project.nearby && (
               <div className="mb-10">
-                <h3 className="text-lg font-bold text-foreground mb-4">Proximidades</h3>
+                <h3 className="text-lg font-bold text-foreground mb-4">{t.modal.nearby}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Distance to Lisbon & Airport */}
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
                       <Building2 size={16} className="text-gold mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="text-sm font-semibold text-foreground">Distância a Lisboa</p>
+                        <p className="text-sm font-semibold text-foreground">{t.modal.distanceLisbon}</p>
                         <p className="text-sm text-muted-foreground">{project.nearby.distanceLisbon}</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <Plane size={16} className="text-gold mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="text-sm font-semibold text-foreground">Aeroporto</p>
+                        <p className="text-sm font-semibold text-foreground">{t.modal.airport}</p>
                         <p className="text-sm text-muted-foreground">{project.nearby.airport}</p>
                       </div>
                     </div>
                   </div>
 
-                  {/* Nearest Cities */}
                   <div className="flex items-start gap-3">
                     <MapPin size={16} className="text-gold mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-sm font-semibold text-foreground">Cidades Próximas</p>
+                      <p className="text-sm font-semibold text-foreground">{t.modal.nearestCities}</p>
                       {project.nearby.nearestCities.map((city, i) => (
                         <p key={i} className="text-sm text-muted-foreground">{city}</p>
                       ))}
                     </div>
                   </div>
 
-                  {/* Nearest Beaches */}
                   <div className="flex items-start gap-3">
                     <Waves size={16} className="text-gold mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-sm font-semibold text-foreground">Praias Próximas</p>
+                      <p className="text-sm font-semibold text-foreground">{t.modal.nearestBeaches}</p>
                       {project.nearby.nearestBeaches.map((beach, i) => (
                         <p key={i} className="text-sm text-muted-foreground">{beach}</p>
                       ))}
                     </div>
                   </div>
 
-                  {/* Activities */}
                   <div className="flex items-start gap-3">
                     <Compass size={16} className="text-gold mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-sm font-semibold text-foreground">Atividades & Serviços</p>
+                      <p className="text-sm font-semibold text-foreground">{t.modal.activities}</p>
                       {project.nearby.activities.map((activity, i) => (
                         <p key={i} className="text-sm text-muted-foreground">{activity}</p>
                       ))}
@@ -229,7 +228,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             {/* Gallery */}
             {project.gallery.length > 0 && (
               <div>
-                <h3 className="text-lg font-bold text-foreground mb-4">Galeria</h3>
+                <h3 className="text-lg font-bold text-foreground mb-4">{t.modal.gallery}</h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                   {project.gallery.map((img, i) => (
                     <div
@@ -256,7 +255,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                 onClick={onClose}
                 className="inline-block px-10 py-4 bg-dark text-primary-foreground text-sm tracking-widest uppercase hover:bg-gold hover:text-dark-deep transition-all duration-500"
               >
-                Solicitar Informações
+                {t.modal.requestInfo}
               </a>
             </div>
           </div>

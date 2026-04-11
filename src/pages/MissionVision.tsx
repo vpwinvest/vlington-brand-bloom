@@ -3,18 +3,21 @@ import Footer from "@/components/Footer";
 import teamBooth from "@/assets/team-booth.jpg";
 import teamMeeting from "@/assets/team-meeting.jpg";
 import ceoPhoto from "@/assets/ceo.png";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const MissionVision = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="min-h-screen">
       <Navbar />
       <section className="pt-32 pb-24 md:pt-40 md:pb-32 bg-background">
         <div className="container mx-auto px-6">
           <p className="text-gold text-xs tracking-widest-xl uppercase mb-4">
-            Quem Somos
+            {t.mission.label}
           </p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-12 leading-tight">
-            Missão &<span className="text-gradient-gold block">Visão</span>
+            {t.mission.heading1}<span className="text-gradient-gold block">{t.mission.heading2}</span>
           </h1>
 
           {/* Team Photos */}
@@ -37,16 +40,12 @@ const MissionVision = () => {
           <div className="grid md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-12 items-start">
             {/* Missão */}
             <div className="border-l border-gold/30 pl-8">
-              <h2 className="text-2xl font-bold text-foreground mb-6">Missão</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-6">{t.mission.missionTitle}</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Desenvolver projetos imobiliários de excelência que combinam
-                arquitetura contemporânea com ambientes naturais de exceção,
-                criando espaços que inspiram e elevam a qualidade de vida.
+                {t.mission.missionP1}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Cada projeto VLINGTON é pensado ao pormenor — desde a escolha do
-                terreno até aos acabamentos — para proporcionar experiências de
-                vida verdadeiramente únicas.
+                {t.mission.missionP2}
               </p>
             </div>
 
@@ -61,36 +60,26 @@ const MissionVision = () => {
                 />
               </div>
               <h3 className="text-foreground font-semibold text-sm mt-4 text-center">Vítor Pereira</h3>
-              <p className="text-gold text-xs text-center">Fundador & CEO</p>
+              <p className="text-gold text-xs text-center">{t.mission.ceoRole}</p>
             </div>
 
             {/* Visão */}
             <div className="border-l border-gold/30 pl-8">
-              <h2 className="text-2xl font-bold text-foreground mb-6">Visão</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-6">{t.mission.visionTitle}</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Ser a referência no mercado imobiliário de luxo em Portugal,
-                reconhecida pela inovação, qualidade e compromisso com a
-                excelência em cada detalhe.
+                {t.mission.visionP1}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Com a filosofia <span className="text-gold font-semibold">"Think Beyond"</span>,
-                procuramos ir além do convencional, redefinindo os padrões do
-                setor e antecipando as necessidades de quem procura o
-                extraordinário.
+                {t.mission.visionP2prefix}<span className="text-gold font-semibold">"Think Beyond"</span>{t.mission.visionP2suffix}
               </p>
             </div>
           </div>
 
           {/* Valores */}
           <div className="mt-24">
-            <h2 className="text-2xl font-bold text-foreground mb-12">Valores</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-12">{t.mission.valuesTitle}</h2>
             <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
-              {[
-                { title: "Excelência", desc: "Rigor e qualidade em cada pormenor dos nossos projetos." },
-                { title: "Inovação", desc: "Soluções criativas que desafiam o convencional." },
-                { title: "Compromisso", desc: "Dedicação total aos nossos clientes e parceiros." },
-                { title: "Sustentabilidade", desc: "Respeito pelo ambiente e pela comunidade envolvente." },
-              ].map((v) => (
+              {t.mission.values.map((v) => (
                 <div key={v.title} className="group">
                   <div className="w-12 h-[2px] bg-gold/50 mb-4 group-hover:w-20 transition-all duration-300" />
                   <h3 className="text-foreground font-semibold mb-2">{v.title}</h3>
