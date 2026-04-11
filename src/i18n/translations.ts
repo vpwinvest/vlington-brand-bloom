@@ -251,8 +251,7 @@ export const translations = {
       tennisP2: "Values that also define us as a company — discipline, resilience and teamwork — find their most authentic expression in sport.",
     },
   },
-} as const;
+};
 
 export type Lang = "pt" | "en";
-// Use a loose type so both lang objects are assignable
-export type Translations = typeof translations.pt & typeof translations.en;
+export type Translations = typeof translations.pt;
