@@ -207,7 +207,7 @@ const projects: Project[] = [
     title: "Twenty Four",
     location: "Ameal, Torres Vedras",
     type: "Habitação Unifamiliar",
-    coordinates: { lat: 39.0850, lng: -9.2700 },
+    coordinates: { lat: 39.130286, lng: -9.236567 },
     description:
       "Moradia unifamiliar T3 de arquitetura contemporânea no Ameal, combinando volumes brancos com revestimento em madeira ripada. O projeto inclui suite com closet, dois quartos, sala e cozinha open space com ampla varanda, e acabamentos em soalho flutuante, cimento afagado e deck de madeira.",
     details: {
