@@ -17,37 +17,24 @@ const MissionVision = () => {
             Missão &<span className="text-gradient-gold block">Visão</span>
           </h1>
 
-          {/* CEO */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16 items-end">
-            <div className="md:col-span-1">
-              <img
-                src={ceoPhoto}
-                alt="CEO da VLINGTON Properties"
-                className="w-full h-[400px] object-cover object-top"
-                loading="lazy"
-              />
-              <div className="mt-4">
-                <h3 className="text-foreground font-semibold text-lg">Fundador & CEO</h3>
-                <p className="text-gold text-sm">VLINGTON Properties</p>
-              </div>
-            </div>
-            <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <img
-                src={teamBooth}
-                alt="Equipa VLINGTON Properties no stand"
-                className="w-full h-[240px] object-cover"
-                loading="lazy"
-              />
-              <img
-                src={teamMeeting}
-                alt="VLINGTON Properties em reunião com cliente"
-                className="w-full h-[240px] object-cover object-top"
-                loading="lazy"
-              />
-            </div>
+          {/* Team Photos */}
+          <div className="grid md:grid-cols-2 gap-6 mb-16">
+            <img
+              src={teamBooth}
+              alt="Equipa VLINGTON Properties no stand"
+              className="w-full h-[320px] object-cover"
+              loading="lazy"
+            />
+            <img
+              src={teamMeeting}
+              alt="VLINGTON Properties em reunião com cliente"
+              className="w-full h-[320px] object-cover object-top"
+              loading="lazy"
+            />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-16">
+          {/* Missão + CEO + Visão */}
+          <div className="grid md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-12 items-start">
             {/* Missão */}
             <div className="border-l border-gold/30 pl-8">
               <h2 className="text-2xl font-bold text-foreground mb-6">Missão</h2>
@@ -61,6 +48,20 @@ const MissionVision = () => {
                 terreno até aos acabamentos — para proporcionar experiências de
                 vida verdadeiramente únicas.
               </p>
+            </div>
+
+            {/* CEO circle */}
+            <div className="flex flex-col items-center justify-start pt-2">
+              <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-2 border-gold/40 shadow-lg">
+                <img
+                  src={ceoPhoto}
+                  alt="CEO da VLINGTON Properties"
+                  className="w-full h-full object-cover object-top"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="text-foreground font-semibold text-sm mt-4 text-center">Fundador & CEO</h3>
+              <p className="text-gold text-xs text-center">VLINGTON Properties</p>
             </div>
 
             {/* Visão */}
