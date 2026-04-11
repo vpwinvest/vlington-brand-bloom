@@ -262,6 +262,13 @@ const projects: Project[] = [
       "Jardim com relva natural",
       "Garagem integrada",
     ],
+    nearby: {
+      distanceLisbon: "~45 km (via A8)",
+      airport: "Aeroporto Humberto Delgado — ~50 km",
+      nearestCities: ["Torres Vedras — 5 km", "Mafra — 22 km", "Ericeira — 18 km"],
+      nearestBeaches: ["Praia de Santa Cruz — 12 km", "Praia de Porto Novo — 10 km", "Praia Azul — 11 km"],
+      activities: ["Restaurantes típicos regionais", "Mercado municipal de Torres Vedras", "Trilhos pedestres", "Enoturismo"],
+    },
   },
   {
     id: "villa-serena",
@@ -289,6 +296,13 @@ const projects: Project[] = [
       "Kitchenette",
       "Arrumos",
     ],
+    nearby: {
+      distanceLisbon: "~50 km (via A8)",
+      airport: "Aeroporto Humberto Delgado — ~55 km",
+      nearestCities: ["Torres Vedras — 5 km", "Lourinhã — 15 km", "Mafra — 25 km"],
+      nearestBeaches: ["Praia de Santa Cruz — 10 km", "Praia de Porto Novo — 8 km", "Praia Azul — 9 km"],
+      activities: ["Surf e desportos aquáticos", "Campo Real Golf Resort — 12 km", "Castelo de Torres Vedras", "Termas dos Cucos — 8 km"],
+    },
   },
 ];
 const ProjectsSection = () => {
