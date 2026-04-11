@@ -12,6 +12,10 @@ import abyssHouse8 from "@/assets/abyss-house-8.png";
 import abyssHouse9 from "@/assets/abyss-house-9.png";
 import abyssHouse10 from "@/assets/abyss-house-10.png";
 import abyssHouse11 from "@/assets/abyss-house-11.jpg";
+import abyssHouse12 from "@/assets/abyss-house-12.png";
+import abyssHouse13 from "@/assets/abyss-house-13.png";
+import abyssHouse14 from "@/assets/abyss-house-14.png";
+import abyssHouse15 from "@/assets/abyss-house-15.png";
 import velaris5 from "@/assets/velaris-5.png";
 import velaris6 from "@/assets/velaris-6.png";
 import velaris7 from "@/assets/velaris-7.png";
@@ -139,7 +143,7 @@ const projects: Project[] = [
   },
   {
     id: "abyss-house",
-    image: abyssHouse1,
+    image: abyssHouse12,
     title: "Abyss House",
     location: "Torres Vedras, Portugal",
     type: "Habitação Unifamiliar",
@@ -151,7 +155,7 @@ const projects: Project[] = [
       area: "311 m²",
       status: "Em Projeto",
     },
-    gallery: [abyssHouse1, abyssHouse2, abyssHouse3, abyssHouse4, abyssHouse5, abyssHouse6, abyssHouse7, abyssHouse8, abyssHouse9, abyssHouse10, abyssHouse11],
+    gallery: [abyssHouse12, abyssHouse13, abyssHouse14, abyssHouse15],
     features: [
       "Lote de 694 m²",
       "3 pisos com vista sobre a cidade",
