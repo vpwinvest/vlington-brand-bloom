@@ -60,8 +60,8 @@ const MissionVision = () => {
                   loading="lazy"
                 />
               </div>
-              <h3 className="text-foreground font-semibold text-sm mt-4 text-center">Fundador & CEO</h3>
-              <p className="text-gold text-xs text-center">VLINGTON Properties</p>
+              <h3 className="text-foreground font-semibold text-sm mt-4 text-center">Vítor Pereira</h3>
+              <p className="text-gold text-xs text-center">Fundador & CEO</p>
             </div>
 
             {/* Visão */}
