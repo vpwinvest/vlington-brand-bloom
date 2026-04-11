@@ -64,7 +64,7 @@ const featuredProject: Project = {
   location: "Quinta de Fez, Turcifal",
   type: "Projeto em Destaque",
   description:
-    "Situada na prestigiada Quinta de Fez do Turcifal — que oferece campos de ténis e o famoso Campo Real para a prática de golf — a Bridge House é uma moradia de arquitetura contemporânea com um terreno privado de 1.100 m². O projeto destaca-se pelo design da ponte que é a entrada para a moradia, pela privacidade, piso radiante, lareira, piscina aquecida, jardim interior e um jardim exterior criado para proporcionar um ambiente verdadeiramente único.",
+    "Situada na prestigiada Quinta de Fez do Turcifal — que oferece campos de ténis e o famoso Campo Real para a prática de golf — a Bridge House é uma moradia de arquitetura contemporânea com um terreno privado de 1.100 m². O projeto destaca-se pelo design da ponte que é a entrada para a moradia e pela sua privacidade. Esta moradia apresenta-se com piso radiante, lareira, piscina aquecida, churrasqueira, lavandaria, alpendre, jardim interior e um jardim exterior criado para proporcionar um ambiente verdadeiramente único.",
   details: {
     bedrooms: "4",
     bathrooms: "5",
