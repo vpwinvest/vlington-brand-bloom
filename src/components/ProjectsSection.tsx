@@ -99,6 +99,7 @@ const projects: Project[] = [
     title: "Velaris Atalaya",
     location: "Atalaia, Lourinhã",
     type: "Condomínio de Luxo",
+    coordinates: { lat: 39.2480, lng: -9.3340 },
     description:
       "Condomínio habitacional de luxo na costa oeste de Portugal, pensado para nómadas digitais que valorizam conforto, liberdade e proximidade com a natureza. Com vistas impressionantes para o oceano, o empreendimento inclui 5 villas exclusivas, 5 edifícios residenciais, wellness center com spa, coworking e anfiteatro ao ar livre.",
     details: {
@@ -125,6 +126,7 @@ const projects: Project[] = [
     title: "The Atlantic Gold Residence",
     location: "Atalaia, Lourinhã",
     type: "Condomínio Residencial",
+    coordinates: { lat: 39.2480, lng: -9.3340 },
     description:
       "Condomínio residencial T3 na Atalaia, Lourinhã, com arquitetura contemporânea que combina betão, madeira e vegetação abundante. Os apartamentos dispõem de amplas varandas com vista para a piscina comum, sala e cozinha open space, e acabamentos de design em todos os espaços.",
     details: {
