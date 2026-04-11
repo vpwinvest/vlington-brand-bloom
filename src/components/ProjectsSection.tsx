@@ -265,6 +265,10 @@ const getProjectData = (lang: string) => {
 
   return { featured, list };
 };
+const ProjectsSection = () => {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const { t, lang } = useLanguage();
+  const { featured: featuredProject, list: projects } = getProjectData(lang);
 
   return (
     <>
