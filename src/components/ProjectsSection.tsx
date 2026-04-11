@@ -70,7 +70,7 @@ const featuredProject: Project = {
   title: "Bridge House",
   location: "Quinta de Fez, Turcifal",
   type: "Projeto em Destaque",
-  coordinates: { lat: 39.0833, lng: -9.2833 },
+  coordinates: { lat: 39.038278, lng: -9.272678 },
   description:
     "Situada na prestigiada Quinta de Fez do Turcifal — que oferece campos de ténis e o famoso Campo Real para a prática de golf — a Bridge House é uma moradia de arquitetura contemporânea com um terreno privado de 1.100 m². O projeto destaca-se pelo design da ponte que é a entrada para a moradia e pela sua privacidade. Esta moradia apresenta-se com piso radiante, lareira, piscina aquecida, churrasqueira, lavandaria, alpendre, jardim interior e um jardim exterior criado para proporcionar um ambiente verdadeiramente único.",
   details: {
@@ -99,7 +99,7 @@ const projects: Project[] = [
     title: "Velaris Atalaya",
     location: "Atalaia, Lourinhã",
     type: "Condomínio de Luxo",
-    coordinates: { lat: 39.2480, lng: -9.3340 },
+    coordinates: { lat: 39.234398, lng: -9.334172 },
     description:
       "Condomínio habitacional de luxo na costa oeste de Portugal, pensado para nómadas digitais que valorizam conforto, liberdade e proximidade com a natureza. Com vistas impressionantes para o oceano, o empreendimento inclui 5 villas exclusivas, 5 edifícios residenciais, wellness center com spa, coworking e anfiteatro ao ar livre.",
     details: {
@@ -126,7 +126,7 @@ const projects: Project[] = [
     title: "The Atlantic Gold Residence",
     location: "Atalaia, Lourinhã",
     type: "Condomínio Residencial",
-    coordinates: { lat: 39.2480, lng: -9.3340 },
+    coordinates: { lat: 39.236230, lng: -9.337215 },
     description:
       "Condomínio residencial T3 na Atalaia, Lourinhã, com arquitetura contemporânea que combina betão, madeira e vegetação abundante. Os apartamentos dispõem de amplas varandas com vista para a piscina comum, sala e cozinha open space, e acabamentos de design em todos os espaços.",
     details: {
@@ -153,7 +153,7 @@ const projects: Project[] = [
     title: "Abyss House",
     location: "Torres Vedras, Portugal",
     type: "Habitação Unifamiliar",
-    coordinates: { lat: 39.0910, lng: -9.2590 },
+    coordinates: { lat: 39.089989, lng: -9.266865 },
     description:
       "Uma habitação unifamiliar T4 integrada na encosta de Torres Vedras, com uma vista única e privilegiada sobre a cidade. A arquitetura contemporânea dialoga com a topografia natural do terreno, distribuída por 3 pisos que maximizam as vistas panorâmicas. Espaços generosos fluem entre interior e exterior através de amplos terraços e jardins paisagísticos.",
     details: {
@@ -180,7 +180,7 @@ const projects: Project[] = [
     title: "Mont House",
     location: "Lamas, Cadaval",
     type: "Habitação Unifamiliar",
-    coordinates: { lat: 39.2440, lng: -9.1050 },
+    coordinates: { lat: 39.211955, lng: -9.071823 },
     description:
       "Habitação unifamiliar de arquitetura contemporânea em Lamas, Cadaval, com vista panorâmica para a Serra de Montejunto. Inserida no centro da natureza com todos os serviços na proximidade, destaca-se pelas manhãs calmas, ar puro e natureza em toda a envolvente — um verdadeiro luxo no campo. O projeto combina volumes brancos com revestimento em madeira ripada e pedra natural, criando uma linguagem arquitetónica sofisticada. Amplas superfícies envidraçadas garantem uma relação fluida entre o interior e o exterior, com espelho de água na entrada principal.",
     details: {
