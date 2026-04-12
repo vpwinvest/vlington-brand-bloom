@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { X, MapPin, Bed, Bath, Maximize, ArrowRight, ChevronLeft, ChevronRight, Plane, Building2, Waves, Compass } from "lucide-react";
+import { X, MapPin, Bed, Bath, Maximize, ArrowRight, ChevronLeft, ChevronRight, Plane, Building2, Waves, Compass, Share2, Link, Check } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { toast } from "sonner";
 
 export interface NearbyInfo {
   distanceLisbon: string;

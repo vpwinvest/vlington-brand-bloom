@@ -71,6 +71,9 @@ export const translations = {
       viewOnMaps: "Ver no Google Maps",
       gallery: "Galeria",
       requestInfo: "Solicitar Informações",
+      share: "Partilhar",
+      copyLink: "Copiar link",
+      linkCopied: "Link copiado!",
     },
     // Footer
     footer: {
@@ -196,6 +199,9 @@ export const translations = {
       viewOnMaps: "View on Google Maps",
       gallery: "Gallery",
       requestInfo: "Request Information",
+      share: "Share",
+      copyLink: "Copy link",
+      linkCopied: "Link copied!",
     },
     footer: {
       missionVision: "Mission & Vision",
