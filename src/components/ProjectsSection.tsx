@@ -298,9 +298,6 @@ const ProjectsSection = () => {
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-dark-deep via-dark-deep/30 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-              <p className="text-gold text-xs tracking-widest-xl uppercase mb-3">
-                {featuredProject.type}
-              </p>
               <h3 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-2">
                 {featuredProject.title}
               </h3>
