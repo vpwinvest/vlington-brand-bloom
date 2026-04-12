@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import teamBooth from "@/assets/team-booth.jpg";
-import teamMeeting from "@/assets/team-meeting.jpg";
 import ceoPhoto from "@/assets/ceo.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -11,30 +10,26 @@ const MissionVision = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <section className="pt-32 pb-24 md:pt-40 md:pb-32 bg-background">
-        <div className="container mx-auto px-6">
+      {/* Hero */}
+      <section className="relative h-[60vh] min-h-[400px] flex items-end">
+        <img
+          src={teamBooth}
+          alt="Equipa VLINGTON Properties no stand"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark-deep via-dark-deep/60 to-dark-deep/20" />
+        <div className="relative container mx-auto px-6 pb-12 md:pb-16">
           <p className="text-gold text-xs tracking-widest-xl uppercase mb-4">
             {t.mission.label}
           </p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-12 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground leading-tight">
             {t.mission.heading1}<span className="text-gradient-gold block">{t.mission.heading2}</span>
           </h1>
+        </div>
+      </section>
 
-          {/* Team Photos */}
-          <div className="grid md:grid-cols-2 gap-6 mb-16">
-            <img
-              src={teamBooth}
-              alt="Equipa VLINGTON Properties no stand"
-              className="w-full h-[320px] object-cover"
-              loading="lazy"
-            />
-            <img
-              src={teamMeeting}
-              alt="VLINGTON Properties em reunião com cliente"
-              className="w-full h-[320px] object-cover object-top"
-              loading="lazy"
-            />
-          </div>
+      <section className="py-24 md:py-32 bg-background">
+        <div className="container mx-auto px-6">
 
           {/* Missão + CEO + Visão */}
           <div className="grid md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-12 items-start">
