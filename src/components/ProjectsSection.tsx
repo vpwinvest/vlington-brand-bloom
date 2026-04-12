@@ -56,6 +56,7 @@ import bridgeHouse21 from "@/assets/bridge-house-21.png";
 import bridgeHouse22 from "@/assets/bridge-house-22.png";
 import bridgeHouse23 from "@/assets/bridge-house-23.png";
 import bridgeHouse24 from "@/assets/bridge-house-24.png";
+import bridgeHouse25 from "@/assets/bridge-house-25.png";
 import atlanticGold1 from "@/assets/atlantic-gold-1.png";
 import atlanticGold2 from "@/assets/atlantic-gold-2.jpg";
 import atlanticGold3 from "@/assets/atlantic-gold-3.jpg";
