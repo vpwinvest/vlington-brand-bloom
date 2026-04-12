@@ -33,6 +33,20 @@ const Footer = () => {
               {t.footer.sustainability}
             </Link>
             <span className="hidden md:inline text-primary-foreground/20">|</span>
+            <Link
+              to="/politica-privacidade"
+              className="text-primary-foreground/40 hover:text-gold transition-colors duration-300 text-xs tracking-wider uppercase"
+            >
+              {t.footer.privacy}
+            </Link>
+            <span className="hidden md:inline text-primary-foreground/20">|</span>
+            <Link
+              to="/termos-condicoes"
+              className="text-primary-foreground/40 hover:text-gold transition-colors duration-300 text-xs tracking-wider uppercase"
+            >
+              {t.footer.terms}
+            </Link>
+            <span className="hidden md:inline text-primary-foreground/20">|</span>
             <p className="text-primary-foreground/40 text-xs tracking-wider">
               © {new Date().getFullYear()} VLINGTON Properties. {t.footer.rights}
             </p>
