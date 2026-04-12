@@ -134,7 +134,7 @@ const getProjectData = (lang: string) => {
       area: "350 m²",
       status: lang === "en" ? projectTranslations["bridge-house"].status : "Em Construção — Conclusão 2026",
     },
-    gallery: [bridgeHouse20, bridgeHouse21, bridgeHouse22, bridgeHouse23, bridgeHouse24],
+    gallery: [bridgeHouse20, bridgeHouse21, bridgeHouse22, bridgeHouse23, bridgeHouse24, bridgeHouse25],
     features: lang === "en" ? projectTranslations["bridge-house"].features : [
       "Terreno privado de 1.100 m²", "Piscina aquecida", "Piso radiante", "Lareira",
       "Garagem de design", "Jardim interior", "Campos de ténis e golf (Quinta de Fez)", "Acabamentos premium",
