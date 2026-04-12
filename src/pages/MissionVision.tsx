@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import teamBooth from "@/assets/team-booth.jpg";
-import teamMeeting from "@/assets/team-meeting.jpg";
 import ceoPhoto from "@/assets/ceo.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
