@@ -21,11 +21,22 @@ const ContactSection = () => {
 
     setSending(true);
     try {
+      const id = crypto.randomUUID();
       const { error } = await supabase
         .from("contact_submissions")
-        .insert({ name: name.trim(), email: email.trim(), message: message.trim() });
+        .insert({ id, name: name.trim(), email: email.trim(), message: message.trim() });
 
       if (error) throw error;
+
+      // Send notification email to geral@vlington.com
+      await supabase.functions.invoke('send-transactional-email', {
+        body: {
+          templateName: 'contact-form-notification',
+          recipientEmail: 'geral@vlington.com',
+          idempotencyKey: `contact-notify-${id}`,
+          templateData: { name: name.trim(), email: email.trim(), message: message.trim() },
+        },
+      });
 
       toast.success(t.contact.success);
       setName("");

@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 import Index from "./pages/Index.tsx";
+import Unsubscribe from "./pages/Unsubscribe.tsx";
 import SocialResponsibility from "./pages/SocialResponsibility.tsx";
 import MissionVision from "./pages/MissionVision.tsx";
 import Sustainability from "./pages/Sustainability.tsx";
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/responsabilidade-social" element={<SocialResponsibility />} />
             <Route path="/missao-visao" element={<MissionVision />} />
             <Route path="/sustentabilidade" element={<Sustainability />} />
+            <Route path="/unsubscribe" element={<Unsubscribe />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
