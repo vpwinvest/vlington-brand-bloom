@@ -19,7 +19,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename="/vlington-brand-bloom">
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
