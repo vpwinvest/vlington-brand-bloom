@@ -80,6 +80,8 @@ export const translations = {
       missionVision: "Missão & Visão",
       socialResponsibility: "Responsabilidade Social & Patrocínios",
       sustainability: "Sustentabilidade",
+      privacy: "Privacidade & Cookies",
+      terms: "Termos e Condições",
       rights: "Todos os direitos reservados.",
     },
     // Mission & Vision
@@ -207,6 +209,8 @@ export const translations = {
       missionVision: "Mission & Vision",
       socialResponsibility: "Social Responsibility & Sponsorships",
       sustainability: "Sustainability",
+      privacy: "Privacy & Cookies",
+      terms: "Terms & Conditions",
       rights: "All rights reserved.",
     },
     mission: {
