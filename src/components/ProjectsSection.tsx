@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import property1 from "@/assets/property-1.jpg";
@@ -276,6 +276,19 @@ const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const { t, lang } = useLanguage();
   const { featured: featuredProject, list: projects } = getProjectData(lang);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const projectId = params.get('project');
+    if (projectId) {
+      const allProjects = [featuredProject, ...projects];
+      const found = allProjects.find(p => p.id === projectId);
+      if (found) {
+        setSelectedProject(found);
+        document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
 
   return (
     <>
