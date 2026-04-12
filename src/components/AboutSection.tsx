@@ -1,4 +1,4 @@
-import aboutBg from "@/assets/about-bg.jpg";
+import aboutBg from "@/assets/about-hero.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const AboutSection = () => {
