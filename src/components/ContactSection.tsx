@@ -62,7 +62,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-foreground font-medium text-sm">{t.contact.address}</p>
-                  <p className="text-muted-foreground text-sm">Lisboa, Portugal</p>
+                  <p className="text-muted-foreground text-sm">Torres Vedras, Lisboa, Portugal</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
