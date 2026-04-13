@@ -135,7 +135,15 @@ const Lifestyle = () => {
                 </div>
               );
             })}
-          </div>
+        </div>
+      </section>
+
+      {/* Gastronomy */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative order-2 lg:order-1">
+              <img src={lifestyleGastro} alt="Gastronomia do Oeste" className="w-full rounded-sm object-cover aspect-[4/3]" loading="lazy" />
               <div className="absolute bottom-4 left-4 bg-dark-deep/80 backdrop-blur-sm px-4 py-2 rounded-sm">
                 <p className="text-primary-foreground/70 text-xs tracking-wider">Gastronomia · Região Oeste</p>
               </div>
