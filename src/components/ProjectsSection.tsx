@@ -17,6 +17,7 @@ import abyssHouse12 from "@/assets/abyss-house-12.png";
 import abyssHouse13 from "@/assets/abyss-house-13.png";
 import abyssHouse14 from "@/assets/abyss-house-14.png";
 import abyssHouse15 from "@/assets/abyss-house-15.png";
+import abyssHouse16 from "@/assets/abyss-house-16.png";
 import abyssExterior1 from "@/assets/abyss-exterior1.png";
 import abyssExterior2 from "@/assets/abyss-exterior2.png";
 import abyssBathroom from "@/assets/abyss-bathroom.png";
@@ -201,7 +202,7 @@ const getProjectData = (lang: string) => {
       coordinates: { lat: 39.089989, lng: -9.266865 },
       description: lang === "en" ? projectTranslations["abyss-house"].description : "Uma habitação unifamiliar T4 integrada na encosta de Torres Vedras, com uma vista única e privilegiada sobre a cidade. A arquitetura contemporânea dialoga com a topografia natural do terreno, distribuída por 3 pisos que maximizam as vistas panorâmicas. Espaços generosos fluem entre interior e exterior através de amplos terraços e jardins paisagísticos.",
       details: { bedrooms: "4", bathrooms: "3", area: "311 m²", status: lang === "en" ? projectTranslations["abyss-house"].status : "Em Projeto" },
-      gallery: [abyssExterior1, abyssExterior2, abyssHouse12, abyssHouse13, abyssHouse14, abyssRooftop, abyssBathroom, abyssHouse15],
+      gallery: [abyssExterior1, abyssExterior2, abyssHouse16, abyssHouse12, abyssHouse13, abyssHouse14, abyssHouse15, abyssRooftop, abyssBathroom],
       features: lang === "en" ? projectTranslations["abyss-house"].features : ["Lote de 694 m²", "3 pisos com vista sobre a cidade", "Garagem para 3 viaturas", "Terraços e alpendres (270 m²)", "Cozinha open space", "Suite com closet", "Jardim paisagístico", "Acabamentos em betão e pedra natural"],
       nearby: {
         distanceLisbon: "~50 km (via A8)",
