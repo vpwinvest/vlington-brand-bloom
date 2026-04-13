@@ -26,8 +26,9 @@ import actEquitacao from "@/assets/activities/equitacao-portonovo.jpg";
 import actHiking from "@/assets/activities/hiking-montejunto.jpg";
 import actKarting from "@/assets/activities/karting.jpg";
 import actFutebol from "@/assets/activities/futebol-torreense.jpg";
+import actCorrida from "@/assets/activities/corrida-costa.jpg";
 
-const activityImages = [actSurf, actBodyboard, actPesca, actGolf, actTenis, actCiclismo, actSup, actEquitacao, actHiking, actKarting, actFutebol];
+const activityImages = [actSurf, actBodyboard, actPesca, actGolf, actTenis, actCiclismo, actSup, actEquitacao, actHiking, actKarting, actFutebol, actCorrida];
 const climateIcons = [Sun, Thermometer, CloudSun, Snowflake];
 
 const Lifestyle = () => {
