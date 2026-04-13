@@ -45,9 +45,12 @@ const Lifestyle = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-dark-deep via-dark-deep/50 to-transparent" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
           <span className="text-gold text-xs tracking-[0.3em] uppercase mb-6 font-light">{t.lifestyle.label}</span>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-light text-primary-foreground max-w-4xl leading-tight mb-6">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-light text-primary-foreground max-w-4xl leading-tight mb-4">
             {t.lifestyle.heroHeading}
           </h1>
+          <h2 className="text-lg md:text-2xl font-light text-primary-foreground/70 tracking-wide mb-6">
+            {t.lifestyle.heroH2}
+          </h2>
           <p className="text-primary-foreground/70 text-lg md:text-xl font-light">{t.lifestyle.heroSub}</p>
         </div>
       </section>
