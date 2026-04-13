@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import {
   Sun, Waves, UtensilsCrossed, Landmark, MapPin, ArrowRight,
   Wind, Thermometer, CloudSun, Snowflake,
-  Fish, Bike, Horse, Mountain, Flag, Sailboat, Trophy, CircleDot
+  Fish, Bike, Footprints, Mountain, Flag, Sailboat, Trophy, CircleDot
 } from "lucide-react";
 
 import lifestyleHero from "@/assets/lifestyle-hero.jpg";
