@@ -97,9 +97,9 @@ const Lifestyle = () => {
               </div>
             </div>
             <div className="relative">
-              <img src={lifestyleActivities} alt="Ténis & Padel" className="w-full h-full object-cover rounded-sm aspect-[16/9] md:aspect-auto" loading="lazy" />
+              <img src={lifestyleActivities} alt="Ténis" className="w-full h-full object-cover rounded-sm aspect-[16/9] md:aspect-auto" loading="lazy" />
               <div className="absolute bottom-4 left-4 bg-dark-deep/80 backdrop-blur-sm px-4 py-2 rounded-sm">
-                <p className="text-primary-foreground/70 text-xs tracking-wider">Ténis & Padel</p>
+                <p className="text-primary-foreground/70 text-xs tracking-wider">Ténis</p>
               </div>
             </div>
           </div>
