@@ -129,7 +129,7 @@ const Lifestyle = () => {
             <div className="relative order-2 lg:order-1">
               <img src={lifestyleGastro} alt="Gastronomia do Oeste" className="w-full rounded-sm object-cover aspect-[4/3]" loading="lazy" />
               <div className="absolute bottom-4 left-4 bg-dark-deep/80 backdrop-blur-sm px-4 py-2 rounded-sm">
-                <p className="text-primary-foreground/70 text-xs tracking-wider">Vinhas de Torres Vedras</p>
+                <p className="text-primary-foreground/70 text-xs tracking-wider">Gastronomia · Região Oeste</p>
               </div>
             </div>
             <div className="order-1 lg:order-2">
