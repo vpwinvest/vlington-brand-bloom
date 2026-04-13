@@ -14,6 +14,7 @@ import lifestyleGastro from "@/assets/lifestyle-gastro.jpg";
 import lifestyleCulture from "@/assets/lifestyle-culture.jpg";
 import lifestyleBeach from "@/assets/lifestyle-beach.jpg";
 import lifestyleActivities from "@/assets/lifestyle-activities.jpg";
+import lifestyleEducation from "@/assets/lifestyle-education.jpg";
 
 import actSurf from "@/assets/activities/surf-ericeira.jpg";
 import actBodyboard from "@/assets/activities/bodyboard-santacruz.jpg";
@@ -187,10 +188,15 @@ const Lifestyle = () => {
       {/* Education */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-14">
-            <span className="text-gold text-xs tracking-[0.3em] uppercase mb-4 block font-light">{t.lifestyle.educationLabel}</span>
-            <h2 className="text-2xl md:text-4xl font-light text-primary-foreground mb-6">{t.lifestyle.educationHeading}</h2>
-            <p className="text-primary-foreground/60 text-sm md:text-base max-w-2xl mx-auto font-light">{t.lifestyle.educationIntro}</p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-14">
+            <div>
+              <span className="text-gold text-xs tracking-[0.3em] uppercase mb-4 block font-light">{t.lifestyle.educationLabel}</span>
+              <h2 className="text-2xl md:text-4xl font-light text-primary-foreground mb-6">{t.lifestyle.educationHeading}</h2>
+              <p className="text-primary-foreground/60 text-sm md:text-base font-light leading-relaxed">{t.lifestyle.educationIntro}</p>
+            </div>
+            <div className="relative">
+              <img src={lifestyleEducation} alt="Education" className="w-full rounded-sm object-cover aspect-[4/3]" loading="lazy" />
+            </div>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {t.lifestyle.educationItems.map((item, i) => (
