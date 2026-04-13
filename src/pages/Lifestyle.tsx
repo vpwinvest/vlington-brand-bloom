@@ -8,26 +8,26 @@ import {
   Thermometer, CloudSun, Snowflake, GraduationCap,
 } from "lucide-react";
 
-import lifestyleHero from "@/assets/lifestyle-hero.jpg";
-import lifestyleSurf from "@/assets/lifestyle-surf.jpg";
-import lifestyleGastro from "@/assets/lifestyle-gastro.jpg";
-import lifestyleCulture from "@/assets/lifestyle-culture.jpg";
-import lifestyleBeach from "@/assets/lifestyle-beach.jpg";
-import lifestyleActivities from "@/assets/lifestyle-activities.jpg";
-import lifestyleEducation from "@/assets/lifestyle-education.jpg";
+import lifestyleHero from "@/assets/portugal-west-coast-lifestyle.jpg";
+import lifestyleSurf from "@/assets/ericeira-surf-lifestyle.jpg";
+import lifestyleGastro from "@/assets/portugal-gastronomy-wine.jpg";
+import lifestyleCulture from "@/assets/portugal-culture-heritage.jpg";
+import lifestyleBeach from "@/assets/portugal-coastal-living-beach.jpg";
+import lifestyleActivities from "@/assets/portugal-outdoor-activities.jpg";
+import lifestyleEducation from "@/assets/international-schools-portugal.jpg";
 
-import actSurf from "@/assets/activities/surf-ericeira.jpg";
-import actBodyboard from "@/assets/activities/bodyboard-santacruz.jpg";
-import actPesca from "@/assets/activities/pesca-peniche.jpg";
-import actGolf from "@/assets/activities/golf-praia-del-rey.jpg";
-import actTenis from "@/assets/activities/tenis-padel.jpg";
-import actCiclismo from "@/assets/activities/ciclismo.jpg";
-import actSup from "@/assets/activities/sup.jpg";
-import actEquitacao from "@/assets/activities/equitacao-portonovo.jpg";
-import actHiking from "@/assets/activities/hiking-montejunto.jpg";
-import actKarting from "@/assets/activities/karting.jpg";
-import actFutebol from "@/assets/activities/futebol-torreense.jpg";
-import actCorrida from "@/assets/activities/corrida-costa.jpg";
+import actSurf from "@/assets/activities/surf-ericeira-world-reserve.jpg";
+import actBodyboard from "@/assets/activities/bodyboard-santa-cruz-portugal.jpg";
+import actPesca from "@/assets/activities/fishing-peniche-portugal.jpg";
+import actGolf from "@/assets/activities/golf-praia-del-rey-portugal.jpg";
+import actTenis from "@/assets/activities/tennis-padel-portugal.jpg";
+import actCiclismo from "@/assets/activities/cycling-west-coast-portugal.jpg";
+import actSup from "@/assets/activities/stand-up-paddle-portugal.jpg";
+import actEquitacao from "@/assets/activities/horse-riding-porto-novo-portugal.jpg";
+import actHiking from "@/assets/activities/hiking-serra-montejunto-portugal.jpg";
+import actKarting from "@/assets/activities/karting-bombarral-portugal.jpg";
+import actFutebol from "@/assets/activities/football-torreense-portugal.jpg";
+import actCorrida from "@/assets/activities/trail-running-coast-portugal.jpg";
 
 const activityImages = [actSurf, actBodyboard, actPesca, actGolf, actTenis, actCiclismo, actSup, actEquitacao, actHiking, actKarting, actFutebol, actCorrida];
 const climateIcons = [Sun, Thermometer, CloudSun, Snowflake];
