@@ -12,10 +12,10 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="hero" className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+      <section id="hero" className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden" aria-label="Casas de luxo em Portugal — Luxury homes in Portugal">
         <img
           src={heroBg}
-          alt="Luxury villa with infinity pool at sunset"
+          alt="Casa de luxo em Portugal com piscina infinity e vista mar — Luxury sea view villa in Portugal near Lisbon"
           className="absolute inset-0 w-full h-full object-cover"
           width={1920}
           height={1080}
