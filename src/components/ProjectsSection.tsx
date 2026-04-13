@@ -188,7 +188,7 @@ const getProjectData = (lang: string) => {
         distanceLisbon: "~68 km (via A8)",
         airport: "Humberto Delgado Airport — ~75 km",
         nearestCities: ["Lourinhã — 5 km", "Peniche — 20 km", "Torres Vedras — 25 km"],
-        nearestBeaches: ["Praia do Porto das Barcas — 3 km", "Praia da Areia Branca — 5 km", "Praia de Valmitão — 2 km"],
+        nearestBeaches: ["Praia do Porto das Barcas — 3 km", "Praia da Areia Branca — 5 km", "Praia de Valmitão — 2 km", "Praia da Peralta — 4 km"],
         activities: lang === "en" ? projectTranslations["atlantic-gold"].activities : ["Surf e bodyboard", "Museu da Lourinhã (dinossauros)", "Mergulho e pesca desportiva", "Passeios de barco"],
       },
     },
