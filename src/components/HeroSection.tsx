@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-dark-overlay" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <h1 className="sr-only">VLINGTON Properties — Casas de Luxo em Portugal junto ao Mar | Luxury Homes in Portugal near Lisbon, Ericeira, Nazaré, Torres Vedras</h1>
+          <h1 className="sr-only">VLINGTON Properties — Luxury Real Estate Portugal | Villas near Lisbon | Houses for Sale Ericeira | Coastal Living Portugal | Casas de Luxo junto ao Mar | Torres Vedras, Nazaré | Real Estate Investment Portugal | Family Relocation & International Schools</h1>
           <div
             className="animate-fade-in-up mb-12"
             style={{ animationDelay: "0.3s", opacity: 0 }}
