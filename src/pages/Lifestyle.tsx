@@ -188,7 +188,8 @@ const Lifestyle = () => {
           <h2 className="text-2xl md:text-4xl font-light text-primary-foreground mb-4">{t.lifestyle.closingHeading}</h2>
           <p className="text-primary-foreground/60 text-sm md:text-base max-w-xl mx-auto mb-10 font-light">{t.lifestyle.closingText}</p>
           <Link
-            to="/#projects"
+            to="/"
+            onClick={() => setTimeout(() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }), 100)}
             className="group inline-flex items-center gap-3 border border-gold/40 text-gold px-8 py-3 text-sm tracking-widest uppercase hover:bg-gold/10 transition-all duration-500"
           >
             {t.lifestyle.closingCta}
