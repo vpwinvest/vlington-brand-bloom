@@ -12,10 +12,10 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="hero" className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+      <section id="hero" className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden" aria-label="Casas de luxo em Portugal — Luxury homes in Portugal">
         <img
           src={heroBg}
-          alt="Luxury villa with infinity pool at sunset"
+          alt="Casa de luxo em Portugal com piscina infinity e vista mar — Luxury sea view villa in Portugal near Lisbon"
           className="absolute inset-0 w-full h-full object-cover"
           width={1920}
           height={1080}
@@ -23,13 +23,14 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-dark-overlay" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+          <h1 className="sr-only">VLINGTON Properties — Casas de Luxo em Portugal junto ao Mar | Luxury Homes in Portugal near Lisbon, Ericeira, Nazaré, Torres Vedras</h1>
           <div
             className="animate-fade-in-up mb-12"
             style={{ animationDelay: "0.3s", opacity: 0 }}
           >
             <img
               src={logoNegative}
-              alt="VLINGTON Properties - Think Beyond"
+              alt="VLINGTON Properties - Think Beyond - Imóveis de luxo em Portugal"
               className="mx-auto h-24 md:h-32 lg:h-40 w-auto"
             />
           </div>

@@ -5,7 +5,7 @@ const AboutSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="py-24 md:py-32 bg-background">
+    <section id="about" className="py-24 md:py-32 bg-background" aria-label="Sobre VLINGTON Properties — Imóveis de luxo em Portugal">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Text */}
@@ -43,7 +43,7 @@ const AboutSection = () => {
           <div className="relative">
             <img
               src={aboutBg}
-              alt="Modern luxury interior"
+              alt="Interior de casa de luxo em Portugal — Arquitetura contemporânea VLINGTON Properties"
               className="w-full h-[500px] object-cover"
               loading="lazy"
             />
