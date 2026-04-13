@@ -17,6 +17,7 @@ import abyssHouse12 from "@/assets/abyss-house-12.png";
 import abyssHouse13 from "@/assets/abyss-house-13.png";
 import abyssHouse14 from "@/assets/abyss-house-14.png";
 import abyssHouse15 from "@/assets/abyss-house-15.png";
+import abyssHouse16 from "@/assets/abyss-house-16.png";
 import abyssExterior1 from "@/assets/abyss-exterior1.png";
 import abyssExterior2 from "@/assets/abyss-exterior2.png";
 import abyssBathroom from "@/assets/abyss-bathroom.png";
