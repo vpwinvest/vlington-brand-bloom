@@ -173,9 +173,9 @@ const Lifestyle = () => {
               </div>
             </div>
             <div className="relative">
-              <img src={lifestyleCulture} alt="Família de bicicleta na Costa de Prata" className="w-full rounded-sm object-cover aspect-[4/3]" loading="lazy" />
+              <img src={lifestyleCulture} alt="Carnaval de Torres Vedras" className="w-full rounded-sm object-cover aspect-[4/3]" loading="lazy" />
               <div className="absolute bottom-4 left-4 bg-dark-deep/80 backdrop-blur-sm px-4 py-2 rounded-sm">
-                <p className="text-primary-foreground/70 text-xs tracking-wider">Natureza · Costa de Prata</p>
+                <p className="text-primary-foreground/70 text-xs tracking-wider">Carnaval · Torres Vedras</p>
               </div>
             </div>
           </div>
