@@ -115,30 +115,27 @@ const Lifestyle = () => {
             </div>
           </div>
 
-          {/* Activity items grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Activity image cards grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {t.lifestyle.activitiesItems.map((item, i) => {
-              const Icon = activityIcons[i] || Waves;
+              const img = activityImages[i];
               return (
-                <div key={i} className="flex gap-4 items-start p-4 border border-primary-foreground/5 rounded-sm hover:border-gold/20 transition-colors">
-                  <div className="p-2 rounded-lg bg-gold/10 text-gold shrink-0"><Icon className="h-5 w-5" /></div>
-                  <div>
-                    <h3 className="text-primary-foreground text-sm font-medium mb-1">{item.title}</h3>
-                    <p className="text-primary-foreground/50 text-xs leading-relaxed">{item.desc}</p>
+                <div key={i} className="group relative overflow-hidden rounded-sm aspect-[3/2]">
+                  <img
+                    src={img}
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark-deep/80 via-dark-deep/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-primary-foreground text-sm font-medium">{item.title}</h3>
+                    <p className="text-gold text-xs tracking-wider">{(item as any).location}</p>
                   </div>
                 </div>
               );
             })}
           </div>
-        </div>
-      </section>
-
-      {/* Gastronomy */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative order-2 lg:order-1">
-              <img src={lifestyleGastro} alt="Gastronomia do Oeste" className="w-full rounded-sm object-cover aspect-[4/3]" loading="lazy" />
               <div className="absolute bottom-4 left-4 bg-dark-deep/80 backdrop-blur-sm px-4 py-2 rounded-sm">
                 <p className="text-primary-foreground/70 text-xs tracking-wider">Gastronomia · Região Oeste</p>
               </div>
