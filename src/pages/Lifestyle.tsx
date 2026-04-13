@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import {
   Sun, Waves, UtensilsCrossed, Landmark, MapPin, ArrowRight,
   Wind, Thermometer, CloudSun, Snowflake,
-  Fish, Bike, Footprints, Mountain, Flag, Sailboat, Trophy, CircleDot
+  Fish, Bike, Footprints, Mountain, Flag, Sailboat, Trophy, CircleDot, Dribbble
 } from "lucide-react";
 
 import lifestyleHero from "@/assets/lifestyle-hero.jpg";
@@ -16,7 +16,7 @@ import lifestyleCulture from "@/assets/lifestyle-culture.jpg";
 import lifestyleBeach from "@/assets/lifestyle-beach.jpg";
 import lifestyleActivities from "@/assets/lifestyle-activities.jpg";
 
-const activityIcons = [Waves, Fish, Trophy, CircleDot, Bike, Sailboat, Footprints, Mountain, Flag];
+const activityIcons = [Waves, Fish, Trophy, CircleDot, Bike, Sailboat, Footprints, Mountain, Flag, Dribbble];
 const climateIcons = [Sun, Thermometer, CloudSun, Snowflake];
 
 const Lifestyle = () => {
@@ -73,7 +73,7 @@ const Lifestyle = () => {
             <div className="relative">
               <img src={lifestyleBeach} alt="Praias do Oeste" className="w-full rounded-sm object-cover aspect-[4/3]" loading="lazy" />
               <div className="absolute bottom-4 left-4 bg-dark-deep/80 backdrop-blur-sm px-4 py-2 rounded-sm">
-                <p className="text-primary-foreground/70 text-xs tracking-wider">Areia Branca · Lourinhã</p>
+                <p className="text-primary-foreground/70 text-xs tracking-wider">Ericeira</p>
               </div>
             </div>
           </div>
@@ -97,9 +97,9 @@ const Lifestyle = () => {
               </div>
             </div>
             <div className="relative">
-              <img src={lifestyleActivities} alt="Atividades" className="w-full h-full object-cover rounded-sm aspect-[16/9] md:aspect-auto" loading="lazy" />
+              <img src={lifestyleActivities} alt="Ténis & Padel" className="w-full h-full object-cover rounded-sm aspect-[16/9] md:aspect-auto" loading="lazy" />
               <div className="absolute bottom-4 left-4 bg-dark-deep/80 backdrop-blur-sm px-4 py-2 rounded-sm">
-                <p className="text-primary-foreground/70 text-xs tracking-wider">Equitação · Lourinhã</p>
+                <p className="text-primary-foreground/70 text-xs tracking-wider">Ténis & Padel</p>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@ const Lifestyle = () => {
             <div className="relative order-2 lg:order-1">
               <img src={lifestyleGastro} alt="Gastronomia do Oeste" className="w-full rounded-sm object-cover aspect-[4/3]" loading="lazy" />
               <div className="absolute bottom-4 left-4 bg-dark-deep/80 backdrop-blur-sm px-4 py-2 rounded-sm">
-                <p className="text-primary-foreground/70 text-xs tracking-wider">Torres Vedras · Região vinícola</p>
+                <p className="text-primary-foreground/70 text-xs tracking-wider">Vinhas de Torres Vedras</p>
               </div>
             </div>
             <div className="order-1 lg:order-2">
