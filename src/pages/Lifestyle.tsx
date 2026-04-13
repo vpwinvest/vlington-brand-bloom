@@ -175,7 +175,7 @@ const Lifestyle = () => {
             <div className="relative">
               <img src={lifestyleCulture} alt="Óbidos" className="w-full rounded-sm object-cover aspect-[4/3]" loading="lazy" />
               <div className="absolute bottom-4 left-4 bg-dark-deep/80 backdrop-blur-sm px-4 py-2 rounded-sm">
-                <p className="text-primary-foreground/70 text-xs tracking-wider">Óbidos · Vila medieval</p>
+                <p className="text-primary-foreground/70 text-xs tracking-wider">Óbidos · Festival do Chocolate</p>
               </div>
             </div>
           </div>
