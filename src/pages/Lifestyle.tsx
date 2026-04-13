@@ -15,6 +15,7 @@ import lifestyleGastro from "@/assets/lifestyle-gastro.jpg";
 import lifestyleCulture from "@/assets/lifestyle-culture.jpg";
 import lifestyleBeach from "@/assets/lifestyle-beach.jpg";
 import lifestyleActivities from "@/assets/lifestyle-activities.jpg";
+import lifestyleWow from "@/assets/lifestyle-wow.jpg";
 
 const activityIcons = [Waves, Fish, Trophy, CircleDot, Bike, Sailboat, Footprints, Mountain, Flag, Dribbble];
 const climateIcons = [Sun, Thermometer, CloudSun, Snowflake];
@@ -182,15 +183,26 @@ const Lifestyle = () => {
         </div>
       </section>
 
+      {/* WOW Moment */}
+      <section className="relative h-[80vh] min-h-[500px]">
+        <img src={lifestyleWow} alt="Lifestyle" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
+        <div className="absolute inset-0 bg-dark-deep/40" />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-light text-primary-foreground text-center px-6 tracking-wide italic">
+            {t.lifestyle.wowHeading}
+          </h2>
+        </div>
+      </section>
+
       {/* Closing CTA */}
       <section className="py-24 md:py-32">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-4xl font-light text-primary-foreground mb-4">{t.lifestyle.closingHeading}</h2>
           <p className="text-primary-foreground/60 text-sm md:text-base max-w-xl mx-auto mb-10 font-light">{t.lifestyle.closingText}</p>
           <Link
-            to="/"
+            to="/#projects"
             onClick={() => setTimeout(() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }), 100)}
-            className="group inline-flex items-center gap-3 border border-gold/40 text-gold px-8 py-3 text-sm tracking-widest uppercase hover:bg-gold/10 transition-all duration-500"
+            className="group inline-flex items-center gap-3 bg-gold text-dark-deep px-10 py-4 text-sm tracking-widest uppercase hover:bg-gold/90 transition-all duration-500 font-medium"
           >
             {t.lifestyle.closingCta}
             <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
