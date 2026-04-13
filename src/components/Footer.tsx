@@ -13,6 +13,13 @@ const Footer = () => {
           <img src={logoSymbol} alt="VLINGTON" className="h-6 w-auto opacity-60" />
           <div className="flex flex-col md:flex-row items-center gap-4">
             <Link
+              to="/lifestyle"
+              className="text-primary-foreground/40 hover:text-gold transition-colors duration-300 text-xs tracking-wider uppercase"
+            >
+              {t.footer.lifestyle}
+            </Link>
+            <span className="hidden md:inline text-primary-foreground/20">|</span>
+            <Link
               to="/missao-visao"
               className="text-primary-foreground/40 hover:text-gold transition-colors duration-300 text-xs tracking-wider uppercase"
             >
