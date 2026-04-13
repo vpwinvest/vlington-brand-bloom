@@ -151,6 +151,7 @@ const getProjectData = (lang: string) => {
       nearestCities: ["Torres Vedras — 8 km", "Mafra — 20 km", "Ericeira — 15 km"],
       nearestBeaches: ["Praia de Santa Cruz — 15 km", "Praia da Foz do Lizandro — 18 km", "Praia de Porto Novo — 12 km"],
       activities: lang === "en" ? projectTranslations["bridge-house"].activities : ["Campo Real Golf Resort", "Campos de ténis (Quinta de Fez)", "Trilhos pedestres", "Enoturismo na região"],
+      education: lang === "en" ? "EITV (International School of Torres Vedras) — ~10 km" : "EITV (Escola Internacional de Torres Vedras) — ~10 km",
     },
   };
 
@@ -172,6 +173,7 @@ const getProjectData = (lang: string) => {
         nearestCities: ["Lourinhã — 5 km", "Peniche — 20 km", "Torres Vedras — 25 km"],
         nearestBeaches: ["Praia do Porto das Barcas — 3 km", "Praia da Areia Branca — 5 km", "Praia de Paimogo — 4 km"],
         activities: lang === "en" ? projectTranslations["velaris-atalaya"].activities : ["Surf e bodyboard", "Museu da Lourinhã (dinossauros)", "Rota dos dinossauros", "Mergulho e pesca desportiva"],
+        education: lang === "en" ? "EITV (International School of Torres Vedras) — ~25 km" : "EITV (Escola Internacional de Torres Vedras) — ~25 km",
       },
     },
     {
@@ -191,6 +193,7 @@ const getProjectData = (lang: string) => {
         nearestCities: ["Lourinhã — 5 km", "Peniche — 20 km", "Torres Vedras — 25 km"],
         nearestBeaches: ["Praia do Porto das Barcas — 3 km", "Praia da Areia Branca — 5 km", "Praia de Valmitão — 2 km", "Praia da Peralta — 4 km"],
         activities: lang === "en" ? projectTranslations["atlantic-gold"].activities : ["Surf e bodyboard", "Museu da Lourinhã (dinossauros)", "Mergulho e pesca desportiva", "Passeios de barco"],
+        education: lang === "en" ? "EITV (International School of Torres Vedras) — ~25 km" : "EITV (Escola Internacional de Torres Vedras) — ~25 km",
       },
     },
     {
@@ -210,6 +213,7 @@ const getProjectData = (lang: string) => {
         nearestCities: ["Torres Vedras (centre) — 3 km", "Mafra — 25 km", "Ericeira — 30 km"],
         nearestBeaches: ["Praia de Santa Cruz — 15 km", "Praia de Porto Novo — 12 km", "Praia Azul — 14 km"],
         activities: lang === "en" ? projectTranslations["abyss-house"].activities : ["Mercado municipal de Torres Vedras", "Castelo de Torres Vedras", "Trilhos pedestres", "Festas do concelho"],
+        education: lang === "en" ? "EITV (International School of Torres Vedras) — ~3 km" : "EITV (Escola Internacional de Torres Vedras) — ~3 km",
       },
     },
     {
@@ -229,6 +233,7 @@ const getProjectData = (lang: string) => {
         nearestCities: ["Cadaval — 5 km", "Caldas da Rainha — 25 km", "Alenquer — 20 km"],
         nearestBeaches: ["Praia da Foz do Arelho — 30 km", "Praia de São Martinho do Porto — 35 km"],
         activities: lang === "en" ? projectTranslations["mont-house"].activities : ["Serra de Montejunto (Paisagem Protegida)", "Trilhos pedestres e BTT", "Enoturismo e quintas vinícolas", "Parapente na Serra"],
+        education: lang === "en" ? "EITV (International School of Torres Vedras) — ~30 km" : "EITV (Escola Internacional de Torres Vedras) — ~30 km",
       },
     },
     {
@@ -248,6 +253,7 @@ const getProjectData = (lang: string) => {
         nearestCities: ["Torres Vedras — 5 km", "Mafra — 22 km", "Ericeira — 18 km"],
         nearestBeaches: ["Praia de Santa Cruz — 12 km", "Praia de Porto Novo — 10 km", "Praia Azul — 11 km"],
         activities: lang === "en" ? projectTranslations["twenty-four"].activities : ["Restaurantes típicos regionais", "Mercado municipal de Torres Vedras", "Trilhos pedestres", "Enoturismo"],
+        education: lang === "en" ? "EITV (International School of Torres Vedras) — ~5 km" : "EITV (Escola Internacional de Torres Vedras) — ~5 km",
       },
     },
     {
@@ -267,6 +273,7 @@ const getProjectData = (lang: string) => {
         nearestCities: ["Torres Vedras — 5 km", "Lourinhã — 15 km", "Ericeira — 25 km"],
         nearestBeaches: ["Praia de Santa Cruz — 10 km", "Praia de Porto Novo — 8 km", "Praia Azul — 9 km"],
         activities: lang === "en" ? projectTranslations["villa-serena"].activities : ["Surf e desportos aquáticos", "Campo Real Golf Resort — 12 km", "Castelo de Torres Vedras", "Termas dos Cucos — 8 km"],
+        education: lang === "en" ? "EITV (International School of Torres Vedras) — ~5 km" : "EITV (Escola Internacional de Torres Vedras) — ~5 km",
       },
     },
   ];
