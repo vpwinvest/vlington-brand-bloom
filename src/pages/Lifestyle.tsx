@@ -16,7 +16,7 @@ import lifestyleCulture from "@/assets/lifestyle-culture.jpg";
 import lifestyleBeach from "@/assets/lifestyle-beach.jpg";
 import lifestyleActivities from "@/assets/lifestyle-activities.jpg";
 
-const activityIcons = [Waves, Fish, Trophy, CircleDot, Bike, Sailboat, Horse, Mountain, Flag];
+const activityIcons = [Waves, Fish, Trophy, CircleDot, Bike, Sailboat, Footprints, Mountain, Flag];
 const climateIcons = [Sun, Thermometer, CloudSun, Snowflake];
 
 const Lifestyle = () => {
