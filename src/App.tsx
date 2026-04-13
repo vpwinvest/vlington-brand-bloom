@@ -10,6 +10,7 @@ import Unsubscribe from "./pages/Unsubscribe.tsx";
 import SocialResponsibility from "./pages/SocialResponsibility.tsx";
 import MissionVision from "./pages/MissionVision.tsx";
 import Sustainability from "./pages/Sustainability.tsx";
+import Lifestyle from "./pages/Lifestyle.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsConditions from "./pages/TermsConditions.tsx";
 
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/responsabilidade-social" element={<SocialResponsibility />} />
             <Route path="/missao-visao" element={<MissionVision />} />
             <Route path="/sustentabilidade" element={<Sustainability />} />
+            <Route path="/lifestyle" element={<Lifestyle />} />
             <Route path="/unsubscribe" element={<Unsubscribe />} />
             <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
             <Route path="/termos-condicoes" element={<TermsConditions />} />

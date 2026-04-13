@@ -75,6 +75,9 @@ export const translations = {
       copyLink: "Copiar link",
       linkCopied: "Link copiado!",
     },
+    lifestyleSection: {
+      cta: "Conheça o nosso Oeste",
+    },
     // Lifestyle
     lifestyle: {
       label: "Lifestyle",
@@ -251,6 +254,9 @@ export const translations = {
       share: "Share",
       copyLink: "Copy link",
       linkCopied: "Link copied!",
+    },
+    lifestyleSection: {
+      cta: "Discover our West",
     },
     // Lifestyle
     lifestyle: {
