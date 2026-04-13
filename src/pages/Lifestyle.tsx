@@ -4,9 +4,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 import {
-  Sun, Waves, UtensilsCrossed, Landmark, MapPin, ArrowRight,
-  Wind, Thermometer, CloudSun, Snowflake,
-  Fish, Bike, Footprints, Mountain, Flag, Sailboat, Trophy, CircleDot, Dribbble
+  Sun, UtensilsCrossed, Landmark, MapPin, ArrowRight,
+  Thermometer, CloudSun, Snowflake,
 } from "lucide-react";
 
 import lifestyleHero from "@/assets/lifestyle-hero.jpg";
@@ -16,7 +15,19 @@ import lifestyleCulture from "@/assets/lifestyle-culture.jpg";
 import lifestyleBeach from "@/assets/lifestyle-beach.jpg";
 import lifestyleActivities from "@/assets/lifestyle-activities.jpg";
 
-const activityIcons = [Waves, Fish, Trophy, CircleDot, Bike, Sailboat, Footprints, Mountain, Flag, Dribbble];
+import actSurf from "@/assets/activities/surf-ericeira.jpg";
+import actBodyboard from "@/assets/activities/bodyboard-santacruz.jpg";
+import actPesca from "@/assets/activities/pesca-peniche.jpg";
+import actGolf from "@/assets/activities/golf-praia-del-rey.jpg";
+import actTenis from "@/assets/activities/tenis-padel.jpg";
+import actCiclismo from "@/assets/activities/ciclismo.jpg";
+import actSup from "@/assets/activities/sup.jpg";
+import actEquitacao from "@/assets/activities/equitacao-portonovo.jpg";
+import actHiking from "@/assets/activities/hiking-montejunto.jpg";
+import actKarting from "@/assets/activities/karting.jpg";
+import actFutebol from "@/assets/activities/futebol-torreense.jpg";
+
+const activityImages = [actSurf, actBodyboard, actPesca, actGolf, actTenis, actCiclismo, actSup, actEquitacao, actHiking, actKarting, actFutebol];
 const climateIcons = [Sun, Thermometer, CloudSun, Snowflake];
 
 const Lifestyle = () => {
