@@ -308,25 +308,23 @@ const ProjectsSection = () => {
             className="group relative overflow-hidden cursor-pointer mb-12"
             onClick={() => setSelectedProject(featuredProject)}
           >
-            <div className="aspect-[16/7] md:aspect-[21/9] overflow-hidden">
+            <div className="aspect-[4/3] md:aspect-[21/9] overflow-hidden">
               <img
                 src={featuredProject.image}
                 alt={featuredProject.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-dark-deep via-dark-deep/30 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-              <h3 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-2">
+            <div className="absolute inset-0 bg-gradient-to-t from-dark-deep/80 via-dark-deep/20 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12">
+              <p className="text-gold text-xs tracking-widest uppercase mb-2">{featuredProject.type}</p>
+              <h3 className="text-2xl md:text-5xl font-bold text-primary-foreground mb-1">
                 {featuredProject.title}
               </h3>
-              <p className="text-primary-foreground/60 text-sm mb-2">
+              <p className="text-primary-foreground/60 text-sm">
                 {featuredProject.location}
               </p>
-              <p className="text-primary-foreground/50 text-sm max-w-xl mb-6 hidden md:block">
-                {featuredProject.description}
-              </p>
-              <span className="inline-flex items-center gap-2 text-gold text-xs tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <span className="inline-flex items-center gap-2 text-gold text-xs tracking-widest uppercase mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 {t.projects.viewDetails} <ArrowRight size={14} />
               </span>
             </div>
