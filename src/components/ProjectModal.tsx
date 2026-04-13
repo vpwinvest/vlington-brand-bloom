@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { X, MapPin, Bed, Bath, Maximize, ArrowRight, ChevronLeft, ChevronRight, Plane, Building2, Waves, Compass, Share2, Link, Check } from "lucide-react";
+import { X, MapPin, Bed, Bath, Maximize, ArrowRight, ChevronLeft, ChevronRight, Plane, Building2, Waves, Compass, Share2, Link, Check, GraduationCap } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { toast } from "sonner";
 
@@ -9,6 +9,7 @@ export interface NearbyInfo {
   nearestCities: string[];
   nearestBeaches: string[];
   activities: string[];
+  education?: string;
 }
 
 export interface Project {
@@ -214,6 +215,16 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                       ))}
                     </div>
                   </div>
+
+                  {project.nearby.education && (
+                    <div className="flex items-start gap-3">
+                      <GraduationCap size={16} className="text-gold mt-0.5 flex-shrink-0" />
+                      <div>
+                        <p className="text-sm font-semibold text-foreground">{t.modal.education}</p>
+                        <p className="text-sm text-muted-foreground">{project.nearby.education}</p>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             )}
