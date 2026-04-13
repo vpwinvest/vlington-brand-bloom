@@ -220,7 +220,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                     <div className="flex items-start gap-3">
                       <GraduationCap size={16} className="text-gold mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="text-sm font-semibold text-foreground">{t.modal.education || "Educação"}</p>
+                        <p className="text-sm font-semibold text-foreground">{t.modal.education}</p>
                         <p className="text-sm text-muted-foreground">{project.nearby.education}</p>
                       </div>
                     </div>
