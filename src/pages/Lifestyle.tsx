@@ -15,6 +15,7 @@ import lifestyleGastro from "@/assets/lifestyle-gastro.jpg";
 import lifestyleCulture from "@/assets/lifestyle-culture.jpg";
 import lifestyleBeach from "@/assets/lifestyle-beach.jpg";
 import lifestyleActivities from "@/assets/lifestyle-activities.jpg";
+import lifestyleWow from "@/assets/lifestyle-wow.jpg";
 
 const activityIcons = [Waves, Fish, Trophy, CircleDot, Bike, Sailboat, Footprints, Mountain, Flag, Dribbble];
 const climateIcons = [Sun, Thermometer, CloudSun, Snowflake];
