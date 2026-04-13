@@ -22,17 +22,20 @@ const Navbar = () => {
     { label: t.nav.home, href: "#hero" },
     { label: t.nav.about, href: "#about" },
     { label: t.nav.projects, href: "#projects" },
+    { label: "Lifestyle", href: "/lifestyle", isRoute: true },
     { label: t.nav.contact, href: "#contact" },
   ];
 
-  const handleLinkClick = (e: React.MouseEvent, href: string) => {
+  const handleLinkClick = (e: React.MouseEvent, link: { href: string; isRoute?: boolean }) => {
     e.preventDefault();
     setMenuOpen(false);
-    if (isHome) {
-      const el = document.querySelector(href);
+    if (link.isRoute) {
+      navigate(link.href);
+    } else if (isHome) {
+      const el = document.querySelector(link.href);
       el?.scrollIntoView({ behavior: "smooth" });
     } else {
-      navigate("/" + href);
+      navigate("/" + link.href);
     }
   };
 
@@ -65,7 +68,7 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              onClick={(e) => handleLinkClick(e, link.href)}
+              onClick={(e) => handleLinkClick(e, link)}
               className="text-sm tracking-widest uppercase text-primary-foreground/80 hover:text-gold transition-colors duration-300"
             >
               {link.label}
@@ -130,7 +133,7 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              onClick={(e) => handleLinkClick(e, link.href)}
+              onClick={(e) => handleLinkClick(e, link)}
               className="block py-3 text-sm tracking-widest uppercase text-primary-foreground/80 hover:text-gold transition-colors border-b border-primary-foreground/10"
             >
               {link.label}
