@@ -82,7 +82,8 @@ export const translations = {
     // Lifestyle
     lifestyle: {
       label: "Lifestyle",
-      heroHeading: "Entre o mar e a natureza, o Oeste é onde o tempo desacelera — e a vida ganha sentido.",
+      heroHeading: "Lifestyle no Oeste de Portugal",
+      heroH2: "Coastal living in Portugal",
       heroSub: "Mais do que uma casa. Uma forma de viver.",
       intro: "A Costa de Prata portuguesa é um dos segredos mais bem guardados da Europa. Entre falésias douradas, praias selvagens e colinas verdes, o Oeste oferece um estilo de vida que combina natureza, cultura e tranquilidade — a menos de 40 minutos de Lisboa.",
       climateLabel: "Clima",
@@ -277,7 +278,8 @@ export const translations = {
     // Lifestyle
     lifestyle: {
       label: "Lifestyle",
-      heroHeading: "Between the sea and nature, the West is where time slows down — and life finds meaning.",
+      heroHeading: "Lifestyle in Western Portugal",
+      heroH2: "Coastal living in Portugal",
       heroSub: "More than a home. A way of living.",
       intro: "Portugal's Silver Coast is one of Europe's best-kept secrets. Between golden cliffs, wild beaches and green hills, the West offers a lifestyle that combines nature, culture and tranquillity — less than 40 minutes from Lisbon.",
       climateLabel: "Climate",
