@@ -32,7 +32,7 @@ const LifestyleSection = () => {
             to="/lifestyle"
             className="group inline-flex items-center gap-3 border border-gold/40 text-gold px-8 py-3 text-sm tracking-widest uppercase hover:bg-gold/10 transition-all duration-500"
           >
-            {t.lifestyle.closingCta === "Descobrir Projetos" ? "Conheça o nosso Oeste" : "Discover our West"}
+            {t.lifestyleSection.cta}
             <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
