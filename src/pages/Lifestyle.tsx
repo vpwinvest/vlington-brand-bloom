@@ -5,7 +5,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 import {
   Sun, UtensilsCrossed, Landmark, MapPin, ArrowRight,
-  Thermometer, CloudSun, Snowflake,
+  Thermometer, CloudSun, Snowflake, GraduationCap,
 } from "lucide-react";
 
 import lifestyleHero from "@/assets/lifestyle-hero.jpg";
@@ -180,6 +180,31 @@ const Lifestyle = () => {
                 <p className="text-primary-foreground/70 text-xs tracking-wider">Carnaval · Torres Vedras</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Education */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-14">
+            <span className="text-gold text-xs tracking-[0.3em] uppercase mb-4 block font-light">{t.lifestyle.educationLabel}</span>
+            <h2 className="text-2xl md:text-4xl font-light text-primary-foreground mb-6">{t.lifestyle.educationHeading}</h2>
+            <p className="text-primary-foreground/60 text-sm md:text-base max-w-2xl mx-auto font-light">{t.lifestyle.educationIntro}</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {t.lifestyle.educationItems.map((item, i) => (
+              <div key={i} className="border border-primary-foreground/10 rounded-sm p-6 hover:border-gold/30 transition-colors duration-500">
+                <div className="flex items-start gap-4 mb-3">
+                  <div className="p-2 rounded-lg bg-gold/10 text-gold shrink-0"><GraduationCap className="h-5 w-5" /></div>
+                  <div>
+                    <h3 className="text-primary-foreground text-sm font-medium mb-1">{item.title}</h3>
+                    <p className="text-gold text-xs tracking-wider">{(item as any).distance}</p>
+                  </div>
+                </div>
+                <p className="text-primary-foreground/50 text-xs leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
