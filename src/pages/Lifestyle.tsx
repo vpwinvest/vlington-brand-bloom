@@ -99,22 +99,6 @@ const Lifestyle = () => {
             <h2 className="text-2xl md:text-4xl font-light text-primary-foreground">{t.lifestyle.activitiesHeading}</h2>
           </div>
 
-          {/* Image grid */}
-          <div className="grid md:grid-cols-3 gap-4 mb-14">
-            <div className="relative md:col-span-2">
-              <img src={lifestyleSurf} alt="Surf Ericeira" className="w-full h-full object-cover rounded-sm aspect-[16/9]" loading="lazy" />
-              <div className="absolute bottom-4 left-4 bg-dark-deep/80 backdrop-blur-sm px-4 py-2 rounded-sm">
-                <p className="text-primary-foreground/70 text-xs tracking-wider">Surf · Ericeira & Peniche</p>
-              </div>
-            </div>
-            <div className="relative">
-              <img src={lifestyleActivities} alt="Ténis" className="w-full h-full object-cover rounded-sm aspect-[16/9] md:aspect-auto" loading="lazy" />
-              <div className="absolute bottom-4 left-4 bg-dark-deep/80 backdrop-blur-sm px-4 py-2 rounded-sm">
-                <p className="text-primary-foreground/70 text-xs tracking-wider">Ténis</p>
-              </div>
-            </div>
-          </div>
-
           {/* Activity image cards grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {t.lifestyle.activitiesItems.map((item, i) => {
@@ -135,6 +119,7 @@ const Lifestyle = () => {
                 </div>
               );
             })}
+          </div>
         </div>
       </section>
 
