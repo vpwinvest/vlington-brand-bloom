@@ -4,9 +4,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 import {
-  Sun, Waves, UtensilsCrossed, Landmark, MapPin, ArrowRight,
-  Wind, Thermometer, CloudSun, Snowflake,
-  Fish, Bike, Footprints, Mountain, Flag, Sailboat, Trophy, CircleDot, Dribbble
+  Sun, UtensilsCrossed, Landmark, MapPin, ArrowRight,
+  Thermometer, CloudSun, Snowflake,
 } from "lucide-react";
 
 import lifestyleHero from "@/assets/lifestyle-hero.jpg";
@@ -16,7 +15,19 @@ import lifestyleCulture from "@/assets/lifestyle-culture.jpg";
 import lifestyleBeach from "@/assets/lifestyle-beach.jpg";
 import lifestyleActivities from "@/assets/lifestyle-activities.jpg";
 
-const activityIcons = [Waves, Fish, Trophy, CircleDot, Bike, Sailboat, Footprints, Mountain, Flag, Dribbble];
+import actSurf from "@/assets/activities/surf-ericeira.jpg";
+import actBodyboard from "@/assets/activities/bodyboard-santacruz.jpg";
+import actPesca from "@/assets/activities/pesca-peniche.jpg";
+import actGolf from "@/assets/activities/golf-praia-del-rey.jpg";
+import actTenis from "@/assets/activities/tenis-padel.jpg";
+import actCiclismo from "@/assets/activities/ciclismo.jpg";
+import actSup from "@/assets/activities/sup.jpg";
+import actEquitacao from "@/assets/activities/equitacao-portonovo.jpg";
+import actHiking from "@/assets/activities/hiking-montejunto.jpg";
+import actKarting from "@/assets/activities/karting.jpg";
+import actFutebol from "@/assets/activities/futebol-torreense.jpg";
+
+const activityImages = [actSurf, actBodyboard, actPesca, actGolf, actTenis, actCiclismo, actSup, actEquitacao, actHiking, actKarting, actFutebol];
 const climateIcons = [Sun, Thermometer, CloudSun, Snowflake];
 
 const Lifestyle = () => {
@@ -88,32 +99,22 @@ const Lifestyle = () => {
             <h2 className="text-2xl md:text-4xl font-light text-primary-foreground">{t.lifestyle.activitiesHeading}</h2>
           </div>
 
-          {/* Image grid */}
-          <div className="grid md:grid-cols-3 gap-4 mb-14">
-            <div className="relative md:col-span-2">
-              <img src={lifestyleSurf} alt="Surf Ericeira" className="w-full h-full object-cover rounded-sm aspect-[16/9]" loading="lazy" />
-              <div className="absolute bottom-4 left-4 bg-dark-deep/80 backdrop-blur-sm px-4 py-2 rounded-sm">
-                <p className="text-primary-foreground/70 text-xs tracking-wider">Surf · Ericeira & Peniche</p>
-              </div>
-            </div>
-            <div className="relative">
-              <img src={lifestyleActivities} alt="Ténis" className="w-full h-full object-cover rounded-sm aspect-[16/9] md:aspect-auto" loading="lazy" />
-              <div className="absolute bottom-4 left-4 bg-dark-deep/80 backdrop-blur-sm px-4 py-2 rounded-sm">
-                <p className="text-primary-foreground/70 text-xs tracking-wider">Ténis</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Activity items grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Activity image cards grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {t.lifestyle.activitiesItems.map((item, i) => {
-              const Icon = activityIcons[i] || Waves;
+              const img = activityImages[i];
               return (
-                <div key={i} className="flex gap-4 items-start p-4 border border-primary-foreground/5 rounded-sm hover:border-gold/20 transition-colors">
-                  <div className="p-2 rounded-lg bg-gold/10 text-gold shrink-0"><Icon className="h-5 w-5" /></div>
-                  <div>
-                    <h3 className="text-primary-foreground text-sm font-medium mb-1">{item.title}</h3>
-                    <p className="text-primary-foreground/50 text-xs leading-relaxed">{item.desc}</p>
+                <div key={i} className="group relative overflow-hidden rounded-sm aspect-[3/2]">
+                  <img
+                    src={img}
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark-deep/80 via-dark-deep/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-primary-foreground text-sm font-medium">{item.title}</h3>
+                    <p className="text-gold text-xs tracking-wider">{(item as any).location}</p>
                   </div>
                 </div>
               );
