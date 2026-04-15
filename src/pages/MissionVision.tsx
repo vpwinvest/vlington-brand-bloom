@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import teamBooth from "@/assets/team-booth.jpg";
-import ceoPhoto from "@/assets/ceo.png";
+import ceoPhoto from "@/assets/ceo.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const MissionVision = () => {
