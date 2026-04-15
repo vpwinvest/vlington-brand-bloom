@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Leaf, TreePine, Droplets, Sun } from "lucide-react";
-import sustainabilityHero from "@/assets/sustainability-hero.png";
+import sustainabilityHero from "@/assets/sustainability-hero.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Sustainability = () => {
