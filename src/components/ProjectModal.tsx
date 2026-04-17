@@ -22,6 +22,7 @@ export interface Project {
   coordinates?: { lat: number; lng: number };
   nearby?: NearbyInfo;
   sold?: boolean;
+  price?: string;
   details: {
     bedrooms?: string;
     bathrooms?: string;
@@ -127,7 +128,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               </div>
               {!project.sold && (
                 <p className="text-base md:text-lg font-light text-gold tracking-wide">
-                  {t.modal.priceOnRequest}
+                  {project.price ?? t.modal.priceOnRequest}
                 </p>
               )}
             </div>
