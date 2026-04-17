@@ -112,21 +112,24 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
           {/* Content */}
           <div className="p-6 md:p-10">
-            {/* Sale badge */}
+            {/* Sale / Sold badge */}
             <div className="flex flex-wrap items-center justify-between gap-4 pb-6 mb-8 border-b border-border">
               <div className="flex items-center gap-3">
-                <span className="inline-flex items-center px-3 py-1 bg-gold text-dark-deep text-[10px] tracking-[0.2em] uppercase font-semibold">
-                  {t.modal.forSale}
-                </span>
+                {project.sold ? (
+                  <span className="inline-flex items-center px-3 py-1 bg-muted-foreground/80 text-background text-[10px] tracking-[0.2em] uppercase font-semibold">
+                    {t.modal.sold}
+                  </span>
+                ) : (
+                  <span className="inline-flex items-center px-3 py-1 bg-gold text-dark-deep text-[10px] tracking-[0.2em] uppercase font-semibold">
+                    {t.modal.forSale}
+                  </span>
+                )}
               </div>
-              <div className="text-right">
-                <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mb-0.5">
-                  {t.modal.status}
-                </p>
+              {!project.sold && (
                 <p className="text-base md:text-lg font-light text-gold tracking-wide">
                   {t.modal.priceOnRequest}
                 </p>
-              </div>
+              )}
             </div>
 
             {/* Stats */}
