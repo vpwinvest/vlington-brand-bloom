@@ -241,6 +241,7 @@ const getProjectData = (lang: string) => {
     {
       id: "twenty-four",
       image: twentyFour1,
+      sold: true,
       title: "Twenty Four",
       location: "Ameal, Torres Vedras",
       type: lang === "en" ? projectTranslations["twenty-four"].type : "Habitação Unifamiliar",
