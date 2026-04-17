@@ -151,11 +151,13 @@ export const FAQ_INVESTORS_EN = [
   },
 ];
 
-export const buildFAQSchema = (lang: "pt" | "en") => {
-  const faqs = lang === "en" ? FAQ_INVESTORS_EN : FAQ_INVESTORS_PT;
+export const buildFAQSchema = (lang: string) => {
+  // Portuguese for "pt"; English for everything else (universal investor language).
+  const faqs = lang === "pt" ? FAQ_INVESTORS_PT : FAQ_INVESTORS_EN;
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    inLanguage: lang === "pt" ? "pt-PT" : "en-GB",
     mainEntity: faqs.map((f) => ({
       "@type": "Question",
       name: f.q,
