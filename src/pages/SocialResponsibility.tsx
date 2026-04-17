@@ -1,15 +1,28 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import tennisClub from "@/assets/tennis-club.jpg";
 import { Heart, Trophy, Users } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { buildBreadcrumbs } from "@/lib/seo-schemas";
 
 const SocialResponsibility = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const icons = [Heart, Trophy, Users];
 
   return (
     <div className="min-h-screen">
+      <SEO
+        path="/responsabilidade-social"
+        titlePt="Responsabilidade Social & Patrocínios — VLINGTON Properties"
+        titleEn="Social Responsibility & Sponsorships — VLINGTON Properties"
+        descriptionPt="Responsabilidade social VLINGTON Properties: patrocínios desportivos, apoio à comunidade local e iniciativas em Torres Vedras e Oeste de Portugal."
+        descriptionEn="VLINGTON Properties social responsibility: sports sponsorships, local community support and initiatives across Torres Vedras and Portugal's West Coast."
+        jsonLd={buildBreadcrumbs([
+          { name: lang === "en" ? "Home" : "Início", path: "/" },
+          { name: lang === "en" ? "Social Responsibility" : "Responsabilidade Social", path: "/responsabilidade-social" },
+        ])}
+      />
       <Navbar />
 
       {/* Hero */}

@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const TermsConditions = () => {
@@ -7,6 +8,13 @@ const TermsConditions = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        path="/termos-condicoes"
+        titlePt="Termos & Condições — VLINGTON Properties"
+        titleEn="Terms & Conditions — VLINGTON Properties"
+        descriptionPt="Termos e condições de utilização do website VLINGTON Properties."
+        descriptionEn="Terms and conditions for use of the VLINGTON Properties website."
+      />
       <Navbar />
       <section className="pt-32 pb-24 bg-dark-deep">
         <div className="container mx-auto px-6 max-w-3xl">

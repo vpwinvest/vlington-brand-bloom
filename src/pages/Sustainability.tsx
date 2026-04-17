@@ -1,15 +1,28 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Leaf, TreePine, Droplets, Sun } from "lucide-react";
 import sustainabilityHero from "@/assets/sustainability-hero.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { buildBreadcrumbs } from "@/lib/seo-schemas";
 
 const Sustainability = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const icons = [Leaf, Sun, Droplets, TreePine];
 
   return (
     <div className="min-h-screen">
+      <SEO
+        path="/sustentabilidade"
+        titlePt="Sustentabilidade — VLINGTON Properties | Construção Eco em Portugal"
+        titleEn="Sustainability — VLINGTON Properties | Eco-Friendly Building Portugal"
+        descriptionPt="Construção sustentável em Portugal: eficiência energética, energia solar, gestão de água e materiais ecológicos nos projetos VLINGTON Properties."
+        descriptionEn="Sustainable building in Portugal: energy efficiency, solar power, water management and eco materials across VLINGTON Properties' projects."
+        jsonLd={buildBreadcrumbs([
+          { name: lang === "en" ? "Home" : "Início", path: "/" },
+          { name: lang === "en" ? "Sustainability" : "Sustentabilidade", path: "/sustentabilidade" },
+        ])}
+      />
       <Navbar />
 
       {/* Hero */}
