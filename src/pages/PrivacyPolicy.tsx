@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const PrivacyPolicy = () => {
@@ -7,6 +8,13 @@ const PrivacyPolicy = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        path="/politica-privacidade"
+        titlePt="Política de Privacidade — VLINGTON Properties"
+        titleEn="Privacy Policy — VLINGTON Properties"
+        descriptionPt="Política de privacidade da VLINGTON Properties em conformidade com o RGPD."
+        descriptionEn="VLINGTON Properties' privacy policy, GDPR compliant."
+      />
       <Navbar />
       <section className="pt-32 pb-24 bg-dark-deep">
         <div className="container mx-auto px-6 max-w-3xl">

@@ -1,8 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
+import { buildBreadcrumbs } from "@/lib/seo-schemas";
 import {
   Sun, UtensilsCrossed, Landmark, MapPin, ArrowRight,
   Thermometer, CloudSun, Snowflake, GraduationCap,
@@ -33,10 +35,21 @@ const activityImages = [actSurf, actBodyboard, actPesca, actGolf, actTenis, actC
 const climateIcons = [Sun, Thermometer, CloudSun, Snowflake];
 
 const Lifestyle = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   return (
     <div className="min-h-screen bg-dark-deep">
+      <SEO
+        path="/lifestyle"
+        titlePt="Lifestyle no Oeste de Portugal — Surf, Gastronomia & Cultura | VLINGTON"
+        titleEn="Coastal Living in Portugal — Surf, Food & Culture | VLINGTON Lifestyle"
+        descriptionPt="Viver no Oeste de Portugal: Ericeira, Torres Vedras, Lourinhã. Surf, gastronomia, vinhos, escolas internacionais e clima ameno todo o ano."
+        descriptionEn="Living on Portugal's West Coast: Ericeira, Torres Vedras, Lourinhã. Surf, gastronomy, wine, international schools and mild weather year-round."
+        jsonLd={buildBreadcrumbs([
+          { name: lang === "en" ? "Home" : "Início", path: "/" },
+          { name: "Lifestyle", path: "/lifestyle" },
+        ])}
+      />
       <Navbar />
 
       {/* Hero */}

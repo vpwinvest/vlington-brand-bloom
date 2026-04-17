@@ -1,14 +1,40 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import teamBooth from "@/assets/team-booth.jpg";
 import ceoPhoto from "@/assets/ceo.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { buildBreadcrumbs } from "@/lib/seo-schemas";
 
 const MissionVision = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   return (
     <div className="min-h-screen">
+      <SEO
+        path="/missao-visao"
+        titlePt="Missão & Visão — VLINGTON Properties | Think Beyond"
+        titleEn="Mission & Vision — VLINGTON Properties | Think Beyond"
+        descriptionPt="A missão e visão da VLINGTON Properties: criar imóveis de luxo em Portugal que redefinem padrões. Conheça a nossa filosofia Think Beyond."
+        descriptionEn="VLINGTON Properties' mission and vision: building luxury real estate in Portugal that redefines standards. Discover our Think Beyond philosophy."
+        jsonLd={[
+          buildBreadcrumbs([
+            { name: lang === "en" ? "Home" : "Início", path: "/" },
+            { name: lang === "en" ? "Mission & Vision" : "Missão & Visão", path: "/missao-visao" },
+          ]),
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Vítor Pereira",
+            jobTitle: lang === "en" ? "CEO & Founder" : "CEO & Fundador",
+            worksFor: {
+              "@type": "Organization",
+              name: "VLINGTON Properties",
+              url: "https://www.vlington.com",
+            },
+          },
+        ]}
+      />
       <Navbar />
       {/* Hero */}
       <section className="relative h-[60vh] min-h-[400px] flex items-end">
