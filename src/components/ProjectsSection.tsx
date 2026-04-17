@@ -72,6 +72,8 @@ import atlanticGold6 from "@/assets/atlantic-gold-6.png";
 import atlanticGold7 from "@/assets/atlantic-gold-7.jpg";
 import twentyFour1 from "@/assets/twenty-four-1.png";
 import ProjectModal, { type Project } from "./ProjectModal";
+import { Helmet } from "react-helmet-async";
+import { buildItemListSchema } from "@/lib/seo-schemas";
 
 const projectTranslations: Record<string, { type: string; description: string; status: string; features: string[]; activities: string[] }> = {
   "bridge-house": {
@@ -285,11 +287,29 @@ const ProjectsSection = () => {
   const { t, lang } = useLanguage();
   const { featured: featuredProject, list: projects } = getProjectData(lang);
 
+  const allProjects = [featuredProject, ...projects];
+  const projectsSchema = buildItemListSchema(
+    allProjects.map((p) => ({
+      id: p.id,
+      name: p.title,
+      description: p.description,
+      image: p.image,
+      city: p.location.split(",").pop()?.trim() || "Torres Vedras",
+      region: "Lisboa",
+      bedrooms: p.details.bedrooms,
+      bathrooms: p.details.bathrooms,
+      area: p.details.area,
+      status: p.details.status,
+      lat: p.coordinates?.lat,
+      lng: p.coordinates?.lng,
+      features: p.features,
+    }))
+  );
+
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const projectId = params.get('project');
     if (projectId) {
-      const allProjects = [featuredProject, ...projects];
       const found = allProjects.find(p => p.id === projectId);
       if (found) {
         setSelectedProject(found);
@@ -300,6 +320,9 @@ const ProjectsSection = () => {
 
   return (
     <>
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(projectsSchema)}</script>
+      </Helmet>
       <section id="projects" className="py-24 md:py-32 bg-dark-deep">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
