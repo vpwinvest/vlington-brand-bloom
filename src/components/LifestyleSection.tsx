@@ -8,7 +8,7 @@ const LifestyleSection = () => {
 
   return (
     <section id="lifestyle" className="relative py-0">
-      <div className="relative h-[70vh] min-h-[500px] overflow-hidden">
+      <div className="relative h-screen min-h-[700px] overflow-hidden">
         <img
           src={lifestyleHero}
           alt="Silver Coast Portugal"
