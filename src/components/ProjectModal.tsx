@@ -21,6 +21,7 @@ export interface Project {
   description: string;
   coordinates?: { lat: number; lng: number };
   nearby?: NearbyInfo;
+  sold?: boolean;
   details: {
     bedrooms?: string;
     bathrooms?: string;
