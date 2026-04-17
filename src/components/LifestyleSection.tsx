@@ -7,7 +7,7 @@ const LifestyleSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="relative py-0">
+    <section id="lifestyle" className="relative py-0">
       <div className="relative h-[70vh] min-h-[500px] overflow-hidden">
         <img
           src={lifestyleHero}
