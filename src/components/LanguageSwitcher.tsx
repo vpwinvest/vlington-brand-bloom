@@ -26,7 +26,7 @@ const LANGUAGES: LanguageOption[] = [
   { code: "it", flag: "🇮🇹", native: "Italiano", english: "Italian" },
   { code: "zh", flag: "🇨🇳", native: "中文", english: "Chinese" },
   { code: "ja", flag: "🇯🇵", native: "日本語", english: "Japanese" },
-  { code: "ru", flag: "🇷🇺", native: "Русский", english: "Russian" },
+  { code: "ru", flag: "🌐", native: "Русский", english: "Russian" },
   { code: "uk", flag: "🇺🇦", native: "Українська", english: "Ukrainian" },
   { code: "ar", flag: "🇸🇦", native: "العربية", english: "Arabic" },
   { code: "hi", flag: "🇮🇳", native: "हिन्दी", english: "Hindi" },
