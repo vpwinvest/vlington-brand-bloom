@@ -77,6 +77,7 @@ export const translations = {
       linkCopied: "Link copiado!",
       forSale: "Para venda",
       priceOnRequest: "Valor sob consulta",
+      sold: "Vendida",
     },
     lifestyleSection: {
       cta: "Conheça o nosso Oeste",
@@ -275,6 +276,7 @@ export const translations = {
       linkCopied: "Link copied!",
       forSale: "For Sale",
       priceOnRequest: "Price on Request",
+      sold: "Sold",
     },
     lifestyleSection: {
       cta: "Discover our West",
@@ -475,6 +477,7 @@ export const translations = {
       linkCopied: "链接已复制！",
       forSale: "出售",
       priceOnRequest: "价格面议",
+      sold: "已售出",
     },
     lifestyleSection: {
       cta: "探索我们的西部地区",
@@ -679,6 +682,7 @@ export const translations = {
       linkCopied: "Lien copié !",
       forSale: "À vendre",
       priceOnRequest: "Prix sur demande",
+      sold: "Vendue",
     },
     lifestyleSection: {
       cta: "Découvrez notre région Ouest",
@@ -883,6 +887,7 @@ export const translations = {
       linkCopied: "Link kopiert!",
       forSale: "Zu verkaufen",
       priceOnRequest: "Preis auf Anfrage",
+      sold: "Verkauft",
     },
     lifestyleSection: {
       cta: "Entdecken Sie unseren Westen",
@@ -1087,6 +1092,7 @@ export const translations = {
       linkCopied: "リンクをコピーしました！",
       forSale: "販売中",
       priceOnRequest: "価格応相談",
+      sold: "成約済み",
     },
     lifestyleSection: {
       cta: "西海岸エリアの魅力",
@@ -1291,6 +1297,7 @@ export const translations = {
       linkCopied: "Link copiato!",
       forSale: "In vendita",
       priceOnRequest: "Prezzo su richiesta",
+      sold: "Venduta",
     },
     lifestyleSection: {
       cta: "Scopri la nostra regione Oeste",
@@ -1495,6 +1502,7 @@ export const translations = {
       linkCopied: "Посилання скопійовано!",
       forSale: "Продається",
       priceOnRequest: "Ціна за запитом",
+      sold: "Продана",
     },
     lifestyleSection: {
       cta: "Відкрийте для себе наш Західний регіон",
@@ -1699,6 +1707,7 @@ export const translations = {
       linkCopied: "Ссылка скопирована!",
       forSale: "Продаётся",
       priceOnRequest: "Цена по запросу",
+      sold: "Продана",
     },
     lifestyleSection: {
       cta: "Откройте для себя наш Западный регион",
@@ -1903,6 +1912,7 @@ export const translations = {
       linkCopied: "تم نسخ الرابط!",
       forSale: "للبيع",
       priceOnRequest: "السعر عند الطلب",
+      sold: "مباعة",
     },
     lifestyleSection: {
       cta: "تعرف على منطقة الغرب لدينا",
@@ -2107,6 +2117,7 @@ export const translations = {
       linkCopied: "लिंक कॉपी हो गया!",
       forSale: "बिक्री के लिए",
       priceOnRequest: "मूल्य अनुरोध पर",
+      sold: "बिक गई",
     },
     lifestyleSection: {
       cta: "हमारे वेस्ट को जानें",
