@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import logoNavbar from "@/assets/logo-navbar.png";
 import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isHome = location.pathname === "/";
-  const { lang, setLang, t } = useLanguage();
+  const { t } = useLanguage();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -76,48 +77,12 @@ const Navbar = () => {
           ))}
 
           {/* Language Switcher */}
-          <div className="flex items-center gap-1 text-sm tracking-wider">
-            <button
-              onClick={() => setLang("pt")}
-              className={`px-1.5 py-0.5 transition-colors duration-300 ${
-                lang === "pt" ? "text-gold font-semibold" : "text-primary-foreground/50 hover:text-primary-foreground/80"
-              }`}
-            >
-              PT
-            </button>
-            <span className="text-primary-foreground/30">|</span>
-            <button
-              onClick={() => setLang("en")}
-              className={`px-1.5 py-0.5 transition-colors duration-300 ${
-                lang === "en" ? "text-gold font-semibold" : "text-primary-foreground/50 hover:text-primary-foreground/80"
-              }`}
-            >
-              EN
-            </button>
-          </div>
+          <LanguageSwitcher />
         </div>
 
         <div className="flex items-center gap-4 md:hidden">
           {/* Mobile Language Switcher */}
-          <div className="flex items-center gap-1 text-xs tracking-wider">
-            <button
-              onClick={() => setLang("pt")}
-              className={`px-1 transition-colors ${
-                lang === "pt" ? "text-gold font-semibold" : "text-primary-foreground/50"
-              }`}
-            >
-              PT
-            </button>
-            <span className="text-primary-foreground/30">|</span>
-            <button
-              onClick={() => setLang("en")}
-              className={`px-1 transition-colors ${
-                lang === "en" ? "text-gold font-semibold" : "text-primary-foreground/50"
-              }`}
-            >
-              EN
-            </button>
-          </div>
+          <LanguageSwitcher variant="compact" />
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-primary-foreground"

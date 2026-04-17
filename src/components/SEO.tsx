@@ -49,13 +49,15 @@ const SEO = ({
         "Imóveis de luxo em Portugal. Casas junto ao mar em Torres Vedras, Ericeira, Nazaré e Lisboa. Investimento imobiliário, Golden Visa e regime fiscal NHR."
 
   const url = `${SITE_URL}${path}`;
-  const ogLocale = lang === "en" ? "en_GB" : "pt_PT";
-  const altLocale = lang === "en" ? "pt_PT" : "en_GB";
-  const htmlLang = lang === "en" ? "en" : "pt";
 
-  // Hreflang: same path for both, language switch is client-side; both URLs are valid entry points.
-  const ptUrl = url;
-  const enUrl = url;
+  const OG_LOCALE_MAP: Record<string, string> = {
+    pt: "pt_PT", en: "en_GB", zh: "zh_CN", fr: "fr_FR", de: "de_DE",
+    ja: "ja_JP", it: "it_IT", uk: "uk_UA", ru: "ru_RU", ar: "ar_AR", hi: "hi_IN",
+  };
+  const SUPPORTED = ["pt","en","zh","fr","de","ja","it","uk","ru","ar","hi"] as const;
+
+  const ogLocale = OG_LOCALE_MAP[lang] ?? "pt_PT";
+  const htmlLang = lang;
 
   const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
@@ -67,15 +69,18 @@ const SEO = ({
       <link rel="canonical" href={url} />
       {noindex && <meta name="robots" content="noindex, nofollow" />}
 
-      {/* Hreflang */}
-      <link rel="alternate" hrefLang="pt" href={ptUrl} />
-      <link rel="alternate" hrefLang="en" href={enUrl} />
-      <link rel="alternate" hrefLang="x-default" href={ptUrl} />
+      {/* Hreflang — single URL serves all languages (client-side switch) */}
+      {SUPPORTED.map((code) => (
+        <link key={code} rel="alternate" hrefLang={code} href={url} />
+      ))}
+      <link rel="alternate" hrefLang="x-default" href={url} />
 
       {/* Open Graph */}
       <meta property="og:type" content={ogType} />
       <meta property="og:locale" content={ogLocale} />
-      <meta property="og:locale:alternate" content={altLocale} />
+      {SUPPORTED.filter((c) => c !== lang).map((code) => (
+        <meta key={code} property="og:locale:alternate" content={OG_LOCALE_MAP[code]} />
+      ))}
       <meta property="og:site_name" content="VLINGTON Properties" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
