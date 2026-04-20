@@ -11,7 +11,7 @@ const LifestyleSection = () => {
       <div className="relative h-screen min-h-[700px] overflow-hidden">
         <img
           src={lifestyleHero}
-          alt="Silver Coast Portugal"
+          alt="Costa de Prata Portugal — Silver Coast lifestyle: surf em Ericeira e Peniche, praias de Baleal e Areia Branca, golf, ténis, equitação e natureza junto ao mar"
           className="w-full h-full object-cover"
           loading="lazy"
           width={1920}
