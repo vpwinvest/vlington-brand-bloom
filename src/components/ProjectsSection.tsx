@@ -181,6 +181,7 @@ const getProjectData = (lang: string) => {
     },
     {
       id: "atlantic-gold",
+      hidden: true,
       image: atlanticGold5,
       title: "The Atlantic Gold Residence",
       location: "Atalaia, Lourinhã",
@@ -287,7 +288,8 @@ const getProjectData = (lang: string) => {
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const { t, lang } = useLanguage();
-  const { featured: featuredProject, list: projects } = getProjectData(lang);
+  const { featured: featuredProject, list: rawProjects } = getProjectData(lang);
+  const projects = rawProjects.filter((p) => !(p as { hidden?: boolean }).hidden);
 
   const allProjects = [featuredProject, ...projects];
   const projectsSchema = buildItemListSchema(

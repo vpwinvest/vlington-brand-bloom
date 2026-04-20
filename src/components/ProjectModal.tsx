@@ -22,6 +22,7 @@ export interface Project {
   coordinates?: { lat: number; lng: number };
   nearby?: NearbyInfo;
   sold?: boolean;
+  hidden?: boolean;
   price?: string;
   details: {
     bedrooms?: string;
