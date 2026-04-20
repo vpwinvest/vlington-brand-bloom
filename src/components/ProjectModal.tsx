@@ -41,21 +41,35 @@ interface ProjectModalProps {
 
 const ProjectMap = ({ lat, lng, title }: { lat: number; lng: number; title: string }) => {
   const { t } = useLanguage();
+  const [interactive, setInteractive] = useState(false);
   const src = `https://www.openstreetmap.org/export/embed.html?bbox=${lng - 0.015}%2C${lat - 0.01}%2C${lng + 0.015}%2C${lat + 0.01}&layer=mapnik&marker=${lat}%2C${lng}`;
 
   return (
     <div className="mb-10">
       <h3 className="text-lg font-bold text-foreground mb-4">{t.modal.location}</h3>
-      <div className="relative overflow-hidden border border-border" style={{ height: 260 }}>
+      <div
+        className="relative overflow-hidden border border-border group"
+        style={{ height: 260 }}
+        onClick={() => setInteractive(true)}
+        onMouseLeave={() => setInteractive(false)}
+      >
         <iframe
           src={src}
           title={`Mapa - ${title}`}
           className="w-full h-full border-0"
           style={{
             filter: "grayscale(100%) brightness(1.05) contrast(0.95) sepia(15%) saturate(60%) hue-rotate(10deg)",
+            pointerEvents: interactive ? "auto" : "none",
           }}
           loading="lazy"
         />
+        {!interactive && (
+          <div className="absolute inset-0 flex items-center justify-center bg-dark-deep/0 group-hover:bg-dark-deep/30 transition-colors cursor-pointer">
+            <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-dark-deep/80 text-primary-foreground text-xs tracking-widest uppercase px-4 py-2">
+              {t.modal.viewOnMaps ? "Click to interact" : "Click to interact"}
+            </span>
+          </div>
+        )}
         <div className="absolute inset-0 pointer-events-none border border-gold/20" />
       </div>
       <a
