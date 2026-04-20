@@ -12,10 +12,10 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="hero" className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden" aria-label="Casas de luxo em Portugal — Luxury homes in Portugal">
+      <section id="hero" className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden" aria-label="Casas de luxo junto à praia em Portugal — Luxury beachfront homes Portugal Silver Coast">
         <img
           src={heroBg}
-          alt="Casa de luxo em Portugal com piscina infinity e vista mar — Luxury sea view villa in Portugal near Lisbon"
+          alt="Casa de luxo junto à praia em Portugal com piscina infinity e vista mar — Luxury beachfront villa Silver Coast Portugal near Ericeira, Peniche and Lisbon"
           className="absolute inset-0 w-full h-full object-cover"
           width={1920}
           height={1080}
@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-dark-overlay" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <h1 className="sr-only">VLINGTON Properties — Luxury Real Estate Portugal | Villas near Lisbon | Houses for Sale Ericeira | Coastal Living Portugal | Casas de Luxo junto ao Mar | Torres Vedras, Nazaré | Real Estate Investment Portugal | Family Relocation & International Schools</h1>
+          <h1 className="sr-only">VLINGTON Properties — Casas de Luxo Junto à Praia em Portugal | Imóveis na Costa de Prata, Ericeira, Peniche, Baleal, Areia Branca, Nazaré, Torres Vedras | Villas Near Lisbon for Surf, Golf, Tennis, Equestrian & Nature Lovers | Luxury Beachfront Real Estate Portugal Silver Coast</h1>
           <div
             className="animate-fade-in-up mb-12"
             style={{ animationDelay: "0.3s", opacity: 0 }}

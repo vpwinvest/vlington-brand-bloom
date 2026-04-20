@@ -38,15 +38,15 @@ const SEO = ({
 
   const title =
     lang === "en"
-      ? titleEn ?? "VLINGTON Properties — Luxury Real Estate Portugal | Think Beyond"
-      : titlePt ?? "VLINGTON Properties — Casas de Luxo em Portugal | Think Beyond";
+      ? titleEn ?? "VLINGTON Properties — Luxury Beachfront Homes Portugal | Silver Coast, Ericeira, Peniche, Nazaré"
+      : titlePt ?? "VLINGTON Properties — Casas de Luxo Junto à Praia | Costa de Prata, Ericeira, Peniche, Nazaré";
 
   const description =
     lang === "en"
       ? descriptionEn ??
-        "Luxury real estate Portugal. Villas near Lisbon, houses for sale Ericeira, coastal living. Golden Visa & NHR tax benefits. Real estate investment Portugal."
+        "Luxury beachfront real estate Portugal — Silver Coast, Ericeira, Peniche, Baleal, Areia Branca, Nazaré, Torres Vedras. Villas near Lisbon for surf, golf, tennis, equestrian and nature lovers."
       : descriptionPt ??
-        "Imóveis de luxo em Portugal. Casas junto ao mar em Torres Vedras, Ericeira, Nazaré e Lisboa. Investimento imobiliário, Golden Visa e regime fiscal NHR."
+        "Imóveis de luxo junto à praia em Portugal — Costa de Prata, Ericeira, Peniche, Baleal, Areia Branca, Nazaré e Torres Vedras. Casas perto de Lisboa para amantes de surf, golf, ténis, equitação e natureza."
 
   const url = `${SITE_URL}${path}`;
 

@@ -118,6 +118,26 @@ export const FAQ_INVESTORS_PT = [
     q: "Existem boas escolas internacionais perto dos vossos projetos?",
     a: "Sim. Os nossos projetos estão localizados perto de várias escolas internacionais de referência, incluindo a EITV (International School of Torres Vedras), o TASIS Portugal, o St. Julian's School em Carcavelos e a CAISL em Linhó — facilitando a relocação de famílias estrangeiras para Portugal.",
   },
+  {
+    q: "Quais são as melhores praias da Costa de Prata perto dos vossos imóveis?",
+    a: "Os nossos projetos estão a poucos minutos de algumas das melhores praias de Portugal: Praia de Ribeira d'Ilhas e Praia do Sul na Ericeira (World Surfing Reserve), Praia do Baleal e Supertubos em Peniche, Praia da Areia Branca na Lourinhã, Praia de Santa Cruz em Torres Vedras e a icónica Praia do Norte na Nazaré — referência mundial das ondas gigantes.",
+  },
+  {
+    q: "A região é boa para quem pratica surf?",
+    a: "Sim. A costa oeste portuguesa entre Ericeira, Peniche e Nazaré é considerada um dos melhores destinos de surf do mundo. A Ericeira é a única World Surfing Reserve da Europa, Peniche e Baleal recebem etapas do Championship Tour da WSL (Supertubos) e a Nazaré é mundialmente famosa pelas ondas gigantes. Ideal para surfistas de todos os níveis durante todo o ano.",
+  },
+  {
+    q: "Há campos de golf perto dos vossos projetos?",
+    a: "Sim. A região está rodeada de campos de golf de classe mundial: Praia D'El Rey Golf & Beach Resort, West Cliffs Ocean and Golf Resort, Royal Óbidos Spa & Golf Resort, Bom Sucesso Golf, Campo Real Golf e Dolce CampoReal Lisboa — todos a 15 a 40 minutos dos nossos imóveis.",
+  },
+  {
+    q: "Existem clubes de ténis e equitação na zona?",
+    a: "Sim. A Costa de Prata oferece excelentes clubes de ténis em Torres Vedras, Ericeira e Cascais, e múltiplos picadeiros e centros equestres com aulas, passeios na praia e na natureza, incluindo na zona de Mafra, Sintra, Lourinhã e Bombarral. Vários dos nossos projetos têm também espaço para campo de ténis privado.",
+  },
+  {
+    q: "A que distância de Lisboa estão os vossos projetos?",
+    a: "Os nossos imóveis na Costa de Prata estão entre 30 e 60 minutos do centro de Lisboa e do Aeroporto Humberto Delgado: Ericeira a 35 min, Torres Vedras a 40 min, Areia Branca/Lourinhã a 50 min, Peniche/Baleal a 55 min e Nazaré a 1h15. A proximidade a Lisboa garante acesso rápido a serviços, voos internacionais e cultura urbana, sem abdicar da vida junto ao mar.",
+  },
 ];
 
 export const FAQ_INVESTORS_EN = [
@@ -148,6 +168,26 @@ export const FAQ_INVESTORS_EN = [
   {
     q: "Are there good international schools near your projects?",
     a: "Yes. Our projects are located near several leading international schools, including EITV (International School of Torres Vedras), TASIS Portugal, St. Julian's School in Carcavelos and CAISL in Linhó — making relocation easy for foreign families moving to Portugal.",
+  },
+  {
+    q: "What are the best Silver Coast beaches near your properties?",
+    a: "Our projects sit minutes from some of Portugal's best beaches: Ribeira d'Ilhas and Praia do Sul in Ericeira (World Surfing Reserve), Baleal Beach and Supertubos in Peniche, Areia Branca Beach in Lourinhã, Santa Cruz Beach in Torres Vedras and the iconic Praia do Norte in Nazaré — world-famous for its giant waves.",
+  },
+  {
+    q: "Is the region good for surfing?",
+    a: "Absolutely. Portugal's west coast between Ericeira, Peniche and Nazaré is considered one of the world's top surf destinations. Ericeira is Europe's only World Surfing Reserve, Peniche and Baleal host the WSL Championship Tour at Supertubos, and Nazaré is globally famous for its giant waves. Ideal for surfers of all levels, year-round.",
+  },
+  {
+    q: "Are there golf courses near your projects?",
+    a: "Yes. The region is surrounded by world-class golf: Praia D'El Rey Golf & Beach Resort, West Cliffs Ocean and Golf Resort, Royal Óbidos Spa & Golf Resort, Bom Sucesso Golf, Campo Real Golf and Dolce CampoReal Lisboa — all within 15 to 40 minutes from our homes.",
+  },
+  {
+    q: "Are there tennis clubs and equestrian centers in the area?",
+    a: "Yes. The Silver Coast offers excellent tennis clubs in Torres Vedras, Ericeira and Cascais, plus several riding schools and equestrian centers offering lessons, beach rides and nature trails — particularly around Mafra, Sintra, Lourinhã and Bombarral. Several of our projects also offer space for a private tennis court.",
+  },
+  {
+    q: "How far are your projects from Lisbon?",
+    a: "Our Silver Coast properties sit 30 to 60 minutes from central Lisbon and Humberto Delgado Airport: Ericeira 35 min, Torres Vedras 40 min, Areia Branca/Lourinhã 50 min, Peniche/Baleal 55 min and Nazaré 1h15. Close enough for international flights, services and city life — without giving up coastal living.",
   },
 ];
 
