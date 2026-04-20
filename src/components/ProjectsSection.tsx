@@ -71,6 +71,8 @@ import atlanticGold5 from "@/assets/atlantic-gold-5.png";
 import atlanticGold6 from "@/assets/atlantic-gold-6.png";
 import atlanticGold7 from "@/assets/atlantic-gold-7.jpg";
 import twentyFour1 from "@/assets/twenty-four-1.png";
+import villaLumen1 from "@/assets/villa-lumen-1.png";
+import villaLumen2 from "@/assets/villa-lumen-2.png";
 import ProjectModal, { type Project } from "./ProjectModal";
 import { Helmet } from "react-helmet-async";
 import { buildItemListSchema } from "@/lib/seo-schemas";
@@ -117,6 +119,13 @@ const projectTranslations: Record<string, { type: string; description: string; s
     status: "Completed",
     features: ["Suite with walk-in closet", "Open-plan kitchen", "22.5 m² balcony", "Exterior wooden deck", "Polished cement", "Floating flooring", "Natural lawn garden", "Integrated garage"],
     activities: ["Traditional regional restaurants", "Torres Vedras municipal market", "Hiking trails", "Wine tourism"],
+  },
+  "villa-lumen": {
+    type: "Single-Family Home",
+    description: "A contemporary single-family villa in Portela da Vila, Ameal, set on a 540 m² plot. The project develops over three levels — basement with garage, ground floor with open-plan living, kitchen and office, and upper floor with the private quarters. White volumes, generous glazing and a private pool define a serene, light-filled lifestyle just minutes from the western beaches.",
+    status: "Under Construction",
+    features: ["540 m² plot", "Built area 231 m²", "Basement with garage (82 m²)", "Open-plan living (54 m²) & kitchen", "Private office", "Private pool (21 m²)", "Landscaped garden (158 m²)", "Polished cement paving"],
+    activities: ["Surfing at Praia de Santa Cruz", "Torres Vedras municipal market", "Hiking trails", "Wine tourism"],
   },
   "villa-serena": {
     type: "Residential Condominium",
@@ -259,6 +268,26 @@ const getProjectData = (lang: string) => {
         nearestBeaches: ["Praia de Santa Cruz — 12 km", "Praia de Porto Novo — 10 km", "Praia Azul — 11 km"],
         activities: lang === "en" ? projectTranslations["twenty-four"].activities : ["Restaurantes típicos regionais", "Mercado municipal de Torres Vedras", "Trilhos pedestres", "Enoturismo"],
         education: lang === "en" ? "EITV (International School of Torres Vedras) — ~5 km" : "EITV (Escola Internacional de Torres Vedras) — ~5 km",
+      },
+    },
+    {
+      id: "villa-lumen",
+      image: villaLumen1,
+      title: "Villa Lúmen",
+      location: "Portela da Vila, Ameal",
+      type: lang === "en" ? projectTranslations["villa-lumen"].type : "Habitação Unifamiliar",
+      coordinates: { lat: 39.122833, lng: -9.250194 },
+      description: lang === "en" ? projectTranslations["villa-lumen"].description : "Moradia unifamiliar de arquitetura contemporânea na Portela da Vila, Ameal, implantada num lote de 540 m². O projeto desenvolve-se em três níveis — cave com garagem, piso 0 com sala, cozinha em open space e escritório, e piso 1 com a zona privada. Volumes brancos, amplos envidraçados e piscina privada definem um estilo de vida sereno e luminoso a poucos minutos das praias da costa oeste.",
+      details: { bedrooms: "3", bathrooms: "3", area: "231 m²", status: lang === "en" ? projectTranslations["villa-lumen"].status : "Em Construção" },
+      gallery: [villaLumen1, villaLumen2],
+      features: lang === "en" ? projectTranslations["villa-lumen"].features : ["Lote de 540 m²", "Área de construção 231 m²", "Cave com garagem (82 m²)", "Sala open space (54 m²) e cozinha", "Escritório privado", "Piscina privada (21 m²)", "Jardim paisagístico (158 m²)", "Pavimentos em cimento afagado"],
+      nearby: {
+        distanceLisbon: "~50 km (via A8)",
+        airport: "Humberto Delgado Airport — ~55 km",
+        nearestCities: ["Torres Vedras — 6 km", "Mafra — 22 km", "Ericeira — 18 km"],
+        nearestBeaches: ["Praia de Santa Cruz — 12 km", "Praia de Porto Novo — 10 km", "Praia Azul — 11 km"],
+        activities: lang === "en" ? projectTranslations["villa-lumen"].activities : ["Surf na Praia de Santa Cruz", "Mercado municipal de Torres Vedras", "Trilhos pedestres", "Enoturismo"],
+        education: lang === "en" ? "EITV (International School of Torres Vedras) — ~6 km" : "EITV (Escola Internacional de Torres Vedras) — ~6 km",
       },
     },
     {
