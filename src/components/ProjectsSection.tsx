@@ -72,7 +72,6 @@ import atlanticGold6 from "@/assets/atlantic-gold-6.png";
 import atlanticGold7 from "@/assets/atlantic-gold-7.jpg";
 import twentyFour1 from "@/assets/twenty-four-1.png";
 import villaLumen1 from "@/assets/villa-lumen-1.png";
-import villaLumen2 from "@/assets/villa-lumen-2.png";
 import ProjectModal, { type Project } from "./ProjectModal";
 import { Helmet } from "react-helmet-async";
 import { buildItemListSchema } from "@/lib/seo-schemas";
@@ -278,8 +277,9 @@ const getProjectData = (lang: string) => {
       type: lang === "en" ? projectTranslations["villa-lumen"].type : "Habitação Unifamiliar",
       coordinates: { lat: 39.122833, lng: -9.250194 },
       description: lang === "en" ? projectTranslations["villa-lumen"].description : "Moradia unifamiliar de arquitetura contemporânea na Portela da Vila, Ameal, implantada num lote de 540 m². O projeto desenvolve-se em três níveis — cave com garagem, piso 0 com sala, cozinha em open space e escritório, e piso 1 com a zona privada. Volumes brancos, amplos envidraçados e piscina privada definem um estilo de vida sereno e luminoso a poucos minutos das praias da costa oeste.",
+      sold: true,
       details: { bedrooms: "3", bathrooms: "3", area: "231 m²", status: lang === "en" ? projectTranslations["villa-lumen"].status : "Em Construção" },
-      gallery: [villaLumen1, villaLumen2],
+      gallery: [villaLumen1],
       features: lang === "en" ? projectTranslations["villa-lumen"].features : ["Lote de 540 m²", "Área de construção 231 m²", "Cave com garagem (82 m²)", "Sala open space (54 m²) e cozinha", "Escritório privado", "Piscina privada (21 m²)", "Jardim paisagístico (158 m²)", "Pavimentos em cimento afagado"],
       nearby: {
         distanceLisbon: "~50 km (via A8)",
