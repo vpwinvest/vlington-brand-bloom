@@ -72,7 +72,6 @@ import atlanticGold6 from "@/assets/atlantic-gold-6.png";
 import atlanticGold7 from "@/assets/atlantic-gold-7.jpg";
 import twentyFour1 from "@/assets/twenty-four-1.png";
 import villaLumen1 from "@/assets/villa-lumen-1.png";
-import villaLumen2 from "@/assets/villa-lumen-2.png";
 import ProjectModal, { type Project } from "./ProjectModal";
 import { Helmet } from "react-helmet-async";
 import { buildItemListSchema } from "@/lib/seo-schemas";
