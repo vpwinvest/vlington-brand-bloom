@@ -140,8 +140,8 @@ const Careers = () => {
 
             <p className="text-primary-foreground/40 text-xs leading-relaxed">
               {t.careers.formCV} — {lang === "pt" ? "envie por email para" : "send by email to"}{" "}
-              <a href="mailto:carreiras@vlington.com" className="text-gold hover:underline">
-                carreiras@vlington.com
+              <a href="mailto:hello@vlington.com" className="text-gold hover:underline">
+                hello@vlington.com
               </a>
             </p>
 
