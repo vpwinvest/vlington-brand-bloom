@@ -2587,6 +2587,18 @@ export const translations = {
       privacy: "गोपनीयता और कुकीज़",
       terms: "नियम और शर्तें",
       rights: "सर्वाधिकार सुरक्षित।",
+      careers: "करियर",
+      cookieMsg: "हम आपके अनुभव को बेहतर बनाने के लिए कुकीज़ का उपयोग करते हैं। आप सभी को स्वीकार, अस्वीकार या अनुकूलित कर सकते हैं।",
+      cookieAccept: "सभी स्वीकारें",
+      cookieReject: "अस्वीकार करें",
+      cookieSettings: "अनुकूलित करें",
+      cookieSave: "सहेजें",
+      cookieEssential: "आवश्यक",
+      cookieEssentialDesc: "साइट के कार्य के लिए आवश्यक (हमेशा सक्रिय)।",
+      cookieAnalytics: "विश्लेषिकी",
+      cookieAnalyticsDesc: "हमें यह समझने में मदद करते हैं कि साइट का उपयोग कैसे किया जाता है।",
+      cookieMarketing: "मार्केटिंग",
+      cookieMarketingDesc: "हमें वैयक्तिकृत सामग्री दिखाने की अनुमति देते हैं।",
     },
     // Mission & Vision
     mission: {
