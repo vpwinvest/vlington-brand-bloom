@@ -23,10 +23,10 @@ const LifestyleSection = () => {
             {t.lifestyle.label}
           </span>
           <h2 className="text-3xl md:text-5xl font-light text-primary-foreground max-w-3xl leading-tight mb-4">
-            {t.lifestyle.heroSub}
-          </h2>
-          <p className="text-primary-foreground/60 text-sm md:text-base max-w-xl mb-8 font-light">
             {t.lifestyle.heroHeading}
+          </h2>
+          <p className="text-gold/80 text-xs md:text-sm tracking-[0.25em] uppercase mb-8 font-light">
+            {t.lifestyle.heroH2}
           </p>
           <Link
             to="/lifestyle"

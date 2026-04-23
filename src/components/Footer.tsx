@@ -41,6 +41,13 @@ const Footer = () => {
             </Link>
             <span className="hidden md:inline text-primary-foreground/20">|</span>
             <Link
+              to="/carreiras"
+              className="text-primary-foreground/40 hover:text-gold transition-colors duration-300 text-xs tracking-wider uppercase"
+            >
+              {t.footer.careers}
+            </Link>
+            <span className="hidden md:inline text-primary-foreground/20">|</span>
+            <Link
               to="/termos-condicoes"
               className="text-primary-foreground/40 hover:text-gold transition-colors duration-300 text-xs tracking-wider uppercase"
             >

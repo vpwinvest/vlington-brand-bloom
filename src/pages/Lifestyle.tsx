@@ -8,6 +8,7 @@ import { buildBreadcrumbs } from "@/lib/seo-schemas";
 import {
   Sun, UtensilsCrossed, Landmark, MapPin, ArrowRight,
   Thermometer, CloudSun, Snowflake, GraduationCap,
+  Heart, Shield, Wallet, Globe2, Stethoscope, TramFront, Plane,
 } from "lucide-react";
 
 import lifestyleHero from "@/assets/lifestyle-hero.jpg";
@@ -19,20 +20,17 @@ import lifestyleActivities from "@/assets/lifestyle-activities.jpg";
 import lifestyleEducation from "@/assets/lifestyle-education.jpg";
 
 import actSurf from "@/assets/activities/surf-ericeira.jpg";
-import actBodyboard from "@/assets/activities/bodyboard-santacruz.jpg";
-import actPesca from "@/assets/activities/pesca-peniche.jpg";
 import actGolf from "@/assets/activities/golf-praia-del-rey.jpg";
 import actTenis from "@/assets/activities/tenis-padel.jpg";
-import actCiclismo from "@/assets/activities/ciclismo.jpg";
-import actSup from "@/assets/activities/sup.jpg";
 import actEquitacao from "@/assets/activities/equitacao-portonovo.jpg";
+import actCiclismo from "@/assets/activities/ciclismo.jpg";
 import actHiking from "@/assets/activities/hiking-montejunto.jpg";
-import actKarting from "@/assets/activities/karting.jpg";
-import actFutebol from "@/assets/activities/futebol-torreense.jpg";
-import actCorrida from "@/assets/activities/corrida-costa.jpg";
 
-const activityImages = [actSurf, actBodyboard, actPesca, actGolf, actTenis, actCiclismo, actSup, actEquitacao, actHiking, actKarting, actFutebol, actCorrida];
+const activityImages = [actSurf, actGolf, actTenis, actEquitacao, actCiclismo, actHiking];
 const climateIcons = [Sun, Thermometer, CloudSun, Snowflake];
+const qualityIcons = [Shield, Sun, Wallet, Heart];
+const locationIcons = [Globe2, Plane, MapPin];
+const servicesIcons = [Stethoscope, GraduationCap, TramFront, Shield];
 
 const Lifestyle = () => {
   const { t, lang } = useLanguage();
@@ -41,10 +39,10 @@ const Lifestyle = () => {
     <div className="min-h-screen bg-dark-deep">
       <SEO
         path="/lifestyle"
-        titlePt="Lifestyle no Oeste de Portugal — Surf, Gastronomia & Cultura | VLINGTON"
-        titleEn="Coastal Living in Portugal — Surf, Food & Culture | VLINGTON Lifestyle"
-        descriptionPt="Viver no Oeste de Portugal: Ericeira, Torres Vedras, Lourinhã. Surf, gastronomia, vinhos, escolas internacionais e clima ameno todo o ano."
-        descriptionEn="Living on Portugal's West Coast: Ericeira, Torres Vedras, Lourinhã. Surf, gastronomy, wine, international schools and mild weather year-round."
+        titlePt="Porquê viver em Portugal — Think Beyond | VLINGTON Lifestyle"
+        titleEn="Why Live in Portugal — Think Beyond | VLINGTON Lifestyle"
+        descriptionPt="Hospitalidade, qualidade de vida, segurança, clima e localização estratégica. Descubra porque Portugal é o destino ideal para viver."
+        descriptionEn="Hospitality, quality of life, safety, climate and strategic location. Discover why Portugal is the ideal destination to live."
         jsonLd={buildBreadcrumbs([
           { name: lang === "en" ? "Home" : "Início", path: "/" },
           { name: "Lifestyle", path: "/lifestyle" },
@@ -54,14 +52,14 @@ const Lifestyle = () => {
 
       {/* Hero */}
       <section className="relative h-screen min-h-[600px]">
-        <img src={lifestyleHero} alt="Silver Coast" className="w-full h-full object-cover" width={1920} height={1080} />
+        <img src={lifestyleHero} alt="Portugal — Silver Coast" className="w-full h-full object-cover" width={1920} height={1080} />
         <div className="absolute inset-0 bg-gradient-to-t from-dark-deep via-dark-deep/50 to-transparent" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
           <span className="text-gold text-xs tracking-[0.3em] uppercase mb-6 font-light">{t.lifestyle.label}</span>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-light text-primary-foreground max-w-4xl leading-tight mb-4">
             {t.lifestyle.heroHeading}
           </h1>
-          <h2 className="text-lg md:text-2xl font-light text-primary-foreground/70 tracking-wide mb-6">
+          <h2 className="text-lg md:text-2xl font-light text-gold tracking-[0.2em] mb-6 uppercase">
             {t.lifestyle.heroH2}
           </h2>
           <p className="text-primary-foreground/70 text-lg md:text-xl font-light">{t.lifestyle.heroSub}</p>
@@ -74,6 +72,60 @@ const Lifestyle = () => {
           <p className="text-primary-foreground/70 text-base md:text-lg leading-relaxed font-light">
             {t.lifestyle.intro}
           </p>
+        </div>
+      </section>
+
+      {/* Think Beyond */}
+      <section className="py-20 md:py-28 bg-dark/50 border-y border-gold/10">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+          <span className="text-gold text-xs tracking-[0.3em] uppercase mb-6 block font-light">{t.lifestyle.thinkBeyondLabel}</span>
+          <h2 className="text-3xl md:text-5xl font-light text-primary-foreground mb-8 leading-tight">
+            {t.lifestyle.thinkBeyondHeading}
+          </h2>
+          <div className="w-16 h-px bg-gold/40 mx-auto mb-8" />
+          <p className="text-primary-foreground/70 text-base md:text-lg leading-relaxed font-light">
+            {t.lifestyle.thinkBeyondText}
+          </p>
+        </div>
+      </section>
+
+      {/* Hospitality */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="text-gold text-xs tracking-[0.3em] uppercase mb-4 block font-light">{t.lifestyle.hospitalityLabel}</span>
+              <h2 className="text-2xl md:text-4xl font-light text-primary-foreground mb-8">{t.lifestyle.hospitalityHeading}</h2>
+              <p className="text-primary-foreground/60 text-sm md:text-base leading-relaxed font-light">
+                {t.lifestyle.hospitalityText}
+              </p>
+            </div>
+            <div className="relative">
+              <img src={lifestyleCulture} alt="Hospitalidade portuguesa" className="w-full rounded-sm object-cover aspect-[4/3]" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quality of Life */}
+      <section className="py-16 md:py-24 bg-dark/50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-14">
+            <span className="text-gold text-xs tracking-[0.3em] uppercase mb-4 block font-light">{t.lifestyle.qualityLifeLabel}</span>
+            <h2 className="text-2xl md:text-4xl font-light text-primary-foreground max-w-3xl mx-auto">{t.lifestyle.qualityLifeHeading}</h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {t.lifestyle.qualityLifeItems.map((item, i) => {
+              const Icon = qualityIcons[i];
+              return (
+                <div key={i} className="border border-primary-foreground/10 rounded-sm p-6 hover:border-gold/30 transition-colors duration-500">
+                  <div className="p-2 rounded-lg bg-gold/10 text-gold inline-flex mb-4"><Icon className="h-5 w-5" /></div>
+                  <h3 className="text-primary-foreground text-sm font-medium mb-2">{item.title}</h3>
+                  <p className="text-primary-foreground/50 text-xs leading-relaxed">{item.desc}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
 
@@ -109,15 +161,14 @@ const Lifestyle = () => {
         </div>
       </section>
 
-      {/* Activities & Sport */}
+      {/* Outdoor & Sport (reduced) */}
       <section className="py-16 md:py-24 bg-dark/50">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-14">
+          <div className="text-center mb-14 max-w-3xl mx-auto">
             <span className="text-gold text-xs tracking-[0.3em] uppercase mb-4 block font-light">{t.lifestyle.activitiesLabel}</span>
-            <h2 className="text-2xl md:text-4xl font-light text-primary-foreground">{t.lifestyle.activitiesHeading}</h2>
+            <h2 className="text-2xl md:text-4xl font-light text-primary-foreground mb-6">{t.lifestyle.activitiesHeading}</h2>
+            <p className="text-primary-foreground/60 text-sm md:text-base font-light leading-relaxed">{t.lifestyle.activitiesIntro}</p>
           </div>
-
-          {/* Activity image cards grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {t.lifestyle.activitiesItems.map((item, i) => {
               const img = activityImages[i];
@@ -134,6 +185,51 @@ const Lifestyle = () => {
                     <h3 className="text-primary-foreground text-sm font-medium">{item.title}</h3>
                     <p className="text-gold text-xs tracking-wider">{(item as any).location}</p>
                   </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Location — 3 continents */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-14 max-w-3xl mx-auto">
+            <span className="text-gold text-xs tracking-[0.3em] uppercase mb-4 block font-light">{t.lifestyle.locationLabel}</span>
+            <h2 className="text-2xl md:text-4xl font-light text-primary-foreground mb-6">{t.lifestyle.locationHeading}</h2>
+            <p className="text-primary-foreground/60 text-sm md:text-base font-light leading-relaxed">{t.lifestyle.locationText}</p>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {t.lifestyle.locationItems.map((item, i) => {
+              const Icon = locationIcons[i];
+              return (
+                <div key={i} className="text-center border border-primary-foreground/10 rounded-sm p-6 hover:border-gold/30 transition-colors duration-500">
+                  <div className="p-2 rounded-lg bg-gold/10 text-gold inline-flex mb-4"><Icon className="h-5 w-5" /></div>
+                  <h3 className="text-primary-foreground text-sm font-medium mb-2">{item.title}</h3>
+                  <p className="text-primary-foreground/50 text-xs leading-relaxed">{item.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Services & Infrastructure */}
+      <section className="py-16 md:py-24 bg-dark/50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-14">
+            <span className="text-gold text-xs tracking-[0.3em] uppercase mb-4 block font-light">{t.lifestyle.servicesLabel}</span>
+            <h2 className="text-2xl md:text-4xl font-light text-primary-foreground">{t.lifestyle.servicesHeading}</h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {t.lifestyle.servicesItems.map((item, i) => {
+              const Icon = servicesIcons[i];
+              return (
+                <div key={i} className="border border-primary-foreground/10 rounded-sm p-6 hover:border-gold/30 transition-colors duration-500">
+                  <div className="p-2 rounded-lg bg-gold/10 text-gold inline-flex mb-4"><Icon className="h-5 w-5" /></div>
+                  <h3 className="text-primary-foreground text-sm font-medium mb-2">{item.title}</h3>
+                  <p className="text-primary-foreground/50 text-xs leading-relaxed">{item.desc}</p>
                 </div>
               );
             })}

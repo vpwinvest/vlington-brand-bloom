@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import ScrollToTop from "./components/ScrollToTop.tsx";
+import CookieBanner from "./components/CookieBanner.tsx";
 import Index from "./pages/Index.tsx";
 import Unsubscribe from "./pages/Unsubscribe.tsx";
 import SocialResponsibility from "./pages/SocialResponsibility.tsx";
@@ -13,6 +14,7 @@ import Sustainability from "./pages/Sustainability.tsx";
 import Lifestyle from "./pages/Lifestyle.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsConditions from "./pages/TermsConditions.tsx";
+import Careers from "./pages/Careers.tsx";
 
 import NotFound from "./pages/NotFound.tsx";
 
@@ -32,6 +34,7 @@ const App = () => (
             <Route path="/missao-visao" element={<MissionVision />} />
             <Route path="/sustentabilidade" element={<Sustainability />} />
             <Route path="/lifestyle" element={<Lifestyle />} />
+            <Route path="/carreiras" element={<Careers />} />
             <Route path="/unsubscribe" element={<Unsubscribe />} />
             <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
             <Route path="/termos-condicoes" element={<TermsConditions />} />
@@ -39,6 +42,7 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <CookieBanner />
         </BrowserRouter>
       </TooltipProvider>
     </LanguageProvider>
