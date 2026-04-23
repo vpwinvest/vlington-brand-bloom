@@ -15,6 +15,7 @@ import {
 import lifestyleHero from "@/assets/lifestyle-hero.jpg";
 import lifestyleGastro from "@/assets/lifestyle-gastro.jpg";
 import lifestyleCulture from "@/assets/lifestyle-culture.jpg";
+import lifestyleHospitality from "@/assets/lifestyle-hospitality.jpg";
 import lifestyleBeach from "@/assets/lifestyle-beach.jpg";
 
 import actSurf from "@/assets/activities/surf-ericeira.jpg";
@@ -111,8 +112,8 @@ const Lifestyle = () => {
             </div>
             <div className="lg:col-span-7 relative">
               <img
-                src={lifestyleCulture}
-                alt="Hospitalidade portuguesa"
+                src={lifestyleHospitality}
+                alt="Hospitalidade portuguesa — pão e vinho numa vila tradicional"
                 className="w-full rounded-sm object-cover aspect-[4/3]"
                 loading="lazy"
               />
@@ -132,13 +133,13 @@ const Lifestyle = () => {
               {t.lifestyle.qualityLifeHeading}
             </h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-gold/10 max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {t.lifestyle.qualityLifeItems.map((item, i) => {
               const Icon = qualityIcons[i];
               return (
                 <div
                   key={i}
-                  className="bg-dark-deep p-8 md:p-10 hover:bg-dark/60 transition-colors duration-500"
+                  className="border border-gold/15 rounded-sm p-8 hover:border-gold/40 transition-colors duration-500"
                 >
                   <Icon className="h-6 w-6 text-gold mb-6" strokeWidth={1.2} />
                   <h3 className="text-primary-foreground text-base font-light mb-3 tracking-wide">
