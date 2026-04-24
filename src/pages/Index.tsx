@@ -4,7 +4,6 @@ import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import LifestyleSection from "@/components/LifestyleSection";
 import InvestTeaserSection from "@/components/InvestTeaserSection";
-import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -31,7 +30,6 @@ const Index = () => {
       <ProjectsSection />
       <LifestyleSection />
       <InvestTeaserSection />
-      <FAQSection />
       <ContactSection />
       <Footer />
       <WhatsAppButton />
@@ -40,4 +38,5 @@ const Index = () => {
 };
 
 export default Index;
+
 
