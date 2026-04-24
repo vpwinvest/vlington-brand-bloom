@@ -404,7 +404,7 @@ const ProjectsSection = () => {
                 className="group relative overflow-hidden cursor-pointer"
                 onClick={() => setSelectedProject(project)}
               >
-                <div className="aspect-[3/4] overflow-hidden">
+                <div className="aspect-[4/3] sm:aspect-[3/4] overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
