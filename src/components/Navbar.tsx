@@ -115,7 +115,7 @@ const Navbar = () => {
                 isLifestyleActive ? "text-gold" : "text-primary-foreground/80 hover:text-gold"
               }`}
             >
-              Lifestyle
+              Think Beyond
               <ChevronDown className="h-3 w-3" />
             </button>
             {lifestyleOpen && (
@@ -177,7 +177,7 @@ const Navbar = () => {
             onClick={() => setLifestyleOpen(!lifestyleOpen)}
             className="w-full flex items-center justify-between py-3 text-sm tracking-widest uppercase text-primary-foreground/80 hover:text-gold transition-colors border-b border-primary-foreground/10"
           >
-            Lifestyle
+            Think Beyond
             <ChevronDown
               className={`h-4 w-4 transition-transform ${lifestyleOpen ? "rotate-180" : ""}`}
             />
