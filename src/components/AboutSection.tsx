@@ -27,22 +27,22 @@ const AboutSection = () => {
             <p className="text-muted-foreground leading-[1.65] md:leading-[1.7] font-light mb-6 md:mb-7 text-[15px] md:text-base">
               {t.about.p2}
             </p>
-            <div className="flex flex-wrap gap-x-8 gap-y-5 md:gap-x-10 md:gap-y-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-x-7 gap-y-4 md:gap-x-5 md:gap-y-0">
               <div>
                 <span className="text-2xl md:text-3xl font-light text-gradient-gold">20+</span>
-                <p className="text-[10px] md:text-xs tracking-[0.25em] uppercase text-muted-foreground mt-1 font-light">
+                <p className="text-[10px] md:text-[10px] lg:text-xs tracking-[0.18em] lg:tracking-[0.25em] uppercase text-muted-foreground mt-1 font-light">
                   {t.about.stat1}
                 </p>
               </div>
               <div>
                 <span className="text-2xl md:text-3xl font-light text-gradient-gold">20M€+</span>
-                <p className="text-[10px] md:text-xs tracking-[0.25em] uppercase text-muted-foreground mt-1 font-light">
+                <p className="text-[10px] md:text-[10px] lg:text-xs tracking-[0.18em] lg:tracking-[0.25em] uppercase text-muted-foreground mt-1 font-light">
                   {t.about.stat2}
                 </p>
               </div>
               <div>
                 <span className="text-2xl md:text-3xl font-light text-gradient-gold">101%</span>
-                <p className="text-[10px] md:text-xs tracking-[0.25em] uppercase text-muted-foreground mt-1 font-light">
+                <p className="text-[10px] md:text-[10px] lg:text-xs tracking-[0.18em] lg:tracking-[0.25em] uppercase text-muted-foreground mt-1 font-light">
                   {t.about.stat3}
                 </p>
               </div>
