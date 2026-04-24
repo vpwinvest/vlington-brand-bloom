@@ -16,6 +16,7 @@ import InvestPortugal from "./pages/InvestPortugal.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsConditions from "./pages/TermsConditions.tsx";
 import Careers from "./pages/Careers.tsx";
+import FAQ from "./pages/FAQ.tsx";
 
 import NotFound from "./pages/NotFound.tsx";
 
@@ -38,6 +39,7 @@ const App = () => (
             <Route path="/investir" element={<InvestPortugal />} />
             <Route path="/invest" element={<InvestPortugal />} />
             <Route path="/carreiras" element={<Careers />} />
+            <Route path="/faq" element={<FAQ />} />
             <Route path="/unsubscribe" element={<Unsubscribe />} />
             <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
             <Route path="/termos-condicoes" element={<TermsConditions />} />
