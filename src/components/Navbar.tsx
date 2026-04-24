@@ -97,7 +97,7 @@ const Navbar = () => {
               key={link.href}
               href={link.href}
               onClick={(e) => handleLinkClick(e, link)}
-              className="text-sm tracking-widest uppercase text-primary-foreground/80 hover:text-gold transition-colors duration-300"
+              className="text-sm tracking-widest uppercase text-primary-foreground/80 hover:text-gold transition-colors duration-300 focus:outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-dark-deep rounded-sm"
             >
               {link.label}
             </a>
@@ -111,22 +111,31 @@ const Navbar = () => {
           >
             <button
               onClick={() => setLifestyleOpen((v) => !v)}
-              className={`flex items-center gap-1 text-sm tracking-widest uppercase transition-colors duration-300 ${
+              aria-haspopup="menu"
+              aria-expanded={lifestyleOpen}
+              aria-controls="think-beyond-menu"
+              className={`flex items-center gap-1 text-sm tracking-widest uppercase transition-colors duration-300 focus:outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-dark-deep rounded-sm ${
                 isLifestyleActive ? "text-gold" : "text-primary-foreground/80 hover:text-gold"
               }`}
             >
               Think Beyond
-              <ChevronDown className="h-3 w-3" />
+              <ChevronDown className={`h-3 w-3 transition-transform ${lifestyleOpen ? "rotate-180" : ""}`} aria-hidden="true" />
             </button>
             {lifestyleOpen && (
-              <div className="absolute left-0 top-full pt-3 min-w-[260px]">
+              <div
+                id="think-beyond-menu"
+                role="menu"
+                aria-label="Think Beyond"
+                className="absolute left-0 top-full pt-3 min-w-[260px]"
+              >
                 <div className="bg-dark-deep border border-gold/20 shadow-2xl py-2">
                   {lifestyleSubLinks.map((sub) => (
                     <a
                       key={sub.path}
                       href={sub.path}
+                      role="menuitem"
                       onClick={(e) => handleSubLinkClick(e, sub.path)}
-                      className="block px-5 py-2.5 text-xs tracking-[0.2em] uppercase text-primary-foreground/85 hover:text-gold hover:bg-gold/10 transition-colors"
+                      className="block px-5 py-2.5 text-xs tracking-[0.2em] uppercase text-primary-foreground/85 hover:text-gold hover:bg-gold/10 focus:outline-none focus-visible:outline-none focus-visible:bg-gold/15 focus-visible:text-gold transition-colors"
                     >
                       {sub.label}
                     </a>
@@ -140,7 +149,7 @@ const Navbar = () => {
           <a
             href={links[3].href}
             onClick={(e) => handleLinkClick(e, links[3])}
-            className="text-sm tracking-widest uppercase text-primary-foreground/80 hover:text-gold transition-colors duration-300"
+            className="text-sm tracking-widest uppercase text-primary-foreground/80 hover:text-gold transition-colors duration-300 focus:outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-dark-deep rounded-sm"
           >
             {links[3].label}
           </a>
@@ -152,21 +161,27 @@ const Navbar = () => {
           <LanguageSwitcher variant="compact" />
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-primary-foreground"
+            aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
+            className="text-primary-foreground focus:outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-sm"
           >
-            {menuOpen ? <X size={24} /> : <Menu size={24} />}
+            {menuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
           </button>
         </div>
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-dark-deep/95 backdrop-blur-md px-6 pb-6 pt-2 animate-fade-in">
+        <div
+          id="mobile-menu"
+          className="md:hidden bg-dark-deep/95 backdrop-blur-md px-6 pb-6 pt-2 animate-fade-in"
+        >
           {links.slice(0, 3).map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={(e) => handleLinkClick(e, link)}
-              className="block py-3 text-sm tracking-widest uppercase text-primary-foreground/80 hover:text-gold transition-colors border-b border-primary-foreground/10"
+              className="block py-3 text-sm tracking-widest uppercase text-primary-foreground/80 hover:text-gold focus:outline-none focus-visible:outline-none focus-visible:text-gold focus-visible:bg-gold/10 transition-colors border-b border-primary-foreground/10"
             >
               {link.label}
             </a>
@@ -175,21 +190,24 @@ const Navbar = () => {
           {/* Mobile Lifestyle accordion */}
           <button
             onClick={() => setLifestyleOpen(!lifestyleOpen)}
-            className="w-full flex items-center justify-between py-3 text-sm tracking-widest uppercase text-primary-foreground/80 hover:text-gold transition-colors border-b border-primary-foreground/10"
+            aria-expanded={lifestyleOpen}
+            aria-controls="think-beyond-mobile"
+            className="w-full flex items-center justify-between py-3 text-sm tracking-widest uppercase text-primary-foreground/80 hover:text-gold focus:outline-none focus-visible:outline-none focus-visible:text-gold focus-visible:bg-gold/10 transition-colors border-b border-primary-foreground/10"
           >
             Think Beyond
             <ChevronDown
               className={`h-4 w-4 transition-transform ${lifestyleOpen ? "rotate-180" : ""}`}
+              aria-hidden="true"
             />
           </button>
           {lifestyleOpen && (
-            <div className="pl-4 border-b border-primary-foreground/10">
+            <div id="think-beyond-mobile" className="pl-4 border-b border-primary-foreground/10">
               {lifestyleSubLinks.map((sub) => (
                 <a
                   key={sub.path}
                   href={sub.path}
                   onClick={(e) => handleSubLinkClick(e, sub.path)}
-                  className="block py-2.5 text-xs tracking-[0.2em] uppercase text-primary-foreground/65 hover:text-gold transition-colors"
+                  className="block py-2.5 text-xs tracking-[0.2em] uppercase text-primary-foreground/65 hover:text-gold focus:outline-none focus-visible:outline-none focus-visible:text-gold focus-visible:bg-gold/10 transition-colors"
                 >
                   {sub.label}
                 </a>
@@ -200,7 +218,7 @@ const Navbar = () => {
           <a
             href={links[3].href}
             onClick={(e) => handleLinkClick(e, links[3])}
-            className="block py-3 text-sm tracking-widest uppercase text-primary-foreground/80 hover:text-gold transition-colors border-b border-primary-foreground/10"
+            className="block py-3 text-sm tracking-widest uppercase text-primary-foreground/80 hover:text-gold focus:outline-none focus-visible:outline-none focus-visible:text-gold focus-visible:bg-gold/10 transition-colors border-b border-primary-foreground/10"
           >
             {links[3].label}
           </a>
