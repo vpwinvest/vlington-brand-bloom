@@ -10,21 +10,21 @@ const InvestTeaserSection = () => {
   return (
     <section
       id="invest-teaser"
-      className="bg-dark-deep text-primary-foreground py-24 md:py-32"
+      className="bg-dark-deep text-primary-foreground py-28 md:py-36"
       aria-label="Invest in Portugal — Silver Coast property investment"
     >
-      <div className="container mx-auto px-6 max-w-5xl">
-        <p className="text-gold text-xs tracking-[0.3em] uppercase mb-6 font-light">
+      <div className="container mx-auto px-6 max-w-4xl text-center">
+        <p className="text-gold text-xs tracking-[0.35em] uppercase mb-6 font-light">
           {seo.sectionLabel}
         </p>
-        <h2 className="text-3xl md:text-5xl font-light leading-[1.15] mb-10">
+        <h2 className="text-3xl md:text-5xl font-light leading-[1.15] mb-8">
           {seo.h2Invest}
         </h2>
-        <div className="w-12 h-px bg-gold/40 mb-10" />
-        <p className="text-primary-foreground/75 text-base md:text-lg leading-[1.9] font-light mb-6 max-w-3xl">
+        <div className="w-12 h-px bg-gold/40 mx-auto mb-10" />
+        <p className="text-primary-foreground/80 text-base md:text-lg leading-[1.9] font-light mb-6 max-w-2xl mx-auto">
           {seo.investP1}
         </p>
-        <p className="text-primary-foreground/75 text-base md:text-lg leading-[1.9] font-light max-w-3xl mb-12">
+        <p className="text-primary-foreground/80 text-base md:text-lg leading-[1.9] font-light max-w-2xl mx-auto mb-12">
           {seo.investP2}
         </p>
 
