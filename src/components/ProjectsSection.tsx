@@ -359,12 +359,13 @@ const ProjectsSection = () => {
       <section id="projects" className="py-24 md:py-32 bg-dark-deep">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <p className="text-gold text-xs tracking-widest-xl uppercase mb-4">
+            <p className="text-gold text-xs tracking-[0.3em] uppercase mb-6 font-light">
               {t.projects.label}
             </p>
-            <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground">
+            <h2 className="text-3xl md:text-5xl font-light text-primary-foreground leading-[1.15]">
               {t.projects.heading}
             </h2>
+            <div className="w-12 h-px bg-gold/40 mx-auto mt-8" />
           </div>
 
           {/* Featured Project */}
