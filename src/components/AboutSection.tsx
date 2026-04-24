@@ -7,7 +7,7 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="bg-background pt-12 pb-20 md:pt-20 md:pb-28"
+      className="bg-background pt-6 pb-16 md:pt-10 md:pb-24"
       aria-label="Sobre VLINGTON Properties — Comprar imóveis de luxo em Portugal | Buy property Portugal Silver Coast"
     >
       <div className="container mx-auto px-6">
