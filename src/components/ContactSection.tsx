@@ -55,14 +55,15 @@ const ContactSection = () => {
         <div className="grid md:grid-cols-2 gap-16">
           {/* Info */}
           <div>
-            <p className="text-gold text-xs tracking-widest-xl uppercase mb-4">
+            <p className="text-gold text-xs tracking-[0.3em] uppercase mb-6 font-light">
               {t.contact.label}
             </p>
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-8 leading-tight">
+            <h2 className="text-3xl md:text-5xl font-light text-foreground mb-8 leading-[1.15]">
               {t.contact.heading1}
               <span className="text-gradient-gold block">{t.contact.heading2}</span>
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-10">
+            <div className="w-12 h-px bg-gold/40 mb-8" />
+            <p className="text-muted-foreground leading-[1.9] font-light mb-10">
               {t.contact.intro}
             </p>
 
