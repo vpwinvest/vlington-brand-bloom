@@ -432,16 +432,6 @@ const ProjectsSection = () => {
             ))}
           </div>
 
-          {/* CTA → Lifestyle */}
-          <div className="text-center mt-16 md:mt-20">
-            <Link
-              to="/lifestyle"
-              className="group inline-flex items-center gap-3 border border-gold/40 text-gold px-8 py-3 text-sm tracking-widest uppercase hover:bg-gold/10 transition-all duration-500"
-            >
-              {t.footer.lifestyle}
-              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </div>
         </div>
       </section>
 

@@ -120,13 +120,13 @@ const Navbar = () => {
             </button>
             {lifestyleOpen && (
               <div className="absolute left-0 top-full pt-3 min-w-[260px]">
-                <div className="bg-dark-deep/98 backdrop-blur-md border border-gold/15 shadow-xl py-2">
+                <div className="bg-dark-deep border border-gold/20 shadow-2xl py-2">
                   {lifestyleSubLinks.map((sub) => (
                     <a
                       key={sub.path}
                       href={sub.path}
                       onClick={(e) => handleSubLinkClick(e, sub.path)}
-                      className="block px-5 py-2.5 text-xs tracking-[0.2em] uppercase text-primary-foreground/75 hover:text-gold hover:bg-gold/5 transition-colors"
+                      className="block px-5 py-2.5 text-xs tracking-[0.2em] uppercase text-primary-foreground/85 hover:text-gold hover:bg-gold/10 transition-colors"
                     >
                       {sub.label}
                     </a>
