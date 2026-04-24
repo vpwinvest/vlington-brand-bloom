@@ -110,7 +110,7 @@ const Navbar = () => {
             onMouseLeave={() => setLifestyleOpen(false)}
           >
             <button
-              onClick={() => navigate("/lifestyle")}
+              onClick={() => setLifestyleOpen((v) => !v)}
               className={`flex items-center gap-1 text-sm tracking-widest uppercase transition-colors duration-300 ${
                 isLifestyleActive ? "text-gold" : "text-primary-foreground/80 hover:text-gold"
               }`}
