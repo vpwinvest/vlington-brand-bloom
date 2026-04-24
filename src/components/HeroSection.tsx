@@ -64,7 +64,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-fade-in" style={{ animationDelay: "1.5s", opacity: 0 }}>
+        <div className="hidden md:block absolute bottom-10 left-1/2 -translate-x-1/2 animate-fade-in" style={{ animationDelay: "1.5s", opacity: 0 }}>
           <div className="w-px h-16 bg-gradient-to-b from-gold/0 via-gold to-gold/0" />
         </div>
       </section>
