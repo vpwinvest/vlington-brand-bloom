@@ -50,7 +50,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-36 bg-background" aria-label="Contacto — Comprar casa em Portugal, imóveis junto ao mar">
+    <section id="contact" className="pt-12 pb-20 md:pt-20 md:pb-28 bg-background" aria-label="Contacto — Comprar casa em Portugal, imóveis junto ao mar">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-10 md:gap-16">
           {/* Info */}
