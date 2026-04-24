@@ -26,6 +26,55 @@ export const translations = {
       stat2: "Em projetos",
       stat3: "Dedicação",
     },
+    aboutSeo: {
+      sectionLabel: "Investir em Portugal",
+      h2Invest: "Comprar imóveis de luxo em Portugal — Costa de Prata e arredores de Lisboa",
+      investP1: "Portugal tornou-se um dos destinos mais procurados do mundo para comprar casa, viver e investir. Com mais de 300 dias de sol por ano, segurança, hospitalidade e uma localização estratégica entre três continentes, o país combina qualidade de vida, estabilidade e rentabilidade — uma equação rara no panorama imobiliário internacional.",
+      investP2: "Na VLINGTON Properties, dedicamo-nos ao desenvolvimento de imóveis de luxo na Costa de Prata, a faixa litoral a oeste de Lisboa que se estende de Ericeira a Nazaré, passando por Torres Vedras, Lourinhã, Areia Branca, Peniche e Baleal. É aqui, entre falésias atlânticas, vinhas centenárias e algumas das melhores ondas do mundo, que projetamos casas pensadas para uma forma de viver mais consciente, saudável e contemporânea.",
+
+      h2Why: "Porquê investir em imobiliário em Portugal",
+      whyP1: "Portugal é hoje um dos mercados mais sólidos da Europa para investimento imobiliário. A valorização média anual na Costa de Prata tem-se mantido entre 8% e 12% nos últimos anos, com yields de arrendamento turístico de 5% a 8% — sustentados pela procura crescente de europeus, americanos, britânicos e brasileiros à procura de uma segunda casa, de um destino de reforma ou de uma base europeia para trabalhar remotamente.",
+      whyP2: "A estabilidade política, a transparência do processo de compra (sem restrições para estrangeiros), os regimes fiscais para novos residentes (NHR / IFICI, D7 Visa) e a maturidade do setor turístico fazem de Portugal um dos melhores países para investir em imobiliário a longo prazo.",
+      whyBullets: [
+        { title: "Sem restrições à compra por estrangeiros", desc: "Cidadãos UE e não-UE podem comprar livremente. Apenas é necessário NIF português." },
+        { title: "Valorização sustentada", desc: "Costa de Prata com 8–12% de valorização média anual nos últimos 5 anos." },
+        { title: "Yields atrativas", desc: "5–8% em arrendamento turístico, alimentado pelo surf, golf e proximidade a Lisboa." },
+        { title: "Regimes fiscais competitivos", desc: "IFICI (NHR 2.0) e Visto D7 atraem profissionais qualificados e reformados." },
+      ],
+
+      h2Coast: "Costa de Prata: a costa oeste de Portugal entre Lisboa e Nazaré",
+      coastP1: "A Silver Coast — ou Costa de Prata — é o segredo mais bem guardado do imobiliário em Portugal. A apenas 30 a 60 minutos do Aeroporto de Lisboa, esta região oferece o que o Algarve já não consegue dar: autenticidade, espaço, natureza preservada e ondas de classe mundial. Aqui, viver em Portugal junto à praia ainda é possível sem comprometer o acesso à capital, à cultura e à infraestrutura internacional.",
+      coastP2: "Cada vila tem a sua identidade — e cada uma delas é uma porta de entrada para um lifestyle diferente.",
+      coastTowns: [
+        { title: "Ericeira", desc: "Reserva Mundial de Surf, vila piscatória cosmopolita a 35 min de Lisboa. Ideal para quem procura vida de praia com qualidade urbana." },
+        { title: "Peniche & Baleal", desc: "Casa do Supertubos (etapa do WSL Championship Tour) e da praia mais consistente de Portugal para surf." },
+        { title: "Nazaré", desc: "Mundialmente famosa pelas ondas gigantes da Praia do Norte. Tradição piscatória e património." },
+        { title: "Torres Vedras", desc: "Centro urbano completo, escolas internacionais (EITV), enoturismo e excelente acesso a Lisboa pela A8." },
+        { title: "Areia Branca & Lourinhã", desc: "Praias amplas, gastronomia atlântica e comunidades acolhedoras numa zona em forte valorização." },
+      ],
+
+      h2Lifestyle: "Lifestyle Portugal: surf, golf e a melhor qualidade de vida da Europa",
+      lifestyleP1: "A costa oeste é hoje reconhecida como um dos melhores sítios do mundo para o lifestyle outdoor. A Ericeira é a única Reserva Mundial de Surf da Europa. Peniche e Baleal recebem etapas do WSL Championship Tour. A Nazaré é referência mundial das ondas gigantes. Para os adeptos de golf, a região reúne campos premiados como o Praia D'El Rey, West Cliffs, Royal Óbidos, Bom Sucesso, Campo Real e Dolce CampoReal Lisboa — todos a 15-40 minutos.",
+      lifestyleP2: "A esta riqueza desportiva soma-se uma das melhores gastronomias do mundo: peixe fresco do Atlântico, vinhos da região do Oeste e Lisboa, restaurantes premiados e mercados tradicionais. Tudo num país consistentemente eleito pelos rankings internacionais como um dos mais seguros e acolhedores do mundo.",
+
+      h2WhoFor: "Para quem trabalhamos",
+      whoForIntro: "Os nossos clientes vêm de toda a Europa, do Reino Unido, dos EUA e do Brasil. Procuram diferentes coisas — mas todos partilham a vontade de viver melhor.",
+      whoForItems: [
+        { title: "Famílias internacionais", desc: "Procuram escolas internacionais, segurança e proximidade a Lisboa para se reinstalarem em Portugal." },
+        { title: "Investidores", desc: "Procuram ativos de luxo com forte potencial de valorização e rentabilidade turística." },
+        { title: "Surfistas e amantes do mar", desc: "Querem viver a poucos minutos das melhores ondas da Europa, todo o ano." },
+        { title: "Reformados e nómadas digitais", desc: "Buscam clima, qualidade de vida, cuidados de saúde e regimes fiscais favoráveis (D7, NHR/IFICI)." },
+      ],
+
+      h2Process: "Comprar casa em Portugal com a VLINGTON",
+      processP1: "Acompanhamos o processo do início ao fim. Da pesquisa do imóvel à obtenção do NIF português, da escritura à gestão pós-venda, passando pelo aconselhamento fiscal e legal através de parceiros de confiança. O nosso compromisso é simples: tornar a compra de casa em Portugal num processo claro, transparente e sem surpresas.",
+      processSteps: [
+        { title: "1. Consultoria inicial", desc: "Compreendemos o seu projeto de vida e identificamos os imóveis certos para si." },
+        { title: "2. Visitas e proposta", desc: "Visitas presenciais ou virtuais e apoio na negociação da proposta." },
+        { title: "3. Processo legal", desc: "NIF, abertura de conta, contrato promessa e escritura, com parceiros legais especializados." },
+        { title: "4. Pós-venda", desc: "Gestão de obras, decoração, arrendamento e manutenção contínua." },
+      ],
+    },
     // Contact
     contact: {
       label: "Contacto",
