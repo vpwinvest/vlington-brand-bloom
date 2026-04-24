@@ -12,6 +12,7 @@ import SocialResponsibility from "./pages/SocialResponsibility.tsx";
 import MissionVision from "./pages/MissionVision.tsx";
 import Sustainability from "./pages/Sustainability.tsx";
 import Lifestyle from "./pages/Lifestyle.tsx";
+import InvestPortugal from "./pages/InvestPortugal.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsConditions from "./pages/TermsConditions.tsx";
 import Careers from "./pages/Careers.tsx";
@@ -34,6 +35,8 @@ const App = () => (
             <Route path="/missao-visao" element={<MissionVision />} />
             <Route path="/sustentabilidade" element={<Sustainability />} />
             <Route path="/lifestyle" element={<Lifestyle />} />
+            <Route path="/investir" element={<InvestPortugal />} />
+            <Route path="/invest" element={<InvestPortugal />} />
             <Route path="/carreiras" element={<Careers />} />
             <Route path="/unsubscribe" element={<Unsubscribe />} />
             <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
