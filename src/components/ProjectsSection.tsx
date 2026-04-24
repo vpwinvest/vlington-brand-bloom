@@ -373,7 +373,7 @@ const ProjectsSection = () => {
             className="group relative overflow-hidden cursor-pointer mb-12"
             onClick={() => setSelectedProject(featuredProject)}
           >
-            <div className="aspect-[4/3] md:aspect-[21/9] overflow-hidden">
+            <div className="aspect-[16/10] sm:aspect-[4/3] md:aspect-[21/9] overflow-hidden">
               <img
                 src={featuredProject.image}
                 alt={featuredProject.title}
