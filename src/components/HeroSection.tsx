@@ -12,7 +12,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="hero" className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden" aria-label="Casas de luxo junto à praia em Portugal — Luxury beachfront homes Portugal Silver Coast">
+      <section id="hero" className="relative min-h-[100svh] md:min-h-[700px] md:h-screen flex items-center justify-center overflow-hidden py-24 md:py-0" aria-label="Casas de luxo junto à praia em Portugal — Luxury beachfront homes Portugal Silver Coast">
         <img
           src={heroBg}
           alt="Casa de luxo junto à praia em Portugal com piscina infinity e vista mar — Luxury beachfront villa Silver Coast Portugal near Ericeira, Peniche and Lisbon"
