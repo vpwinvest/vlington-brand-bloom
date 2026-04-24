@@ -17,10 +17,10 @@ const Index = () => {
     <div className="min-h-screen">
       <SEO
         path="/"
-        titlePt="Casas de Luxo Junto à Praia em Portugal | Costa de Prata, Ericeira, Peniche, Nazaré — VLINGTON"
-        titleEn="Luxury Beachfront Homes Portugal | Silver Coast, Ericeira, Peniche, Nazaré — VLINGTON"
-        descriptionPt="Imóveis de luxo junto à praia na Costa de Prata — Ericeira, Peniche, Baleal, Areia Branca, Nazaré, Torres Vedras. Casas perto de Lisboa para surf, golf, ténis, equitação, natureza e mar."
-        descriptionEn="Luxury beachfront property on Portugal's Silver Coast — Ericeira, Peniche, Baleal, Areia Branca, Nazaré, Torres Vedras. Villas near Lisbon for surf, golf, tennis, equestrian and nature lovers."
+        titlePt="Comprar Casa de Luxo em Portugal — Costa de Prata, Ericeira, Peniche, Nazaré | VLINGTON"
+        titleEn="Buy Property Portugal — Luxury Homes Silver Coast, Ericeira, Peniche, Nazaré | VLINGTON"
+        descriptionPt="Comprar casa de luxo em Portugal junto à praia — Costa de Prata, Ericeira, Peniche, Baleal, Areia Branca, Nazaré, Torres Vedras. Investimento imobiliário a 30-60 min de Lisboa, ideal para surf, golf, ténis e qualidade de vida."
+        descriptionEn="Buy property in Portugal — luxury homes on the Silver Coast near Lisbon. Beachfront real estate in Ericeira, Peniche, Baleal, Areia Branca, Nazaré and Torres Vedras. Surf lifestyle, golf, tennis and the best places to live in Portugal — invest with VLINGTON."
         jsonLd={buildFAQSchema(lang)}
       />
       <Navbar />
