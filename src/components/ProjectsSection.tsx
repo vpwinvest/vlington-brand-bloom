@@ -140,7 +140,6 @@ const getProjectData = (lang: string) => {
   const featured: Project = {
     id: "bridge-house",
     image: bridgeHouse20,
-    price: "1.500.000 €",
     title: "Bridge House",
     location: "Quinta de Fez, Turcifal",
     type: lang === "en" ? projectTranslations["bridge-house"].type : "Projeto em Destaque",
