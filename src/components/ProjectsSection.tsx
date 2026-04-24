@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+
 import { useLanguage } from "@/contexts/LanguageContext";
 import property1 from "@/assets/property-1.jpg";
 import abyssHouse1 from "@/assets/abyss-house-1.png";
