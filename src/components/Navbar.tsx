@@ -40,11 +40,9 @@ const Navbar = () => {
   const scrollToHash = (hash: string) => {
     const el = document.querySelector(hash) as HTMLElement | null;
     if (!el) return;
-    // Altura do navbar no estado "compacto" (após scroll) — usa-a como offset
-    // porque assim que começamos a fazer scroll para baixo o navbar fica compacto.
-    const navEl = document.querySelector("nav") as HTMLElement | null;
-    const compactNavHeight = 72; // py-3 + conteúdo
-    const offset = navEl ? Math.min(navEl.offsetHeight, compactNavHeight) + 16 : 88;
+    // Offset = altura do navbar compacto (~64px). Sem espaço extra para
+    // que a secção fique encostada por baixo do navbar.
+    const offset = 64;
     const top = el.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top, behavior: "smooth" });
   };
