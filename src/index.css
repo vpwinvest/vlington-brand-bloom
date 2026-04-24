@@ -58,6 +58,28 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    /* Compensa o navbar fixo ao saltar para âncoras (#about, #projects, #contact) */
+    scroll-padding-top: 96px;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      scroll-padding-top: 112px;
+    }
+  }
+
+  section[id] {
+    scroll-margin-top: 96px;
+  }
+
+  @media (min-width: 768px) {
+    section[id] {
+      scroll-margin-top: 112px;
+    }
+  }
+
   body {
     @apply bg-background text-foreground font-body antialiased;
   }
