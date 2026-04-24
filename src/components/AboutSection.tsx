@@ -7,13 +7,13 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="bg-background pt-6 pb-16 md:pt-10 md:pb-24"
+      className="bg-background pt-16 pb-20 md:pt-24 md:pb-28"
       aria-label="Sobre VLINGTON Properties — Comprar imóveis de luxo em Portugal | Buy property Portugal Silver Coast"
     >
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <div>
-            <p className="text-gold text-xs tracking-[0.3em] uppercase mb-5 font-light">
+            <p className="text-gold text-xs tracking-[0.3em] uppercase mb-4 font-light">
               {t.about.label}
             </p>
             <h2 className="text-2xl md:text-5xl font-light text-foreground mb-6 md:mb-8 leading-[1.2]">
