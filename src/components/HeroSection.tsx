@@ -57,7 +57,7 @@ const HeroSection = () => {
           >
             <a
               href="#projects"
-              className="inline-block px-10 py-4 border border-gold text-gold text-sm tracking-widest uppercase hover:bg-gold hover:text-dark-deep transition-all duration-500"
+              className="inline-block px-6 md:px-10 py-3 md:py-4 border border-gold text-gold text-xs md:text-sm tracking-widest uppercase hover:bg-gold hover:text-dark-deep transition-all duration-500"
             >
               {t.hero.discoverProjects}
             </a>
