@@ -30,8 +30,8 @@ const Navbar = () => {
   ];
 
   const lifestyleSubLinks: { label: string; path: string }[] = [
-    { label: lang === "en" ? "Lifestyle Overview" : "Visão Geral", path: "/lifestyle" },
-    { label: lang === "en" ? "Invest in Portugal" : "Investir em Portugal", path: "/investir#why" },
+    { label: "Lifestyle", path: "/lifestyle" },
+    { label: lang === "en" ? "Invest in Portugal" : "Investir em Portugal", path: "/investir" },
     { label: lang === "en" ? "Silver Coast" : "Costa de Prata", path: "/investir#costa" },
     { label: lang === "en" ? "Who We Work With" : "Para Quem Trabalhamos", path: "/investir#para-quem" },
     { label: lang === "en" ? "Buying Process" : "Processo de Compra", path: "/investir#processo" },
