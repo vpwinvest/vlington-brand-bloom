@@ -49,16 +49,16 @@ const AboutSection = () => {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative mt-4 md:mt-0 md:ml-6">
             <img
               src={aboutBg}
               alt="Casa de luxo em Portugal — interior arquitetura contemporânea VLINGTON | Luxury home Portugal Silver Coast"
-              className="w-full h-[320px] md:h-[500px] object-cover"
+              className="w-full h-[280px] sm:h-[360px] md:h-[500px] object-cover"
               loading="lazy"
               width={800}
               height={500}
             />
-            <div className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 w-20 h-20 md:w-32 md:h-32 border border-gold/30" />
+            <div className="absolute -bottom-3 -left-3 md:-bottom-6 md:-left-6 w-16 h-16 md:w-32 md:h-32 border border-gold/30 pointer-events-none" />
           </div>
         </div>
       </div>

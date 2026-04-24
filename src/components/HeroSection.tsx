@@ -12,7 +12,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="hero" className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden" aria-label="Casas de luxo junto à praia em Portugal — Luxury beachfront homes Portugal Silver Coast">
+      <section id="hero" className="relative min-h-[100svh] md:min-h-[700px] md:h-screen flex items-center justify-center overflow-hidden py-24 md:py-0" aria-label="Casas de luxo junto à praia em Portugal — Luxury beachfront homes Portugal Silver Coast">
         <img
           src={heroBg}
           alt="Casa de luxo junto à praia em Portugal com piscina infinity e vista mar — Luxury beachfront villa Silver Coast Portugal near Ericeira, Peniche and Lisbon"
@@ -25,13 +25,13 @@ const HeroSection = () => {
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <h1 className="sr-only">VLINGTON Properties — Casas de Luxo Junto à Praia em Portugal | Imóveis na Costa de Prata, Ericeira, Peniche, Baleal, Areia Branca, Nazaré, Torres Vedras | Villas Near Lisbon for Surf, Golf, Tennis, Equestrian & Nature Lovers | Luxury Beachfront Real Estate Portugal Silver Coast</h1>
           <div
-            className="animate-fade-in-up mb-12"
+            className="animate-fade-in-up mb-8 md:mb-12"
             style={{ animationDelay: "0.3s", opacity: 0 }}
           >
             <img
               src={logoNegative}
               alt="VLINGTON Properties - Think Beyond - Imóveis de luxo em Portugal"
-              className="mx-auto h-24 md:h-32 lg:h-40 w-auto"
+              className="mx-auto h-20 sm:h-24 md:h-32 lg:h-40 w-auto"
             />
           </div>
 
@@ -64,7 +64,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-fade-in" style={{ animationDelay: "1.5s", opacity: 0 }}>
+        <div className="hidden md:block absolute bottom-10 left-1/2 -translate-x-1/2 animate-fade-in" style={{ animationDelay: "1.5s", opacity: 0 }}>
           <div className="w-px h-16 bg-gradient-to-b from-gold/0 via-gold to-gold/0" />
         </div>
       </section>
