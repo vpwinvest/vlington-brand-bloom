@@ -356,16 +356,16 @@ const ProjectsSection = () => {
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(projectsSchema)}</script>
       </Helmet>
-      <section id="projects" className="pt-12 pb-20 md:pt-20 md:pb-28 bg-dark-deep">
+      <section id="projects" className="pt-6 pb-16 md:pt-10 md:pb-24 bg-dark-deep">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-12 md:mb-16">
-            <p className="text-gold text-xs tracking-[0.3em] uppercase mb-5 font-light">
+          <div className="text-center mb-8 md:mb-12">
+            <p className="text-gold text-xs tracking-[0.3em] uppercase mb-4 font-light">
               {t.projects.label}
             </p>
             <h2 className="text-2xl md:text-5xl font-light text-primary-foreground leading-[1.2]">
               {t.projects.heading}
             </h2>
-            <div className="w-12 h-px bg-gold/40 mx-auto mt-6 md:mt-8" />
+            <div className="w-12 h-px bg-gold/40 mx-auto mt-5 md:mt-6" />
           </div>
 
           {/* Featured Project */}
