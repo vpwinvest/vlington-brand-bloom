@@ -50,20 +50,20 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-28 md:py-36 bg-background" aria-label="Contacto — Comprar casa em Portugal, imóveis junto ao mar">
+    <section id="contact" className="py-20 md:py-36 bg-background" aria-label="Contacto — Comprar casa em Portugal, imóveis junto ao mar">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16">
           {/* Info */}
           <div>
-            <p className="text-gold text-xs tracking-[0.3em] uppercase mb-6 font-light">
+            <p className="text-gold text-xs tracking-[0.3em] uppercase mb-5 font-light">
               {t.contact.label}
             </p>
-            <h2 className="text-3xl md:text-5xl font-light text-foreground mb-8 leading-[1.15]">
+            <h2 className="text-2xl md:text-5xl font-light text-foreground mb-6 md:mb-8 leading-[1.2]">
               {t.contact.heading1}
               <span className="text-gradient-gold block">{t.contact.heading2}</span>
             </h2>
-            <div className="w-12 h-px bg-gold/40 mb-8" />
-            <p className="text-muted-foreground leading-[1.9] font-light mb-10">
+            <div className="w-12 h-px bg-gold/40 mb-6 md:mb-8" />
+            <p className="text-muted-foreground leading-[1.85] font-light mb-8 md:mb-10 text-[15px] md:text-base">
               {t.contact.intro}
             </p>
 
@@ -99,7 +99,7 @@ const ContactSection = () => {
           </div>
 
           {/* Form */}
-          <div className="bg-card p-8 md:p-10 border border-border">
+          <div className="bg-card p-6 md:p-10 border border-border">
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-xs tracking-widest uppercase text-muted-foreground mb-2">
