@@ -60,32 +60,29 @@
 
   html {
     scroll-behavior: smooth;
-    /* Compensa o navbar fixo ao saltar para âncoras (#about, #projects, #contact) */
-    scroll-padding-top: 96px;
+    /* Compensa o navbar fixo ao saltar para âncoras (#about, #projects, #contact).
+       Usa o valor maior (estado não-scrolled) para garantir que nunca fica cortado. */
+    scroll-padding-top: 110px;
   }
 
   @media (min-width: 768px) {
     html {
-      scroll-padding-top: 112px;
+      scroll-padding-top: 130px;
     }
   }
 
   section[id] {
-    scroll-margin-top: 96px;
+    scroll-margin-top: 110px;
   }
 
   @media (min-width: 768px) {
     section[id] {
-      scroll-margin-top: 112px;
+      scroll-margin-top: 130px;
     }
   }
 
   body {
     @apply bg-background text-foreground font-body antialiased;
-    overflow-x: hidden;
-  }
-
-  html {
     overflow-x: hidden;
   }
 

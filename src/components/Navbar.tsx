@@ -37,14 +37,25 @@ const Navbar = () => {
     { label: lang === "en" ? "Buying Process" : "Processo de Compra", path: "/investir#processo" },
   ];
 
+  const scrollToHash = (hash: string) => {
+    const el = document.querySelector(hash) as HTMLElement | null;
+    if (!el) return;
+    // Altura do navbar no estado "compacto" (após scroll) — usa-a como offset
+    // porque assim que começamos a fazer scroll para baixo o navbar fica compacto.
+    const navEl = document.querySelector("nav") as HTMLElement | null;
+    const compactNavHeight = 72; // py-3 + conteúdo
+    const offset = navEl ? Math.min(navEl.offsetHeight, compactNavHeight) + 16 : 88;
+    const top = el.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top, behavior: "smooth" });
+  };
+
   const handleLinkClick = (e: React.MouseEvent, link: LinkItem) => {
     e.preventDefault();
     setMenuOpen(false);
     if (link.isRoute) {
       navigate(link.href);
     } else if (isHome) {
-      const el = document.querySelector(link.href);
-      el?.scrollIntoView({ behavior: "smooth" });
+      scrollToHash(link.href);
     } else {
       navigate("/" + link.href);
     }
@@ -58,8 +69,8 @@ const Navbar = () => {
     navigate(route);
     if (hash) {
       setTimeout(() => {
-        document.getElementById(hash)?.scrollIntoView({ behavior: "smooth" });
-      }, 150);
+        scrollToHash("#" + hash);
+      }, 200);
     }
   };
 
