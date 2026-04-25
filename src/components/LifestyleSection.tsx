@@ -8,7 +8,7 @@ const LifestyleSection = () => {
 
   return (
     <section id="lifestyle" className="relative py-0">
-      <div className="relative h-[80vh] min-h-[560px] md:h-screen md:min-h-[700px] overflow-hidden">
+      <div className="relative h-[calc(100svh-56px)] min-h-[560px] md:min-h-[700px] overflow-hidden">
         <img
           src={lifestyleHero}
           alt="Costa de Prata Portugal — Silver Coast lifestyle: surf em Ericeira e Peniche, praias de Baleal e Areia Branca, golf, ténis, equitação e natureza junto ao mar"

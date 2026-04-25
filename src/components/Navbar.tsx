@@ -40,9 +40,7 @@ const Navbar = () => {
   const scrollToHash = (hash: string) => {
     const el = document.querySelector(hash) as HTMLElement | null;
     if (!el) return;
-    // Offset alinhado com scroll-padding-top / scroll-margin-top em index.css
-    // para garantir o mesmo recorte ao navegar por âncoras.
-    const offset = window.matchMedia("(min-width: 768px)").matches ? 80 : 72;
+    const offset = hash === "#hero" ? 0 : 56;
     const top = el.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top, behavior: "smooth" });
   };
@@ -55,7 +53,8 @@ const Navbar = () => {
     } else if (isHome) {
       scrollToHash(link.href);
     } else {
-      navigate("/" + link.href);
+      navigate("/");
+      window.setTimeout(() => scrollToHash(link.href), 100);
     }
   };
 
