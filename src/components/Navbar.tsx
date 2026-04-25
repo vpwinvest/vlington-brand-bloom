@@ -63,11 +63,17 @@ const Navbar = () => {
     setMenuOpen(false);
     setLifestyleOpen(false);
     const [route, hash] = path.split("#");
-    navigate(route);
-    if (hash) {
-      setTimeout(() => {
-        scrollToHash("#" + hash);
-      }, 200);
+    const targetRoute = route || "/";
+    if (location.pathname === targetRoute) {
+      if (hash) scrollToHash("#" + hash);
+      else window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate(targetRoute);
+      if (hash) {
+        setTimeout(() => {
+          scrollToHash("#" + hash);
+        }, 200);
+      }
     }
   };
 
