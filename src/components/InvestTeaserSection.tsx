@@ -10,7 +10,7 @@ const InvestTeaserSection = () => {
   return (
     <section
       id="invest-teaser"
-      className="bg-dark-deep text-primary-foreground pt-16 pb-20 md:pt-24 md:pb-28"
+      className="bg-dark-deep text-primary-foreground pt-16 pb-20 md:pt-24 md:pb-28 lg:min-h-[calc(100svh-56px)] lg:flex lg:items-center"
       aria-label="Invest in Portugal — Silver Coast property investment"
     >
       <div className="container mx-auto px-6 max-w-4xl text-center">
