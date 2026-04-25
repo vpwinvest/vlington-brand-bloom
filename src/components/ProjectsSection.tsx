@@ -356,7 +356,7 @@ const ProjectsSection = () => {
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(projectsSchema)}</script>
       </Helmet>
-      <section id="projects" className="pt-16 pb-20 md:pt-24 md:pb-28 bg-dark-deep">
+      <section id="projects" className="pt-16 pb-20 md:pt-24 md:pb-28 bg-dark-deep lg:min-h-[calc(100svh-56px)]">
         <div className="container mx-auto px-6">
           <div className="text-center mb-10 md:mb-14">
             <p className="text-gold text-xs tracking-[0.3em] uppercase mb-4 font-light">
