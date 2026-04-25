@@ -30,8 +30,8 @@ const Navbar = () => {
   ];
 
   const lifestyleSubLinks: { label: string; path: string }[] = [
-    { label: "Lifestyle", path: "/lifestyle" },
-    { label: lang === "en" ? "Invest in Portugal" : "Investir em Portugal", path: "/investir" },
+    { label: "Lifestyle", path: "/#lifestyle" },
+    { label: lang === "en" ? "Invest in Portugal" : "Investir em Portugal", path: "/#invest-teaser" },
     { label: lang === "en" ? "Silver Coast" : "Costa de Prata", path: "/investir#costa" },
     { label: lang === "en" ? "Who We Work With" : "Para Quem Trabalhamos", path: "/investir#para-quem" },
     { label: lang === "en" ? "Buying Process" : "Processo de Compra", path: "/investir#processo" },
@@ -63,11 +63,17 @@ const Navbar = () => {
     setMenuOpen(false);
     setLifestyleOpen(false);
     const [route, hash] = path.split("#");
-    navigate(route);
-    if (hash) {
-      setTimeout(() => {
-        scrollToHash("#" + hash);
-      }, 200);
+    const targetRoute = route || "/";
+    if (location.pathname === targetRoute) {
+      if (hash) scrollToHash("#" + hash);
+      else window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate(targetRoute);
+      if (hash) {
+        setTimeout(() => {
+          scrollToHash("#" + hash);
+        }, 200);
+      }
     }
   };
 
