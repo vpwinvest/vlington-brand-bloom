@@ -2,40 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.vlington.com/</loc>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.vlington.com/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.vlington.com/" />
+    <loc>https://vlington.com/</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://vlington.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vlington.com/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.vlington.com/lifestyle</loc>
+    <loc>https://vlington.com/lifestyle</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.vlington.com/missao-visao</loc>
+    <loc>https://vlington.com/investir</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vlington.com/invest</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.vlington.com/responsabilidade-social</loc>
+    <loc>https://vlington.com/missao-visao</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.vlington.com/sustentabilidade</loc>
+    <loc>https://vlington.com/responsabilidade-social</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.vlington.com/politica-privacidade</loc>
+    <loc>https://vlington.com/sustentabilidade</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vlington.com/carreiras</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vlington.com/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://vlington.com/politica-privacidade</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.vlington.com/termos-condicoes</loc>
+    <loc>https://vlington.com/termos-condicoes</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://vlington.com/unsubscribe</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
 </urlset>
