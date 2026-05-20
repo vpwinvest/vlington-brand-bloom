@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://www.vlington.com/sitemap.xml
+Sitemap: https://vlington.com/sitemap.xml
