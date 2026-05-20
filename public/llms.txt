@@ -1,0 +1,19 @@
+# VLINGTON Properties
+
+> Luxury real estate brand in Portugal. Premium properties, lifestyle, and investment opportunities. Tagline: "Think Beyond".
+
+## Pages
+
+- [Home](/): Overview of VLINGTON Properties, featured projects, lifestyle, and investment highlights.
+- [Lifestyle](/lifestyle): The VLINGTON lifestyle — design, comfort, and experiences around our properties.
+- [Investir em Portugal](/investir): Why invest in Portuguese real estate — opportunities, advantages, and process.
+- [Missão e Visão](/missao-visao): Our mission, vision, and values.
+- [Responsabilidade Social](/responsabilidade-social): Our social responsibility initiatives.
+- [Sustentabilidade](/sustentabilidade): Sustainability commitments across our developments.
+- [Carreiras](/carreiras): Career opportunities at VLINGTON.
+- [FAQ](/faq): Frequently asked questions.
+
+## Optional
+
+- [Política de Privacidade](/politica-privacidade): Privacy policy.
+- [Termos e Condições](/termos-condicoes): Terms and conditions.
