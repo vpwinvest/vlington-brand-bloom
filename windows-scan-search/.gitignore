@@ -1,0 +1,7 @@
+# Re-include the solution file: the repo root .gitignore excludes *.sln globally
+# (that rule targets the web app, not this .NET project).
+!*.sln
+
+bin/
+obj/
+*.user
