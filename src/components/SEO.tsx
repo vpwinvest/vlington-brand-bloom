@@ -19,7 +19,7 @@ interface SEOProps {
   noindex?: boolean;
 }
 
-const SITE_URL = "https://www.vlington.com";
+const SITE_URL = "https://vlington.com";
 const DEFAULT_OG_IMAGE =
   "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/f462150c-643f-49e1-8d00-2c3df3ea6498";
 
