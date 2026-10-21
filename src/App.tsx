@@ -7,7 +7,6 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 import CookieBanner from "./components/CookieBanner.tsx";
 import Index from "./pages/Index.tsx";
-import Unsubscribe from "./pages/Unsubscribe.tsx";
 import SocialResponsibility from "./pages/SocialResponsibility.tsx";
 import MissionVision from "./pages/MissionVision.tsx";
 import Sustainability from "./pages/Sustainability.tsx";
@@ -40,7 +39,6 @@ const App = () => (
             <Route path="/invest" element={<InvestPortugal />} />
             <Route path="/carreiras" element={<Careers />} />
             <Route path="/faq" element={<FAQ />} />
-            <Route path="/unsubscribe" element={<Unsubscribe />} />
             <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
             <Route path="/termos-condicoes" element={<TermsConditions />} />
             
