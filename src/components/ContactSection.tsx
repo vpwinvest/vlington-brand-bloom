@@ -22,21 +22,11 @@ const ContactSection = () => {
     setSending(true);
     try {
       const id = crypto.randomUUID();
-      const { error } = await supabase
-        .from("contact_submissions")
-        .insert({ id, name: name.trim(), email: email.trim(), message: message.trim() });
-
-      if (error) throw error;
-
-      // Send notification email to geral@vlington.com
-      await supabase.functions.invoke('send-transactional-email', {
-        body: {
-          templateName: 'contact-form-notification',
-          recipientEmail: 'geral@vlington.com',
-          idempotencyKey: `contact-notify-${id}`,
-          templateData: { name: name.trim(), email: email.trim(), message: message.trim() },
-        },
+      const { data, error } = await supabase.functions.invoke('submit-contact', {
+        body: { id, name: name.trim(), email: email.trim(), message: message.trim() },
       });
+
+      if (error || !data?.success) throw error ?? new Error('Unable to save contact');
 
       toast.success(t.contact.success);
       setName("");
