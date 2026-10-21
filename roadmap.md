@@ -4,6 +4,6 @@
 - [x] Verify the corrected preview and report publishing readiness; publishing is left to the user.
 
 # Email update
-- [ ] Convert contact notifications and preserve email audit/event records.
-- [ ] Verify and deploy replacement email functions, then remove legacy files from source only.
-- [ ] Leave the update ready for review without publishing.
+- [x] Convert contact notifications and preserve email audit/event records.
+- [x] Verify and deploy replacement email functions, then remove legacy files from source only.
+- [x] Leave the update ready for review without publishing. Contact submission saved and test entry removed; managed sending is gated until the update finishes and the user publishes, so successful sending remains unverified before cutover.
