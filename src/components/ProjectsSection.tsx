@@ -4,12 +4,9 @@ import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import property1 from "@/assets/property-1.jpg";
 import camachaMain from "@/assets/camacha-main.png.asset.json";
-import camacha1 from "@/assets/camacha-1.jpg.asset.json";
-import camacha2 from "@/assets/camacha-2.jpg.asset.json";
-import camacha3 from "@/assets/camacha-3.jpg.asset.json";
-import camacha4 from "@/assets/camacha-4.jpg.asset.json";
-import camacha5 from "@/assets/camacha-5.jpg.asset.json";
-import camacha6 from "@/assets/camacha-6.jpg.asset.json";
+import camacha7 from "@/assets/camacha-7.png.asset.json";
+import camacha8 from "@/assets/camacha-8.png.asset.json";
+import camacha9 from "@/assets/camacha-9.png.asset.json";
 import abyssHouse1 from "@/assets/abyss-house-1.png";
 import abyssHouse2 from "@/assets/abyss-house-2.png";
 import abyssHouse3 from "@/assets/abyss-house-3.png";
@@ -328,7 +325,7 @@ const getProjectData = (lang: string) => {
         ? "A contemporary residential building in Ericeira — Europe's first World Surfing Reserve — with 12 sea-view two- and three-bedroom apartments over a ground floor and four upper floors. On the fourth floor, two apartments have a private pool on the balcony. The architecture combines light rendered volumes, wood-look aluminium slats and continuous glass balustrades, with generous balconies, large terraces and an underground garage. A few minutes from Ribeira d'Ilhas, Foz do Lizandro and the historic village centre. Sales open in 2027, with an 18-month construction period."
         : "Edifício residencial contemporâneo na Ericeira — a primeira Reserva Mundial de Surf da Europa — com 12 apartamentos T2 e T3 com vista mar, distribuídos pelo rés-do-chão e quatro pisos. No 4.º andar, dois apartamentos dispõem de piscina privada na varanda. A arquitetura combina volumes rebocados em tons claros, ripado em alumínio a imitar madeira e guardas de vidro contínuas, com varandas generosas, amplos terraços e garagem em cave. A poucos minutos de Ribeira d'Ilhas, da Foz do Lizandro e do centro histórico da vila. Vendas abrem em 2027, com prazo de execução de 18 meses.",
       details: { bedrooms: "T2-T3", bathrooms: "2-3", area: "129–162 m²", status: lang === "en" ? "Sales open 2027 · 18-month build" : "Vendas abrem em 2027 · Obra em 18 meses" },
-      gallery: [camacha1.url, camacha2.url, camacha3.url, camacha4.url, camacha5.url, camacha6.url],
+      gallery: [camacha7.url, camacha8.url, camacha9.url],
       features: lang === "en"
         ? ["12 sea-view apartments (T2 and T3)", "2 apartments with a private balcony pool (4th floor)", "Generous balconies on every floor", "Large terraces", "Underground garage", "Bedrooms with closets", "Condominium room", "Wood-look aluminium façade"]
         : ["12 apartamentos com vista mar (T2 e T3)", "2 apartamentos com piscina privada na varanda (4.º andar)", "Varandas generosas em todos os pisos", "Amplos terraços", "Garagem em cave", "Quartos com closet", "Sala de condomínio", "Fachada em ripado de alumínio tipo madeira"],
