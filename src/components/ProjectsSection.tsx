@@ -319,7 +319,7 @@ const getProjectData = (lang: string) => {
     },
     {
       id: "camacha",
-      image: camacha1.url,
+      image: camachaMain.url,
       title: "Camacha Residences",
       location: "Rua da Camacha, Ericeira",
       type: lang === "en" ? "Residential Building — 12 Apartments" : "Edifício Residencial — 12 Apartamentos",
