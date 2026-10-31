@@ -3,6 +3,12 @@ import { ArrowRight } from "lucide-react";
 
 import { useLanguage } from "@/contexts/LanguageContext";
 import property1 from "@/assets/property-1.jpg";
+import camacha1 from "@/assets/camacha-1.jpg.asset.json";
+import camacha2 from "@/assets/camacha-2.jpg.asset.json";
+import camacha3 from "@/assets/camacha-3.jpg.asset.json";
+import camacha4 from "@/assets/camacha-4.jpg.asset.json";
+import camacha5 from "@/assets/camacha-5.jpg.asset.json";
+import camacha6 from "@/assets/camacha-6.jpg.asset.json";
 import abyssHouse1 from "@/assets/abyss-house-1.png";
 import abyssHouse2 from "@/assets/abyss-house-2.png";
 import abyssHouse3 from "@/assets/abyss-house-3.png";
@@ -310,9 +316,35 @@ const getProjectData = (lang: string) => {
         education: lang === "en" ? "EITV (International School of Torres Vedras) — ~5 km" : "EITV (Escola Internacional de Torres Vedras) — ~5 km",
       },
     },
+    {
+      id: "camacha",
+      image: camacha1.url,
+      title: "Camacha Residences",
+      location: "Rua da Camacha, Ericeira",
+      type: lang === "en" ? "Residential Building — 12 Apartments" : "Edifício Residencial — 12 Apartamentos",
+      coordinates: { lat: 38.9675, lng: -9.4120 },
+      description: lang === "en"
+        ? "A contemporary residential building in Ericeira — Europe's first World Surfing Reserve — with 12 two- and three-bedroom apartments across four floors. The architecture combines light rendered volumes, wood-look aluminium slats and continuous glass balustrades, with generous balconies on every floor, large rooftop terraces on the top level and an underground garage. A few minutes from Ribeira d'Ilhas, Foz do Lizandro and the historic village centre."
+        : "Edifício residencial contemporâneo na Ericeira — a primeira Reserva Mundial de Surf da Europa — com 12 apartamentos T2 e T3 distribuídos por quatro pisos. A arquitetura combina volumes rebocados em tons claros, ripado em alumínio a imitar madeira e guardas de vidro contínuas, com varandas generosas em todos os pisos, amplos terraços no último piso e garagem em cave. A poucos minutos de Ribeira d'Ilhas, da Foz do Lizandro e do centro histórico da vila.",
+      details: { bedrooms: "T2-T3", bathrooms: "2-3", area: "129–162 m²", status: lang === "en" ? "In Design — Launch" : "Em Projeto — Lançamento" },
+      gallery: [camacha1.url, camacha2.url, camacha3.url, camacha4.url, camacha5.url, camacha6.url],
+      features: lang === "en"
+        ? ["12 apartments (T2 and T3)", "Generous balconies on every floor", "Rooftop terraces (~167 m²)", "Underground garage (~500 m²)", "Bedrooms with closets", "Condominium room", "Wood-look aluminium façade", "Thermal-break double glazing"]
+        : ["12 apartamentos (T2 e T3)", "Varandas generosas em todos os pisos", "Terraços no último piso (~167 m²)", "Garagem em cave (~500 m²)", "Quartos com closet", "Sala de condomínio", "Fachada em ripado de alumínio tipo madeira", "Caixilharia com corte térmico e vidro duplo"],
+      nearby: {
+        distanceLisbon: "~45 km (via A21/A8)",
+        airport: "Humberto Delgado Airport — ~50 km",
+        nearestCities: ["Ericeira (centro) — 1 km", "Mafra — 10 km", "Sintra — 25 km"],
+        nearestBeaches: ["Praia dos Pescadores — 1 km", "Ribeira d'Ilhas — 3 km", "Foz do Lizandro — 3 km"],
+        activities: lang === "en" ? ["Surfing — World Surfing Reserve", "Mafra National Palace", "Seafood restaurants", "Coastal trails"] : ["Surf — Reserva Mundial de Surf", "Palácio Nacional de Mafra", "Restaurantes de marisco", "Trilhos costeiros"],
+      },
+    },
   ];
 
-  return { featured, list };
+  const abyss = list.find((p) => p.id === "abyss-house")!;
+  const featuredAbyss: Project = { ...abyss, type: lang === "en" ? "Featured Project" : "Projeto em Destaque" };
+  const bridgeSold: Project = { ...featured, sold: true, type: lang === "en" ? "Single-Family Home" : "Habitação Unifamiliar" };
+  return { featured: featuredAbyss, list: [...list.filter((p) => p.id !== "abyss-house"), bridgeSold] };
 };
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
