@@ -6,7 +6,7 @@ import property1 from "@/assets/property-1.jpg";
 import camacha7 from "@/assets/camacha-7.png.asset.json";
 import camacha8 from "@/assets/camacha-8.png.asset.json";
 import camacha9 from "@/assets/camacha-9.png.asset.json";
-import camacha10 from "@/assets/camacha-10.png.asset.json";
+import camacha10 from "@/assets/camacha-10.webp.asset.json";
 import abyssHouse1 from "@/assets/abyss-house-1.png";
 import abyssHouse2 from "@/assets/abyss-house-2.png";
 import abyssHouse3 from "@/assets/abyss-house-3.png";
