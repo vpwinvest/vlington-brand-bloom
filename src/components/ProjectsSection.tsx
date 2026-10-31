@@ -342,7 +342,11 @@ const getProjectData = (lang: string) => {
   const abyss = list.find((p) => p.id === "abyss-house")!;
   const featuredAbyss: Project = { ...abyss, type: lang === "en" ? "Featured Project" : "Projeto em Destaque" };
   const bridgeSold: Project = { ...featured, sold: true, type: lang === "en" ? "Single-Family Home" : "Habitação Unifamiliar" };
-  return { featured: featuredAbyss, list: [...list.filter((p) => p.id !== "abyss-house"), bridgeSold] };
+  const camacha = list.find((p) => p.id === "camacha")!;
+  return {
+    featured: featuredAbyss,
+    list: [camacha, ...list.filter((p) => p.id !== "abyss-house" && p.id !== "camacha"), bridgeSold],
+  };
 };
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
