@@ -3,7 +3,6 @@ import { ArrowRight } from "lucide-react";
 
 import { useLanguage } from "@/contexts/LanguageContext";
 import property1 from "@/assets/property-1.jpg";
-import camachaMain from "@/assets/camacha-main.png.asset.json";
 import camacha7 from "@/assets/camacha-7.png.asset.json";
 import camacha8 from "@/assets/camacha-8.png.asset.json";
 import camacha9 from "@/assets/camacha-9.png.asset.json";
